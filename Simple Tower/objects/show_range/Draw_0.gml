@@ -1,0 +1,16 @@
+// Genetix Studio
+draw_set_alpha(show_alpha)
+draw_set_color(c_aqua)
+draw_set_circle_precision(64);
+draw_circle(tower.x,tower.y,store.attack_range+13,true)
+draw_circle(tower.x,tower.y,store.attack_range+12,true)
+draw_circle(tower.x,tower.y,store.attack_range+11,true)
+draw_set_color(c_teal)
+draw_circle(tower.x,tower.y,store.attack_range+8,true)
+draw_circle(tower.x,tower.y,store.attack_range+9,true)
+draw_set_alpha(show_alpha/1.5)
+draw_set_color(c_aqua)
+draw_circle(tower.x,tower.y,store.attack_range+5,true)
+draw_circle(tower.x,tower.y,store.attack_range+6,true)
+draw_circle(tower.x,tower.y,store.attack_range+7,true)
+draw_set_alpha(1)
