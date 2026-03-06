@@ -2,14 +2,7 @@ if game_paused=0 {
 var cx = camera_get_view_x(view_camera[0]);
 var cy = camera_get_view_y(view_camera[0]);
 
-//Stage lighting/misc
-//if store.bloodmoon=1 {draw_set_alpha(.35) draw_rectangle_color(0,0,room_width,420,c_orange,c_orange,c_red,c_red,false) draw_set_alpha(1)}
-
-//Draw Stats (HP/XP/etc)
-//draw_stats()
-
-draw_set_font(font_large_hud)
-draw_text_color(2,2,"$"+calc_number(store.run_score),c_lime,c_lime,c_lime,c_lime,1)
+draw_player_heatlhbar()
 
 //Draw Current Stage & tier
 /*
@@ -38,15 +31,6 @@ draw_text(cx+202,cy+108,"Stage "+string(store.current_stage))
 draw_set_color(c_yellow)
 draw_line(cx+114,cy+67,cx+389,cy+67)
 draw_line(cx+114,cy+107,cx+389,cy+107)
-*/
-//Draw Bloodmoon banner
-/*
-if store.bloodmoon=1 {
-draw_set_color(c_red)
-draw_text(cx+208,cy+168,"Blood Moon")
-}
-draw_set_alpha(1)
-}
 */
 
 //Draw Gold

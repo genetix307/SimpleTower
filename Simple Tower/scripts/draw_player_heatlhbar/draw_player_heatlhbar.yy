@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"draw_player_heatlhbar",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"draw_player_heatlhbar",
+  "parent":{
+    "name":"Draw",
+    "path":"folders/Scripts/Draw.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

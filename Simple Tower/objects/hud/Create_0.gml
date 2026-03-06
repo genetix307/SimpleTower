@@ -7,10 +7,10 @@ game_over=0
 stage_complete=0
 show_fade=1
 show_stage=3
-alarm[0]=240 //Show tutorial
+hp_smooth = store.hp;
 
-//Status Boosts
-//template_boost=0
+alarm[0]=240 //Show tutorial
+instance_create_depth(x,y,depth,hud_backdrop)
 
 //CARDS
 //Template Card

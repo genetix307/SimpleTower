@@ -1,6 +1,6 @@
 {
   "$GMFont":"",
-  "%Name":"font_stats",
+  "%Name":"font_buttons_small",
   "AntiAlias":1,
   "applyKerning":0,
   "ascender":12,
@@ -156,9 +156,9 @@
     {"amount":-1,"first":121,"second":46,},
   ],
   "last":0,
-  "lineHeight":0,
+  "lineHeight":15,
   "maintainGms1Font":false,
-  "name":"font_stats",
+  "name":"font_buttons_small",
   "parent":{
     "name":"Fonts",
     "path":"folders/Fonts.yy",

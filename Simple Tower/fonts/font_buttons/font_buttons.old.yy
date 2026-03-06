@@ -203,7 +203,7 @@
     {"amount":-1,"first":121,"second":46,},
   ],
   "last":0,
-  "lineHeight":21,
+  "lineHeight":0,
   "maintainGms1Font":false,
   "name":"font_buttons",
   "parent":{

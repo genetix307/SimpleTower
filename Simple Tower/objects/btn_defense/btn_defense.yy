@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"btn_small1",
-    "path":"sprites/btn_small1/btn_small1.yy",
+    "name":"btn_small_tab",
+    "path":"sprites/btn_small_tab/btn_small_tab.yy",
   },
   "spriteMaskId":null,
   "visible":true,
