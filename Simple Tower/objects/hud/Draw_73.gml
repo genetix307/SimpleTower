@@ -4,16 +4,17 @@ var cy = camera_get_view_y(view_camera[0]);
 
 draw_player_heatlhbar()
 
-//Draw Current Stage & tier
-/*
-draw_set_font(font_stats)
-draw_set_color(c_black)
-draw_text(cx+184,cy+440,"Stage "+string(store.current_stage))   
-draw_text(cx+184,cy+452,"Tier "+string(1+floor(store.current_stage/101)))
-draw_set_color(c_white)
-draw_text(cx+182,cy+438,"Stage "+string(store.current_stage))
-draw_text(cx+182,cy+450,"Tier "+string(1+floor(store.current_stage/101)))
-*/
+//Draw HUD Elements
+draw_set_font(font_med_hud)
+draw_text_shadow_color(3,8,"Stage "+string(store.current_stage),c_white,c_white,c_white,c_white)
+draw_sprite(spr_icon_beast_heart,0,116,8)
+draw_text_shadow_color(140,8,calc_number(store.enemy_hp),c_white,c_white,c_white,c_white)
+draw_sprite(spr_icon_sword,0,276,8)
+draw_text_shadow_color(300,8,calc_number(store.enemy_damage),c_white,c_white,c_white,c_white)
+draw_text_shadow_color(375,8,"Tier "+string(store.tier),c_white,c_white,c_white,c_white)
+draw_sprite(spr_icon_clock,0,366,727)
+draw_text_shadow_color(380,719,"x"+string(store.game_speed),c_white,c_white,c_white,c_white)
+
 //Draw Current Stage Banner
 /*
 if show_stage>0 {

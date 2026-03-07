@@ -9,7 +9,7 @@ if super_critical>0 {super_critical-=1*store.game_speed}
 if reload>0 {reload-=1*store.game_speed}
 
 image_index = 0
-if store.hp <(store.maxhp*.45) {image_index =1}
+if store.hp <(store.maxhp*.50) {image_index =1}
 if store.hp <(store.maxhp*.25) {image_index = 2}
 
 //Focus and Attack

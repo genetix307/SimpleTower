@@ -11,6 +11,7 @@ hp_smooth = store.hp;
 
 alarm[0]=240 //Show tutorial
 instance_create_depth(x,y,depth,hud_backdrop)
+instance_create_depth(x,y,depth,wave_gen)
 
 //CARDS
 //Template Card

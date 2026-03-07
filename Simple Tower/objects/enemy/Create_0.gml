@@ -3,11 +3,11 @@ type=""
 
 //Base Stats
 move_speed=1
-maxhp=2+store.current_stage
+maxhp=store.enemy_hp
 hp=maxhp
 boss=0
 shield=0
-attack_damage=1
+attack_damage=store.enemy_damage
 attack_effect=""
 attack_range=25
 attack_speed=120
@@ -29,5 +29,5 @@ alarm[0]=1
 alarm[1]=60
 
 //MISC
-check_lvl_up()
-set_boss_bgm=0
+//check_lvl_up()
+//set_boss_bgm=0

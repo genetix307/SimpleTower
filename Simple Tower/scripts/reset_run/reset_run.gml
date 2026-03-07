@@ -11,6 +11,7 @@ store.enemies_killed_run=0
 store.gems_earned_run=0
 store.enemy_hp=2
 store.enemy_damage=1
+store.extra_spawn=0
 
 store.attack_damage=store.perm_attack_damage
 store.attack_speed=store.perm_attack_speed
