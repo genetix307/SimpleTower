@@ -99,6 +99,7 @@
     {"name":"set_bestiary","order":1,"path":"scripts/set_bestiary/set_bestiary.yy",},
     {"name":"bgm_gameover","order":1,"path":"sounds/bgm_gameover/bgm_gameover.yy",},
     {"name":"sfx_enemy_hit","order":2,"path":"sounds/sfx_enemy_hit/sfx_enemy_hit.yy",},
+    {"name":"sfx_tower_hit","order":3,"path":"sounds/sfx_tower_hit/sfx_tower_hit.yy",},
     {"name":"sfx_upgrade","order":1,"path":"sounds/sfx_upgrade/sfx_upgrade.yy",},
     {"name":"bg_grass_tile","order":2,"path":"sprites/bg_grass_tile/bg_grass_tile.yy",},
     {"name":"bg_title","order":1,"path":"sprites/bg_title/bg_title.yy",},

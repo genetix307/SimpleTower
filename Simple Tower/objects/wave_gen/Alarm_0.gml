@@ -61,6 +61,7 @@ spawn=12+(store.current_stage)+store.extra_spawn
 store.enemy_damage +=.25+(floor(store.current_stage/5)*.25)
 store.enemy_hp +=1+floor(store.current_stage/3)
 if store.goldperwave>0 {store.gold+=store.goldperwave}
+if store.gemsperwave>0 {store.gems+=store.gemsperwave}
 
 ////Check best tier stage reached
 //if store.tier=1 {if store.current_stage>store.tier_best_1 {store.tier_best_1=store.current_stage}}
@@ -72,9 +73,7 @@ if store.goldperwave>0 {store.gold+=store.goldperwave}
 
 //if store.perk_lvl_tutor>0 {store.xp+=store.perk_lvl_tutor*10} 
 //if store.perk_lvl_flawless>0 {store.gold+=store.perk_lvl_flawless*10 store.gold_earned+=store.perk_lvl_flawless*10}
-//if store.regen>0 {store.hp+=store.regen if store.hp>store.maxhp {store.hp=store.maxhp}}
-//if store.interestrate>0 {store.gold+=min(store.maxinterest,ceil(store.gold*store.interestrate))}
-//if store.dailygem>0 {store.gems+=store.dailygem store.gems_earned+=store.dailygem}
+
 //spawn_boss=1
 }
 }

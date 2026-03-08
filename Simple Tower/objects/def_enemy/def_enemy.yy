@@ -9,7 +9,10 @@
     "name":"Defaults",
     "path":"folders/Objects/System/Defaults.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"def_solid",
+    "path":"objects/def_solid/def_solid.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

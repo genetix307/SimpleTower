@@ -1,7 +1,7 @@
 if hud.game_paused=0 and hud.game_over=0 {
 
 //Move to range
-if distance_to_object(tower)>attack_range {mp_potential_step_object(tower.x,tower.y,move_speed*store.game_speed,def_solid)}
+if distance_to_object(tower)>0 {mp_potential_step_object(tower.x,tower.y,move_speed*store.game_speed,def_solid)}
 
 //if frozen>0 {image_speed=0} else {image_speed=1}
 

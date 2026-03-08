@@ -168,6 +168,7 @@
     {"id":{"name":"bgm_title","path":"sounds/bgm_title/bgm_title.yy",},},
     {"id":{"name":"sfx_click","path":"sounds/sfx_click/sfx_click.yy",},},
     {"id":{"name":"sfx_enemy_hit","path":"sounds/sfx_enemy_hit/sfx_enemy_hit.yy",},},
+    {"id":{"name":"sfx_tower_hit","path":"sounds/sfx_tower_hit/sfx_tower_hit.yy",},},
     {"id":{"name":"sfx_upgrade","path":"sounds/sfx_upgrade/sfx_upgrade.yy",},},
     {"id":{"name":"bg_grass_tile","path":"sprites/bg_grass_tile/bg_grass_tile.yy",},},
     {"id":{"name":"bg_menu","path":"sprites/bg_menu/bg_menu.yy",},},

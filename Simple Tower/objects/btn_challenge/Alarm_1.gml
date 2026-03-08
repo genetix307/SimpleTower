@@ -10,4 +10,4 @@ if my_id = 3 {myCap=20+(5*store.lvl_template) myName="Template D" myDesc="Slay "
 if my_id = 4 {myCap=20+(5*store.lvl_template) myName="Template E" myDesc="Slay "+string(myCap)+" Mushkins" myReward=20+(10*store.lvl_template) myCur=store.goal_template myLevel=store.lvl_template}
 if my_id = 5 {myCap=20+(5*store.lvl_template) myName="Template F" myDesc="Slay "+string(myCap)+" Mushkins" myReward=20+(10*store.lvl_template) myCur=store.goal_template myLevel=store.lvl_template}
 
-save_game_old()
+save_game()

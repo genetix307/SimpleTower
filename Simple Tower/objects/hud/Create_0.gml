@@ -10,6 +10,7 @@ show_stage=3
 hp_smooth = store.hp;
 
 alarm[0]=240 //Show tutorial
+alarm[1]=60 //Regen 
 instance_create_depth(x,y,depth,hud_backdrop)
 instance_create_depth(x,y,depth,wave_gen)
 

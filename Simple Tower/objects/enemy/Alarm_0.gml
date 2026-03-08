@@ -11,7 +11,7 @@ attack_effect=""
 //attack_range=10
 //attack_speed=180
 attack_type="melee"
-gold_drop=1
+gold_drop=0
 move_pattern="normal"
 }
 
