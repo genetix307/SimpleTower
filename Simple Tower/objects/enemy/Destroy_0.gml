@@ -2,6 +2,7 @@ if hp<=0
 {
 instance_create_depth(other.x,other.y-12,depth-10,blood_splatter)
 repeat 3 instance_create_depth(other.x,other.y-8,depth-10,gore)
+store.gold+=gold_drop+store.goldperkill
 //if store.code_blood=1 
 //{
 //repeat 3 instance_create_depth(random_range(x-4,x+4),random_range(y-4,y+4),depth-10,blood_splatter)

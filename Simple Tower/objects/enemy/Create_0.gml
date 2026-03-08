@@ -31,3 +31,5 @@ alarm[1]=60
 //MISC
 //check_lvl_up()
 //set_boss_bgm=0
+
+if x<0 or x>room_width {y+=random(600)}

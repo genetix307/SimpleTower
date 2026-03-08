@@ -16,6 +16,6 @@ if store.hp <(store.maxhp*.25) {image_index = 2}
 if instance_number(def_enemy)>0 and hud.game_paused=0 and hud.game_over=0 {
 	if distance_to_object(instance_nearest(x,y,def_enemy))<=store.attack_range {
 		focus_direction=point_direction(x,y,instance_nearest(x,y,def_enemy).x,instance_nearest(x,y,def_enemy).y)
-		if reload<=0 {instance_create_depth(x,y,depth,weapon_arrow) reload=120-(60*store.attack_speed)}
+		if reload<=0 {instance_create_depth(x,y-4,depth,weapon_arrow) reload=120-(60*store.attack_speed)}
 		}
 }

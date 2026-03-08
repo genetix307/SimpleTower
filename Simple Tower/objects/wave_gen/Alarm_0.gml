@@ -1,15 +1,10 @@
-alarm[0]=10
+alarm[0]=30
 
 if hud.game_paused=0 {
-if 75>random(100) and store.current_stage>=0 and spawn>0 {instance_create_depth(random_range(-60,540),-50-random(160),depth,enemy).type="Bone Henchman" spawn-=1}
+if 50>random(100) and store.current_stage>=1 and spawn>0 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Bone Henchman" spawn-=1}
 //if 6>random(100) and store.current_stage>=3 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(110),depth,enemy).type="Slime" spawn-=1}
 //if 4>random(100) and store.current_stage>=11 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Stinger" spawn-=1}
-//if 5>random(100) and store.current_stage>=4 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Bone Archer" spawn-=1}
-//if 6>random(100) and store.current_stage>=2 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(200),depth,enemy).type="Goblin" spawn-=1}
-//if 5>random(100) and store.current_stage>=6 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Mushkin" spawn-=1}
-//if 4>random(100) and store.current_stage>=7 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Ghoul" spawn-=1}
-//if 4>random(100) and store.current_stage>=13 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Carbuncle" spawn-=1}
-//if 4>random(100) and store.current_stage>=8 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Red Ghoul" spawn-=1}
+
 
 ////Specific Stage
 //if 20>random(100) and store.current_stage=12 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(200),depth,enemy).type="Goblin" spawn-=1}
@@ -62,6 +57,10 @@ if 75>random(100) and store.current_stage>=0 and spawn>0 {instance_create_depth(
 
 if spawn<= 0 and instance_number(def_enemy)<=0 and hud.game_paused=0 and hud.game_over=0 {
 store.current_stage+=1 
+spawn=12+(store.current_stage)+store.extra_spawn
+store.enemy_damage +=.25+(floor(store.current_stage/5)*.25)
+store.enemy_hp +=1+floor(store.current_stage/3)
+if store.goldperwave>0 {store.gold+=store.goldperwave}
 
 ////Check best tier stage reached
 //if store.tier=1 {if store.current_stage>store.tier_best_1 {store.tier_best_1=store.current_stage}}
@@ -71,20 +70,11 @@ store.current_stage+=1
 //if store.tier=5 {if store.current_stage>store.tier_best_5 {store.tier_best_5=store.current_stage}}
 //if store.tier=6 {if store.current_stage>store.tier_best_6 {store.tier_best_6=store.current_stage}}
 
-//if hud.game_victory=1 {exit}
-
-spawn=12+(store.current_stage) 
-//instance_create_depth(240,400,depth,show_round) 
 //if store.perk_lvl_tutor>0 {store.xp+=store.perk_lvl_tutor*10} 
 //if store.perk_lvl_flawless>0 {store.gold+=store.perk_lvl_flawless*10 store.gold_earned+=store.perk_lvl_flawless*10}
 //if store.regen>0 {store.hp+=store.regen if store.hp>store.maxhp {store.hp=store.maxhp}}
 //if store.interestrate>0 {store.gold+=min(store.maxinterest,ceil(store.gold*store.interestrate))}
 //if store.dailygem>0 {store.gems+=store.dailygem store.gems_earned+=store.dailygem}
-//if store.dailygold>0 {store.gold+=store.dailygold store.gold_earned+=store.dailygold}
-
-//hud.game_paused=1
-
-//instance_create_depth(240,820,depth,btn_nextwave)
 //spawn_boss=1
 }
-alarm[0]=180}
+}

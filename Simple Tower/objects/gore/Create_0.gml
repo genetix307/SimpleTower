@@ -3,8 +3,6 @@ image_angle = random(360)
 image_index = round(random(image_number))
 rise=0
 
-if store.code_blood=1 {image_xscale=1.5 image_yscale=1.5}
-
 image_speed = 0
 //direction = image_angle
 speed = 1 + random(2)

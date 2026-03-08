@@ -15,6 +15,11 @@ draw_text_shadow_color(375,8,"Tier "+string(store.tier),c_white,c_white,c_white,
 draw_sprite(spr_icon_clock,0,366,727)
 draw_text_shadow_color(380,719,"x"+string(store.game_speed),c_white,c_white,c_white,c_white)
 
+draw_text_shadow_color(28,39,string(store.gold),c_white,c_white,c_white,c_white)
+draw_sprite(spr_show_gold,0,12,48)
+draw_text_shadow_color(28,64,string(store.gems),c_white,c_white,c_white,c_white)
+draw_sprite(spr_show_gem,0,12,72)
+
 //Draw Current Stage Banner
 /*
 if show_stage>0 {
@@ -34,49 +39,6 @@ draw_line(cx+114,cy+67,cx+389,cy+67)
 draw_line(cx+114,cy+107,cx+389,cy+107)
 */
 
-//Draw Gold
-/*
-draw_set_font(font_stats)
-draw_set_color(c_black)
-draw_text(cx+260,cy+440,"Gold")              
-draw_set_color(c_white)
-draw_text(cx+258,cy+438,"Gold")
-draw_sprite(spr_show_gold,0,cx+260,cy+465)
-if store.gold <=9999 {
-draw_set_color(c_black)
-draw_text(cx+275,cy+460,string(store.gold))              
-draw_set_color(c_yellow)
-draw_text(cx+273,cy+458,string(store.gold)) 
-}
-if store.gold >9999 {
-draw_set_color(c_black)
-draw_text(cx+275,cy+460,string(floor(store.gold/1000))+"K")              
-draw_set_color(c_yellow)
-draw_text(cx+273,cy+458,string(floor(store.gold/1000))+"K")    
-}
-*/
-
-//Draw Gems
-/*
-draw_set_font(font_stats)
-draw_set_color(c_black)
-draw_text(cx+330,cy+440,"Gems")              
-draw_set_color(c_white)
-draw_text(cx+328,cy+438,"Gems")
-draw_sprite(spr_show_gem,0,cx+330,cy+465)
-if store.gems <9999 {
-draw_set_color(c_black)
-draw_text(cx+347,cy+460,string(store.gems))              
-draw_set_color(c_yellow)
-draw_text(cx+345,cy+458,string(store.gems)) 
-}
-else {
-draw_set_color(c_black)
-draw_text(cx+347,cy+460,string(floor(store.gems/1000))+"K")              
-draw_set_color(c_yellow)
-draw_text(cx+345,cy+458,string(floor(store.gems/1000))+"K")    
-}
-*/
 //Draw Active Status
 /*
 draw_set_font(font_stats)

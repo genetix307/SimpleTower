@@ -2,7 +2,7 @@
 if type="Bone Henchman"
 {
 sprite_index=spr_enemy_skeleton
-move_speed=1.5
+move_speed=1.25
 maxhp=store.enemy_hp
 boss=0
 shield=0
@@ -11,7 +11,7 @@ attack_effect=""
 //attack_range=10
 //attack_speed=180
 attack_type="melee"
-//xp_drop=1
+gold_drop=1
 move_pattern="normal"
 }
 
