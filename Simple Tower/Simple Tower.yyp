@@ -210,6 +210,8 @@
     {"id":{"name":"spr_tower","path":"sprites/spr_tower/spr_tower.yy",},},
     {"id":{"name":"spr_weapon_effect_arrow","path":"sprites/spr_weapon_effect_arrow/spr_weapon_effect_arrow.yy",},},
     {"id":{"name":"Sprite24","path":"sprites/Sprite24/Sprite24.yy",},},
+    {"id":{"name":"Sprite36","path":"sprites/Sprite36/Sprite36.yy",},},
+    {"id":{"name":"Sprite37","path":"sprites/Sprite37/Sprite37.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

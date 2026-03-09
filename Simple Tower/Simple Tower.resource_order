@@ -136,5 +136,7 @@
     {"name":"spr_show_lifesteal","order":2,"path":"sprites/spr_show_lifesteal/spr_show_lifesteal.yy",},
     {"name":"spr_weapon_effect_arrow","order":6,"path":"sprites/spr_weapon_effect_arrow/spr_weapon_effect_arrow.yy",},
     {"name":"Sprite24","order":1,"path":"sprites/Sprite24/Sprite24.yy",},
+    {"name":"Sprite36","order":2,"path":"sprites/Sprite36/Sprite36.yy",},
+    {"name":"Sprite37","order":3,"path":"sprites/Sprite37/Sprite37.yy",},
   ],
 }

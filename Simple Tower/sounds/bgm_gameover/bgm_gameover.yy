@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":14.376,
+  "duration":14.320794,
   "exportDir":"",
   "name":"bgm_gameover",
   "parent":{
