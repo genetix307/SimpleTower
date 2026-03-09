@@ -57,8 +57,8 @@ if 50>random(100) and store.current_stage>=1 and spawn>0 {instance_create_depth(
 
 if spawn<= 0 and instance_number(def_enemy)<=0 and hud.game_paused=0 and hud.game_over=0 {
 store.current_stage+=1 
-spawn=12+(store.current_stage)+store.extra_spawn
-store.enemy_damage +=.25+(floor(store.current_stage/5)*.25)
+spawn=15+(store.current_stage)+store.extra_spawn
+store.enemy_damage +=.25+(floor(store.current_stage/3)*.25)
 store.enemy_hp +=1+floor(store.current_stage/3)
 if store.goldperwave>0 {store.gold+=store.goldperwave}
 if store.gemsperwave>0 {store.gems+=store.gemsperwave}

@@ -22,4 +22,4 @@ if stage_complete=0 and show_fade>0 {show_fade-=.025*store.game_speed}
 //if store.active_template>0 {store.active_template-=1*store.game_speed}
 //}
 
-
+if store.hp>store.maxhp {store.hp=store.maxhp}

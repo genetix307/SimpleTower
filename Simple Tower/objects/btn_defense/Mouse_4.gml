@@ -1,6 +1,7 @@
 audio_play_sound(sfx_click,1,false)
 effect_btn()
 
+
 if instance_number(btn_upgrade)>0 {with btn_upgrade instance_destroy()}
 //if instance_number(btn_item)>0 {with btn_item instance_destroy()}
 

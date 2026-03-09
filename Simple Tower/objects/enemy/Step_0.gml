@@ -5,7 +5,16 @@ if distance_to_object(tower)>0 {mp_potential_step_object(tower.x,tower.y,move_sp
 
 //if frozen>0 {image_speed=0} else {image_speed=1}
 
-//if move_pattern="delayedrush" and distance_to_object(tower)<300 {move_speed=1.35}
+//Damage Tower
+if distance_to_object(tower)<10 {
+instance_destroy()
+audio_play_sound(sfx_tower_hit,1,false)
+tmpDamage=attack_damage-store.armor
+if store.block_chance>random(100) {instance_create_depth(x,y,depth,effect_block) tmpDamage=0}
+if tmpDamage<0 {tmpDamage=0}
+store.hp-=tmpDamage
+instance_create_depth(other.x,other.y-8,depth,effect_show_damage_player).myDamage=tmpDamage
+}
 
 //Facing
 if x>=room_width/2 {image_xscale=-1} else {image_xscale=1}
