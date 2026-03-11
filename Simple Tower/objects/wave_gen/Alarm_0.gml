@@ -2,9 +2,8 @@ alarm[0]=30
 
 if hud.game_paused=0 {
 if 50>random(100) and store.current_stage>=1 and spawn>0 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Bone Henchman" spawn-=1}
-//if 6>random(100) and store.current_stage>=3 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(110),depth,enemy).type="Slime" spawn-=1}
-//if 4>random(100) and store.current_stage>=11 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Stinger" spawn-=1}
-
+if 70>random(100) and store.current_stage%5==0 and spawn_carbuncle>0 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Carbuncle" spawn_carbuncle-=1}
+if 70>random(100) and store.current_stage%3==0 and spawn_mushkin>0 {instance_create_depth(random_range(-300,room_width+300),-80-random(130),depth,enemy).type="Mushkin" spawn_mushkin-=1}
 
 ////Specific Stage
 //if 20>random(100) and store.current_stage=12 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(200),depth,enemy).type="Goblin" spawn-=1}
@@ -58,6 +57,8 @@ if 50>random(100) and store.current_stage>=1 and spawn>0 {instance_create_depth(
 if spawn<= 0 and instance_number(def_enemy)<=0 and hud.game_paused=0 and hud.game_over=0 {
 store.current_stage+=1 
 spawn=15+(store.current_stage)+store.extra_spawn
+spawn_carbuncle=1+floor(store.current_stage/15)
+spawn_mushkin=1+floor(store.current_stage/12)
 store.enemy_damage +=.25+(floor(store.current_stage/3)*.25)
 store.enemy_hp +=1+floor(store.current_stage/3)
 if store.goldperwave>0 {store.gold+=store.goldperwave}

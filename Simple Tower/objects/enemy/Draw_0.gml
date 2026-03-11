@@ -1,7 +1,8 @@
-//if boss=1 or distance_to_object(cursor_game)<48 {enemy_healthbar(type)}
+if boss=1 {enemy_healthbar(type)}
 
 draw_set_alpha(.25)
-draw_circle_color(x,y+sprite_height/4,sprite_width/2,c_black,c_black,false)
+if attack_type="melee" {draw_circle_color(x,y+sprite_height/4,sprite_width/2,c_black,c_black,false)}
+if attack_type="ranged" {draw_circle_color(x,y+sprite_height,sprite_width/2,c_black,c_black,false)}
 draw_set_alpha(1)
 
 if damaged<=0 {draw_self()}

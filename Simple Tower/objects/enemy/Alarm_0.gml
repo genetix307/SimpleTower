@@ -8,10 +8,42 @@ boss=0
 shield=0
 attack_damage=store.enemy_damage
 attack_effect=""
-//attack_range=10
-//attack_speed=180
+attack_range=0
+attack_speed=180
 attack_type="melee"
 gold_drop=0
+move_pattern="normal"
+}
+
+if type="Carbuncle"
+{
+sprite_index=spr_enemy_carbuncle
+move_speed=1.20
+maxhp=store.enemy_hp
+boss=0
+shield=0
+attack_damage=store.enemy_damage
+attack_effect=""
+attack_range=150
+attack_speed=180
+attack_type="ranged"
+gold_drop=2
+move_pattern="normal"
+}
+
+if type="Mushkin"
+{
+sprite_index=spr_enemy_mushkin
+move_speed=2.5
+maxhp=store.enemy_hp
+boss=0
+shield=0
+attack_damage=store.enemy_damage
+attack_effect=""
+attack_range=0
+attack_speed=180
+attack_type="melee"
+gold_drop=1
 move_pattern="normal"
 }
 
