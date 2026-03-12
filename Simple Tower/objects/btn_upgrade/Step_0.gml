@@ -1,7 +1,7 @@
 // ATTACK
 if myID=1 {myName="Attack Damage" myStat=store.attack_damage myCost=store.cost_perm_attack_damage nextStat=3 myCap=999999999 mylvl=store.lvl_perm_attack_damage}
 if myID=2 {myName="Attack Speed" myStat=store.attack_speed myCost=store.cost_perm_attack_speed nextStat=.07 myCap=10 mylvl=store.lvl_perm_attack_speed}
-if myID=3 {myName="Critical Chance" myStat=calc_number(store.critical_chance) postStat="%" myCost=store.cost_perm_critical_chance nextStat=.5 myCap=70 mylvl=store.lvl_perm_critical_chance}
+if myID=3 {myName="Critical Chance" myStat=calc_number(store.critical_chance) postStat="%" myCost=store.cost_perm_critical_chance nextStat=.25 myCap=70 mylvl=store.lvl_perm_critical_chance}
 if myID=4 {myName="Critical Multiplier" preStat="x" myStat=store.critical_multiplier myCost=store.cost_perm_critical_multiplier nextStat=.10 myCap=999999999 mylvl=store.lvl_perm_critical_multiplier}
 if myID=5 {myName="Attack Range" myStat=calc_number(store.attack_range) postStat=" ft" myCost=store.cost_perm_attack_range nextStat=8 myCap=500 mylvl=store.lvl_perm_attack_range}
 if myID=6 {myName="Multishot Chance" myStat=calc_number(store.multishot_chance) postStat="%" myCost=store.cost_perm_multishot_chance nextStat=.5 myCap=70 mylvl=store.lvl_perm_multishot_chance}

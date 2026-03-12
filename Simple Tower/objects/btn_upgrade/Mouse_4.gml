@@ -34,7 +34,7 @@ if freeUpgrade=0 {store.gold-=myCost}
 
 // ATTACK
 if myID=1 {store.attack_damage+=nextStat store.lvl_perm_attack_damage+=1 store.cost_perm_attack_damage+=ceil(store.lvl_perm_attack_damage/5)*4}
-if myID=2 {store.attack_speed+=nextStat store.lvl_perm_attack_speed+=1 store.cost_perm_attack_speed+=ceil(store.lvl_perm_attack_speed/2)*7}
+if myID=2 {store.attack_speed+=nextStat store.lvl_perm_attack_speed+=1 store.cost_perm_attack_speed+=ceil(store.lvl_perm_attack_speed/5)*6}
 if myID=3 {store.critical_chance+=nextStat store.lvl_perm_critical_chance+=1 store.cost_perm_critical_chance+=ceil(store.lvl_perm_critical_chance/3)*5}
 if myID=4 {store.critical_multiplier+=nextStat store.lvl_perm_critical_multiplier+=1 store.cost_perm_critical_multiplier+=ceil(store.lvl_perm_critical_multiplier/2)*4}
 if myID=5 {store.attack_range+=nextStat store.lvl_perm_attack_range+=1 store.cost_perm_attack_range+=ceil(store.lvl_perm_attack_range/3)*5}
@@ -49,9 +49,9 @@ if myID=12 {store.lifesteal_amount+=nextStat store.lvl_perm_lifesteal_amount+=1 
 // UTILITY
 if myID=13 {store.goldperwave+=nextStat store.lvl_perm_goldperwave+=1 store.cost_perm_goldperwave+=ceil(store.lvl_perm_goldperwave*2)*2}
 if myID=14 {store.goldperkill+=nextStat store.lvl_perm_goldperkill+=1 store.cost_perm_goldperkill+=ceil(store.lvl_perm_goldperkill*2)*3}
-if myID=15 {store.gemsperwave+=nextStat store.lvl_perm_gemsperwave+=1 store.cost_perm_gemsperwave+=ceil(store.lvl_perm_gemsperwave/2)*50}
-if myID=16 {store.free_attack_upgrade+=nextStat store.lvl_perm_free_attack_upgrade+=1 store.cost_perm_free_attack_upgrade+=ceil(store.lvl_perm_free_attack_upgrade/2)*30}
-if myID=17 {store.free_defense_upgrade+=nextStat store.lvl_perm_free_defense_upgrade+=1 store.cost_perm_free_defense_upgrade+=ceil(store.lvl_perm_free_defense_upgrade/2)*30}
-if myID=18 {store.free_utility_upgrade+=nextStat store.lvl_perm_free_utility_upgrade+=1 store.cost_perm_free_utility_upgrade+=ceil(store.lvl_perm_free_utility_upgrade/2)*30}
+if myID=15 {store.gemsperwave+=nextStat store.lvl_perm_gemsperwave+=1 store.cost_perm_gemsperwave+=ceil(store.lvl_perm_gemsperwave/2)*40}
+if myID=16 {store.free_attack_upgrade+=nextStat store.lvl_perm_free_attack_upgrade+=1 store.cost_perm_free_attack_upgrade+=ceil(store.lvl_perm_free_attack_upgrade/2)*10}
+if myID=17 {store.free_defense_upgrade+=nextStat store.lvl_perm_free_defense_upgrade+=1 store.cost_perm_free_defense_upgrade+=ceil(store.lvl_perm_free_defense_upgrade/2)*10}
+if myID=18 {store.free_utility_upgrade+=nextStat store.lvl_perm_free_utility_upgrade+=1 store.cost_perm_free_utility_upgrade+=ceil(store.lvl_perm_free_utility_upgrade/2)*10}
 
 }
