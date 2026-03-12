@@ -12,8 +12,8 @@ draw_text_shadow_color(140,8,calc_number(store.enemy_hp),c_white,c_white,c_white
 draw_sprite(spr_icon_sword,0,276,8)
 draw_text_shadow_color(300,8,calc_number(store.enemy_damage),c_white,c_white,c_white,c_white)
 draw_text_shadow_color(375,8,"Tier "+string(store.tier),c_white,c_white,c_white,c_white)
-draw_sprite(spr_icon_clock,0,366,727)
-draw_text_shadow_color(380,719,"x"+string(store.game_speed),c_white,c_white,c_white,c_white)
+draw_sprite(spr_icon_clock,0,376,727)
+draw_text_shadow_color(390,719,"x"+string(store.game_speed),c_white,c_white,c_white,c_white)
 
 draw_text_shadow_color(28,39,string(store.gold),c_white,c_white,c_white,c_white)
 draw_sprite(spr_show_gold,0,12,48)

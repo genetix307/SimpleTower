@@ -2,7 +2,7 @@ function reset_progress(){
 
 //MISC
 store.game_speed=1.00
-store.max_gamespeed=1.25
+store.max_gamespeed=2.00
 store.ads_watched=0
 store.gem_chest_cooldown=0
 store.show_rating=0
