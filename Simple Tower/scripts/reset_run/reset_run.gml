@@ -38,7 +38,6 @@ store.run_score=0
 
 //In game Status Effects
 store.active_template=0
-
 //InGame Upgrades
 store.cost_attack_damage=5
 store.lvl_attack_damage=1

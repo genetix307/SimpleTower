@@ -14,6 +14,9 @@ alarm[1]=60 //Regen
 instance_create_depth(x,y,depth,hud_backdrop)
 instance_create_depth(x,y,depth,wave_gen)
 
+//First Run Bonus
+if store.total_runs<=0 {store.gold+=10}
+
 //CARDS
 //Template Card
 //if store.card_slot_1 = 1 or store.card_slot_2 = 1 or store.card_slot_3 = 1 or store.card_slot_4 = 1
