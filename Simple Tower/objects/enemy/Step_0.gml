@@ -41,3 +41,5 @@ if reload<=0 and distance_to_object(tower)<=attack_range+25 and frozen<=0 {
 if attack_type="ranged" {wpn=instance_create_depth(x,y-24,depth,enemy_weapon_ranged) wpn.direction=point_direction(x,y,tower.x,tower.y) wpn.attack_damage=attack_damage wpn.attack_effect=attack_effect reload=attack_speed}
 }
 }
+
+if y>room_height {instance_destroy()}

@@ -3,7 +3,9 @@ alarm[0]=30
 if hud.game_paused=0 {
 if 50>random(100) and store.current_stage>=1 and spawn>0 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Bone Henchman" spawn-=1}
 if 70>random(100) and store.current_stage%5==0 and spawn_carbuncle>0 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Carbuncle" spawn_carbuncle-=1}
-if 70>random(100) and store.current_stage%3==0 and spawn_mushkin>0 {instance_create_depth(random_range(-300,room_width+300),-80-random(130),depth,enemy).type="Mushkin" spawn_mushkin-=1}
+if 70>random(100) and store.current_stage%3==0 and spawn_mushkin>0 {instance_create_depth(random_range(-300,room_width+300),-180-random(220),depth,enemy).type="Mushkin" spawn_mushkin-=1}
+if 70>random(100) and store.current_stage%10==0 and spawn_armored_skeleton>0 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Armored Skeleton" spawn_armored_skeleton-=1}
+if 95>random(100) and store.current_stage%15==0 and spawn_dark_lich_boss>0 {instance_create_depth(random_range(-100,room_width+100),-20-random(10),depth,enemy).type="Dark Lich" spawn_dark_lich_boss-=1}
 
 ////Specific Stage
 //if 20>random(100) and store.current_stage=12 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(200),depth,enemy).type="Goblin" spawn-=1}
@@ -59,6 +61,8 @@ store.current_stage+=1
 spawn=15+(store.current_stage)+store.extra_spawn
 spawn_carbuncle=1+floor(store.current_stage/15)
 spawn_mushkin=1+floor(store.current_stage/12)
+spawn_armored_skeleton=1+floor(store.current_stage/15)
+spawn_dark_lich_boss=1+floor(store.current_stage/40)
 store.enemy_damage +=.25+(floor(store.current_stage/3)*.25)
 store.enemy_hp +=1+floor(store.current_stage/3)
 if store.goldperwave>0 {store.gold+=store.goldperwave}

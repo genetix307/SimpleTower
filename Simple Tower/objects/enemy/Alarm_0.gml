@@ -47,6 +47,38 @@ gold_drop=1
 move_pattern="normal"
 }
 
+if type="Armored Skeleton"
+{
+sprite_index=spr_enemy_armored_skeleton
+move_speed=.50
+maxhp=store.enemy_hp*3
+boss=0
+shield=0
+attack_damage=store.enemy_damage*3
+attack_effect=""
+attack_range=0
+attack_speed=180
+attack_type="melee"
+gold_drop=3
+move_pattern="normal"
+}
+
+if type="Dark Lich"
+{
+sprite_index=spr_enemy_dark_lich
+move_speed=.30
+maxhp=store.enemy_hp*10
+boss=1
+shield=0
+attack_damage=store.enemy_damage*5
+attack_effect=""
+attack_range=0
+attack_speed=180
+attack_type="melee"
+gold_drop=7
+move_pattern="normal"
+}
+
 //if type="Armored Skeleton"
 //{
 //sprite_index=spr_enemy_armored_skeleton
