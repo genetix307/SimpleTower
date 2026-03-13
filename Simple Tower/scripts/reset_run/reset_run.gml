@@ -12,6 +12,7 @@ store.gems_earned_run=0
 store.enemy_hp=2
 store.enemy_damage=1
 store.extra_spawn=0
+store.game_speed=1
 
 store.attack_damage=store.perm_attack_damage
 store.attack_speed=store.perm_attack_speed
@@ -38,6 +39,7 @@ store.run_score=0
 
 //In game Status Effects
 store.active_template=0
+
 //InGame Upgrades
 store.cost_attack_damage=5
 store.lvl_attack_damage=1

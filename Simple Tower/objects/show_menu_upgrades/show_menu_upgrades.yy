@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"default_static_physics",
+  "%Name":"show_menu_upgrades",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"default_dynamic_physics","path":"objects/default_dynamic_physics/default_dynamic_physics.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"default_static_physics",
+  "name":"show_menu_upgrades",
   "overriddenProperties":[],
   "parent":{
     "name":"System",

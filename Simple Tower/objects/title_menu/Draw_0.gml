@@ -7,8 +7,8 @@ draw_self()
 //Show Gems
 draw_set_color(c_white)
 draw_set_font(font_med_hud)
-draw_text(222,411,string(store.gems))
-draw_sprite(spr_show_gem,0,207,422)
+draw_text(222,920,string(store.gems))
+draw_sprite(spr_show_gem,0,207,912)
 
 if fade > 0 {
 	draw_set_color(c_black)

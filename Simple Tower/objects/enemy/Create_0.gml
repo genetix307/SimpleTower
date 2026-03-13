@@ -14,6 +14,7 @@ attack_speed=120
 attack_type="melee"
 reload=0
 xp_drop=1
+gold_drop=0
 move_pattern="normal"
 item=""
 item_rare=""
