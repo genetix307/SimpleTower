@@ -23,20 +23,6 @@ draw_sprite(spr_show_gem,0,12,72)
 //Draw Current Stage Banner
 /*
 if show_stage>0 {
-draw_set_alpha(show_stage)
-draw_set_color(c_black)
-draw_set_font(font_large_hud)
-draw_text(cx+124+banner_gap,cy+70,string(store.current_area))  
-draw_set_font(font_upgrades)
-draw_text(cx+204,cy+110,"Stage "+string(store.current_stage))              
-draw_set_color(c_white)
-draw_set_font(font_large_hud)
-draw_text(cx+124+banner_gap,cy+68,string(store.current_area))  
-draw_set_font(font_upgrades)
-draw_text(cx+202,cy+108,"Stage "+string(store.current_stage))
-draw_set_color(c_yellow)
-draw_line(cx+114,cy+67,cx+389,cy+67)
-draw_line(cx+114,cy+107,cx+389,cy+107)
 */
 
 //Draw Active Status
@@ -76,21 +62,22 @@ if game_over = 1 {
     draw_text_color(cx+176,cy+173,"Game Statistics",c_black,c_black,c_black,c_black,.5)
 	draw_text_color(cx+174,cy+171,"Game Statistics",c_lime,c_lime,c_lime,c_lime,1)
 	draw_set_font(font_buttons)
-	//draw_text_color(cx+162,cy+200,string(store.current_area),c_white,c_white,c_silver,c_silver,1)
-	//draw_text_color(cx+162,cy+220,"Best Run: "+string(store.best_stage),c_white,c_white,c_silver,c_silver,1)
-	//draw_text_color(cx+162,cy+220,"Best Run: "+string(store.best_stage),c_white,c_white,c_silver,c_silver,1)
-	//draw_text_color(cx+93,cy+254,"Stage Reached: "+string(store.current_stage),c_white,c_white,c_silver,c_silver,1)
+	draw_text_color(cx+162,cy+200,"Tier "+string(store.tier),c_white,c_white,c_silver,c_silver,1)
+	draw_text_color(cx+162,cy+220,"Best Run: "+string(best_stage),c_white,c_white,c_silver,c_silver,1)
+	draw_text_color(cx+162,cy+220,"Best Run: "+string(best_stage),c_white,c_white,c_silver,c_silver,1)
+	draw_text_color(cx+93,cy+254,"Stage Reached: "+string(store.current_stage),c_white,c_white,c_silver,c_silver,1)
 	//draw_text_color(cx+93,cy+279,"Levels Gained: "+string(store.level),c_white,c_white,c_silver,c_silver,1)
-	//draw_text_color(cx+93,cy+304,"Enemies Slain: "+string(store.enemies_killed_run),c_white,c_white,c_silver,c_silver,1)
-	//draw_text_color(cx+162,cy+329,"Tier Multiplier: x"+string(1+floor(store.current_stage/101)),c_white,c_white,c_silver,c_silver,1)
-	//draw_text_color(cx+162,cy+359,"Bonus Gems: "+string(store.gems_earned_run),c_yellow,c_yellow,c_yellow,c_orange,1)
+	draw_text_color(cx+93,cy+279,"Enemies Slain: "+string(store.enemies_killed_run),c_white,c_white,c_silver,c_silver,1)
+	draw_text_color(cx+162,cy+304,"Tier Multiplier: x"+string(store.tier),c_white,c_white,c_silver,c_silver,1)
+	draw_text_color(cx+162,cy+329,"Bonus Gems: "+string(store.gems_earned_run),c_yellow,c_yellow,c_yellow,c_orange,1)
 	//Show Gems bonuses
-	//if store.current_stage>1 {
-	//draw_text_color(cx+316,cy+254,"+"+string(round(store.current_stage*5))+" gems",c_yellow,c_yellow,c_yellow,c_orange,1)
+	if store.current_stage>1 {
+	draw_text_color(cx+316,cy+254,"+"+string(round(store.current_stage*5))+" gems",c_yellow,c_yellow,c_yellow,c_orange,1)
 	//draw_text_color(cx+316,cy+279,"+"+string(round(store.level*10))+" gems",c_yellow,c_yellow,c_yellow,c_orange,1)
-	//draw_text_color(cx+316,cy+304,"+"+string(ceil(store.enemies_killed_run/3))+" gems",c_yellow,c_yellow,c_yellow,c_orange,1)
+	draw_text_color(cx+316,cy+279,"+"+string(ceil(store.enemies_killed_run/5))+" gems",c_yellow,c_yellow,c_yellow,c_orange,1)
 	//Show end message
 	draw_text_color(cx+114,cy+383,"Your run may have ended\nbut the journey never ends!",c_lime,c_lime,c_lime,c_lime,1)
+	}
 }
 
 

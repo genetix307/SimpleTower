@@ -3,17 +3,13 @@ if hp<=0
 instance_create_depth(other.x,other.y-12,depth-10,blood_splatter)
 repeat 3 instance_create_depth(other.x,other.y-8,depth-10,gore)
 store.gold+=gold_drop+store.goldperkill
-//if store.code_blood=1 
-//{
-//repeat 3 instance_create_depth(random_range(x-4,x+4),random_range(y-4,y+4),depth-10,blood_splatter)
-//repeat 5 instance_create_depth(random_range(x-8,x+8),random_range(y-8,y+8),depth-10,gore)	
-//}
-//instance_create_depth(x+random_range(-8,8),y+random_range(-8,8),depth-5,effect_smoke_small)
+
+instance_create_depth(x+random_range(-8,8),y+random_range(-8,8),depth-5,effect_smoke_small)
 //instance_create_depth(x,y,depth,coin)
 //instance_create_depth(x+random_range(-32,32),y+random_range(-32,32),depth,xp_orb)
 ////if 5+check_luck()>random(200) {spawn_item()}
-//store.enemies_slain +=1
-//store.enemies_killed_run+=1
+store.enemies_slain +=1
+store.enemies_killed_run+=1
 
 //if boss=1 { 
 //store.bosses_slain+=1

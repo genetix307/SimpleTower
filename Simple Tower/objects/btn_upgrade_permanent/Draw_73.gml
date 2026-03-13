@@ -9,7 +9,7 @@ if greyed_out=0 and capped=0 {
 draw_text_shadow_color(x-112,y+2,string(preStat)+string(myStat)+string(postStat)+" to "+string(preStat)+string(showNextStat)+string(postStat),c_aqua,c_aqua,c_aqua,c_aqua)
 }
 
-if greyed_out=1 {
+if greyed_out=1 and mylvl>0 {
 if capped=0 {
 draw_text_shadow_color(x-112,y+2,string(preStat)+string(myStat)+string(postStat),c_aqua,c_aqua,c_aqua,c_aqua)
 }

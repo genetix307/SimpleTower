@@ -3,11 +3,18 @@ save_game()
 
 game_paused=0
 game_over=0
-//menu_tab=0
 stage_complete=0
+best_stage=1
 show_fade=1
 show_stage=3
 hp_smooth = store.hp;
+
+if store.tier=1 {best_stage=store.tier_best_1}
+if store.tier=2 {best_stage=store.tier_best_2}
+if store.tier=3 {best_stage=store.tier_best_3}
+if store.tier=4 {best_stage=store.tier_best_4}
+if store.tier=5 {best_stage=store.tier_best_5}
+if store.tier=6 {best_stage=store.tier_best_6}
 
 alarm[0]=240 //Show tutorial
 alarm[1]=60 //Regen 

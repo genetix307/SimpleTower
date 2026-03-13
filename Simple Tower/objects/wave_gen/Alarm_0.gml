@@ -71,12 +71,12 @@ store.gold+=store.goldperwave instance_create_depth(180,480,depth-10,show_text_y
 store.gems+=store.gemsperwave instance_create_depth(180,503,depth-10,show_text_yellow).myText="Wave Gems +"+calc_number(store.gemsperwave)
 
 ////Check best tier stage reached
-//if store.tier=1 {if store.current_stage>store.tier_best_1 {store.tier_best_1=store.current_stage}}
-//if store.tier=2 {if store.current_stage>store.tier_best_2 {store.tier_best_2=store.current_stage}}
-//if store.tier=3 {if store.current_stage>store.tier_best_3 {store.tier_best_3=store.current_stage}}
-//if store.tier=4 {if store.current_stage>store.tier_best_4 {store.tier_best_4=store.current_stage}}
-//if store.tier=5 {if store.current_stage>store.tier_best_5 {store.tier_best_5=store.current_stage}}
-//if store.tier=6 {if store.current_stage>store.tier_best_6 {store.tier_best_6=store.current_stage}}
+if store.tier=1 {if store.current_stage>store.tier_best_1 {store.tier_best_1=store.current_stage}}
+if store.tier=2 {if store.current_stage>store.tier_best_2 {store.tier_best_2=store.current_stage}}
+if store.tier=3 {if store.current_stage>store.tier_best_3 {store.tier_best_3=store.current_stage}}
+if store.tier=4 {if store.current_stage>store.tier_best_4 {store.tier_best_4=store.current_stage}}
+if store.tier=5 {if store.current_stage>store.tier_best_5 {store.tier_best_5=store.current_stage}}
+if store.tier=6 {if store.current_stage>store.tier_best_6 {store.tier_best_6=store.current_stage}}
 
 //if store.perk_lvl_tutor>0 {store.xp+=store.perk_lvl_tutor*10} 
 //if store.perk_lvl_flawless>0 {store.gold+=store.perk_lvl_flawless*10 store.gold_earned+=store.perk_lvl_flawless*10}

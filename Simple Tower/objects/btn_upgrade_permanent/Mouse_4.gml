@@ -28,3 +28,5 @@ if myID=18 {store.perm_free_utility_upgrade+=nextStat store.lvl_perm_free_utilit
 // ATTACK
 if myID=19 {store.max_gamespeed+=nextStat}
 }
+
+save_game()

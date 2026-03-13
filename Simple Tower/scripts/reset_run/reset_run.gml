@@ -47,36 +47,48 @@ store.cost_attack_speed=5
 store.lvl_attack_speed=1
 store.cost_critical_chance=5
 store.lvl_critical_chance=1
+if store.lvl_perm_critical_chance=0 {store.lvl_critical_chance=0}
 store.cost_critical_multiplier=5
 store.lvl_critical_multiplier=1
+if store.lvl_perm_critical_multiplier=0 {store.lvl_critical_multiplier=0}
 store.cost_attack_range=5
 store.lvl_attack_range=1
+if store.lvl_perm_attack_range=0 {store.lvl_attack_range=0}
 store.cost_multishot_chance=5
 store.lvl_multishot_chance=1
+if store.lvl_perm_multishot_chance=0 {store.lvl_multishot_chance=0}
 store.cost_maxhp=5
 store.lvl_maxhp=1
 store.cost_regen=5
 store.lvl_regen=1
 store.cost_armor=5
 store.lvl_armor=1
-store.cost_waveshield=5
-store.lvl_waveshield=1
+if store.lvl_perm_armor=0 {store.lvl_armor=0}
+store.cost_blockchance=5
+store.lvl_blockchance=1
+if store.lvl_perm_blockchance=0 {store.lvl_blockchance=0}
 store.cost_lifesteal_chance=5
 store.lvl_lifesteal_chance=1
+if store.lvl_perm_lifesteal_chance=0 {store.lvl_lifesteal_chance=0}
 store.cost_lifesteal_amount=5
 store.lvl_lifesteal_amount=1
+if store.lvl_perm_lifesteal_amount=0 {store.lvl_lifesteal_amount=0}
 store.cost_goldperwave=5
 store.lvl_goldperwave=1
 store.cost_goldperkill=5
 store.lvl_goldperkill=1
 store.cost_gemsperwave=5
 store.lvl_gemsperwave=1
+if store.lvl_perm_gemsperwave=0 {store.lvl_gemsperwave=0}
 store.cost_free_attack_upgrade=5
 store.lvl_free_attack_upgrade=1
+if store.lvl_perm_free_attack_upgrade=0 {store.lvl_free_attack_upgrade=0}
 store.cost_free_defense_upgrade=5
 store.lvl_free_defense_upgrade=1
+if store.lvl_perm_free_defense_upgrade=0 {store.lvl_free_defense_upgrade=0}
 store.cost_free_utility_upgrade=5
 store.lvl_free_utility_upgrade=1
+if store.lvl_perm_free_utility_upgrade=0 {store.lvl_free_utility_upgrade=0}
 
 //Ingame Perks
 store.perk_lvl_template=0
