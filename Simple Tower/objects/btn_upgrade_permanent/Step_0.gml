@@ -16,9 +16,9 @@ if myID=12 {myName="Lifesteal Amount" myStat=store.perm_lifesteal_amount myCost=
 if myID=13 {myName="Gold Per Wave" myStat=store.perm_goldperwave myCost=store.cost_perm_goldperwave nextStat=4 myCap=999999999 mylvl=store.lvl_perm_goldperwave}
 if myID=14 {myName="Gold Per Kill" myStat=store.perm_goldperkill myCost=store.cost_perm_goldperkill nextStat=1 myCap=999999999 mylvl=store.lvl_perm_goldperkill}
 if myID=15 {myName="Gems Per Wave" myStat=store.perm_gemsperwave myCost=store.cost_perm_gemsperwave nextStat=1 myCap=999999999 mylvl=store.lvl_perm_gemsperwave}
-if myID=16 {myName="Free Attack Upgrade" myStat=store.perm_free_attack_upgrade myCost=store.cost_perm_free_attack_upgrade nextStat=.25 myCap=15 mylvl=store.lvl_perm_free_attack_upgrade}
-if myID=17 {myName="Free Defense Upgrade" myStat=store.perm_free_defense_upgrade myCost=store.cost_perm_free_defense_upgrade nextStat=.25 myCap=15 mylvl=store.lvl_perm_free_defense_upgrade}
-if myID=18 {myName="Free Utility Upgrade" myStat=store.perm_free_utility_upgrade myCost=store.cost_perm_free_utility_upgrade nextStat=.25 myCap=15 mylvl=store.lvl_perm_free_utility_upgrade}
+if myID=16 {myName="Free Attack Upgrade" myStat=store.perm_free_attack_upgrade postStat="%" myCost=store.cost_perm_free_attack_upgrade nextStat=.25 myCap=15 mylvl=store.lvl_perm_free_attack_upgrade}
+if myID=17 {myName="Free Defense Upgrade" myStat=store.perm_free_defense_upgrade postStat="%" myCost=store.cost_perm_free_defense_upgrade nextStat=.25 myCap=15 mylvl=store.lvl_perm_free_defense_upgrade}
+if myID=18 {myName="Free Utility Upgrade" myStat=store.perm_free_utility_upgrade postStat="%" myCost=store.cost_perm_free_utility_upgrade nextStat=.25 myCap=15 mylvl=store.lvl_perm_free_utility_upgrade}
 //Misc
 if myID=19 {myName="Max Game Speed" myStat=store.max_gamespeed myCost=round(store.max_gamespeed*100) mylvl=store.lvl_perm_gamespeed nextStat=.25 myCap=4}
 

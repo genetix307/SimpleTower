@@ -186,6 +186,7 @@
     {"id":{"name":"set_gameover","path":"scripts/set_gameover/set_gameover.yy",},},
     {"id":{"name":"show_perks_menu","path":"scripts/show_perks_menu/show_perks_menu.yy",},},
     {"id":{"name":"bgm_gameover","path":"sounds/bgm_gameover/bgm_gameover.yy",},},
+    {"id":{"name":"bgm_main_run","path":"sounds/bgm_main_run/bgm_main_run.yy",},},
     {"id":{"name":"bgm_title","path":"sounds/bgm_title/bgm_title.yy",},},
     {"id":{"name":"sfx_click","path":"sounds/sfx_click/sfx_click.yy",},},
     {"id":{"name":"sfx_enemy_hit","path":"sounds/sfx_enemy_hit/sfx_enemy_hit.yy",},},

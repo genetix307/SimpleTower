@@ -18,9 +18,9 @@ if myID=12 {myName="Lifesteal Amount" myStat=store.lifesteal_amount myCost=store
 if myID=13 {myName="Gold Per Wave" myStat=store.goldperwave myCost=store.cost_goldperwave nextStat=4 myCap=999999999 mylvl=store.lvl_goldperwave}
 if myID=14 {myName="Gold Per Kill" myStat=store.goldperkill myCost=store.cost_goldperkill nextStat=1 myCap=999999999 mylvl=store.lvl_goldperkill}
 if myID=15 {myName="Gems Per Wave" myStat=store.gemsperwave myCost=store.cost_gemsperwave nextStat=1 myCap=999999999 mylvl=store.lvl_gemsperwave}
-if myID=16 {myName="Free Attack Upgrade" myStat=store.free_attack_upgrade myCost=store.cost_free_attack_upgrade nextStat=.25 myCap=25 mylvl=store.lvl_free_attack_upgrade}
-if myID=17 {myName="Free Defense Upgrade" myStat=store.free_defense_upgrade myCost=store.cost_free_defense_upgrade nextStat=.25 myCap=25 mylvl=store.lvl_free_defense_upgrade}
-if myID=18 {myName="Free Utility Upgrade" myStat=store.free_utility_upgrade myCost=store.cost_free_utility_upgrade nextStat=.25 myCap=25 mylvl=store.lvl_free_utility_upgrade}
+if myID=16 {myName="Free Attack Upgrade" myStat=store.free_attack_upgrade postStat="%" myCost=store.cost_free_attack_upgrade nextStat=.25 myCap=25 mylvl=store.lvl_free_attack_upgrade}
+if myID=17 {myName="Free Defense Upgrade" myStat=store.free_defense_upgrade postStat="%" myCost=store.cost_free_defense_upgrade nextStat=.25 myCap=25 mylvl=store.lvl_free_defense_upgrade}
+if myID=18 {myName="Free Utility Upgrade" myStat=store.free_utility_upgrade postStat="%" myCost=store.cost_free_utility_upgrade nextStat=.25 myCap=25 mylvl=store.lvl_free_utility_upgrade}
 
 if myCost>store.gold {greyed_out=1} else {greyed_out=0}
 if myStat>=myCap {capped=1}
