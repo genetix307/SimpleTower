@@ -26,11 +26,21 @@ store.bonus_discord=0
 
 //Challenges
 store.challenge_a=0
-store.challenge_b=2
-store.challenge_c=5
+store.challenge_b=1
+store.challenge_c=4
 store.challenge_flag=0
-store.goal_template=0
-store.lvl_template=1
+store.goal_slayer=0
+store.goal_boss_slayer=0
+store.goal_focused_shot=0
+store.goal_vampire=0
+store.goal_survivor=0
+store.goal_collector=0
+store.lvl_slayer=1
+store.lvl_boss_slayer=1
+store.lvl_focused_shot=1
+store.lvl_vampire=1
+store.lvl_survivor=1
+store.lvl_collector=1
 
 //Perm Stats 
 store.perm_attack_speed=1

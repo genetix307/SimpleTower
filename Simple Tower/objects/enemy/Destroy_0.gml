@@ -22,13 +22,19 @@ store.enemies_killed_run+=1
 //if boss=0 {audio_play_sound(sfx_enemy_die,1,false)}
 //if boss=1 {audio_play_sound(sfx_boss_destroy,1,false)}
 
-////Quick Challenge
-////if (store.challenge_a=0 or store.challenge_b=0 or store.challenge_c=0) and store.goal_bossslayer<2+(1*store.lvl_bossslayer)
-////	{
-////	  store.goal_bossslayer+=1
-////	  if store.goal_bossslayer>=2+(1*store.lvl_bossslayer) {store.challenge_flag=1}
-////	}
-////}
+//Quick Challenge
+if (store.challenge_a=0 or store.challenge_b=0 or store.challenge_c=0) and store.goal_slayer<40+(10*store.lvl_slayer)
+	{
+	  store.goal_slayer+=1
+	  if store.goal_slayer>=40+(10*store.lvl_slayer) {store.challenge_flag=1}
+	}
+	
+//Quick Challenge
+if (store.challenge_a=1 or store.challenge_b=1 or store.challenge_c=1) and store.goal_boss_slayer<2+(store.lvl_boss_slayer) and boss=1
+	{
+	  store.goal_boss_slayer+=1
+	  if store.goal_boss_slayer>=2+(store.lvl_boss_slayer) {store.challenge_flag=1}
+	}
 
 ////if on_death="acid" {wpn=instance_create_depth(x,y-24,depth,enemy_weapon_acid) wpn.direction=point_direction(x,y,player.x,player.y) wpn.attack_damage=attack_damage}
 ////if on_death="explode" {instance_create_depth(x,y,depth,enemy_weapon_explosion)}

@@ -8,11 +8,6 @@ if 70>random(100) and store.current_stage%10==0 and spawn_armored_skeleton>0 {in
 if 95>random(100) and store.current_stage%15==0 and spawn_dark_lich_boss>0 {instance_create_depth(random_range(-100,room_width+100),-20-random(10),depth,enemy).type="Dark Lich" spawn_dark_lich_boss-=1}
 if 95>random(100) and store.current_stage%50==0 and spawn_hamelot>0 {instance_create_depth(random_range(-100,room_width+100),-20-random(10),depth,enemy).type="Hamelot" spawn_hamelot-=1}
 
-////Specific Stage
-//if 20>random(100) and store.current_stage=12 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(200),depth,enemy).type="Goblin" spawn-=1}
-//if 20>random(100) and store.current_stage=9 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(200),depth,enemy).type="Slime" spawn-=1}
-//if store.current_stage=14 and spawn>0 and spawn<3 {instance_create_depth(random_range(60,420),room_height+random(90),depth,enemy).type="Golem" spawn-=1}
-
 //if store.tier>1 {
 //if 3>random(100) and store.current_stage>=1 and spawn>10 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Boneheads" spawn-=1}
 //if 3>random(100) and store.current_stage>=1 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Mushkin" spawn-=1}
@@ -89,6 +84,11 @@ if store.tier=6 {if store.current_stage>store.tier_best_6 {store.tier_best_6=sto
 //if store.perk_lvl_tutor>0 {store.xp+=store.perk_lvl_tutor*10} 
 //if store.perk_lvl_flawless>0 {store.gold+=store.perk_lvl_flawless*10 store.gold_earned+=store.perk_lvl_flawless*10}
 
-//spawn_boss=1
+//Quick Challenge
+if (store.challenge_a=4 or store.challenge_b=4 or store.challenge_c=4) and store.goal_survivor<40+(10*store.lvl_survivor)
+	{
+	  store.goal_survivor+=1
+	  if store.goal_survivor>=40+(10*store.lvl_survivor) {store.challenge_flag=1}
+	}
 }
 }

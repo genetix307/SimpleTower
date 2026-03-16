@@ -13,6 +13,7 @@ myCap = 0
 myCur = 0
 myLevel=1
 
-
+//Reset Challenge Flag
+if store.challenge_flag=1 {store.challenge_flag=0}
 
 
