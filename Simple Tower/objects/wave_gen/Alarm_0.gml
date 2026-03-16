@@ -67,6 +67,14 @@ spawn_dark_lich_boss=1+floor(store.current_stage/40)
 spawn_hamelot=1+floor(store.current_stage/100)
 store.enemy_damage +=.25+(floor(store.current_stage/3)*.25)
 store.enemy_hp +=1+floor(store.current_stage/3)
+if store.tier>1 {
+store.enemy_damage+=round(.25*store.tier)
+store.enemy_hp+=(.50*store.tier)
+}
+if store.tier>4 {
+store.enemy_damage+=1
+store.enemy_hp+=1
+}
 store.gold+=store.goldperwave instance_create_depth(180,480,depth-10,show_text_yellow).myText="Wave Gold +"+calc_number(store.goldperwave)
 store.gems+=store.gemsperwave instance_create_depth(180,503,depth-10,show_text_yellow).myText="Wave Gems +"+calc_number(store.gemsperwave)
 

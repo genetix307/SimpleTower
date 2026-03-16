@@ -1,4 +1,4 @@
 // Genetix Studio
 if canSkip=1 {
-room = rm_maingame
+room = rm_menu_home
 }

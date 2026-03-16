@@ -12,6 +12,8 @@ with (instance_place(x, y, def_enemy))
 }
 
 //Move to range
+//if distance_to_object(tower)> 640 {mp_potential_step_object(tower.x,tower.y,move_speed*store.game_speed,def_solid)}
+if y<0 or x<0 or x>room_width {mp_potential_step_object(tower.x,tower.y,move_speed*store.game_speed,def_solid)}
 if distance_to_object(tower)> attack_range {mp_potential_step_object(tower.x,tower.y,move_speed*store.game_speed,def_solid)}
 
 //if frozen>0 {image_speed=0} else {image_speed=1}

@@ -13,6 +13,6 @@ if my_id =4 {store.goal_template=0 store.lvl_template+=1}
 if my_id =5 {store.goal_template=0 store.lvl_template+=1} 
 
 store.challenges_completed +=1
-save_game_old()
+save_game()
 effect_btn()
 }

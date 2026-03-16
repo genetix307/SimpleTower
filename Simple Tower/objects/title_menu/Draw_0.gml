@@ -2,13 +2,13 @@
 draw_self()
 
 	draw_set_font(font_stats)
-	draw_text_color(x+135,y-69,store.version,c_silver,c_silver,c_gray,c_gray,1)
+	draw_text_color(x+135,y-95,store.version,c_silver,c_silver,c_gray,c_gray,1)
 	
 //Show Gems
 draw_set_color(c_white)
 draw_set_font(font_med_hud)
-draw_text(222,920,string(store.gems))
-draw_sprite(spr_show_gem,0,207,912)
+draw_text(235,915,string(store.gems))
+draw_sprite(spr_show_gem,0,220,923)
 
 if fade > 0 {
 	draw_set_color(c_black)

@@ -13,7 +13,7 @@
   "androidsourcedir":"",
   "author":"",
   "classname":"GoogleMobileAdsGM",
-  "copyToTargets":12,
+  "copyToTargets":8,
   "description":"",
   "exportToGame":true,
   "extensionVersion":"1.3.10",

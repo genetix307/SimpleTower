@@ -12,7 +12,7 @@ if myID=4 {store.perm_critical_multiplier+=nextStat store.lvl_perm_critical_mult
 if myID=5 {store.perm_attack_range+=nextStat store.lvl_perm_attack_range+=1 store.cost_perm_attack_range+=ceil(store.lvl_perm_attack_range/3)*10}
 if myID=6 {store.perm_multishot_chance+=nextStat store.lvl_perm_multishot_chance+=1 store.cost_perm_multishot_chance+=ceil(store.lvl_perm_multishot_chance/2)*15}
 // DEFENSE
-if myID=7 {store.perm_maxhp+=nextStat store.perm_hp+=nextStat store.lvl_perm_maxhp+=1 store.cost_perm_maxhp+=ceil(store.lvl_perm_maxhp/2)*4}
+if myID=7 {store.perm_maxhp+=nextStat store.lvl_perm_maxhp+=1 store.cost_perm_maxhp+=ceil(store.lvl_perm_maxhp/2)*4}
 if myID=8 {store.perm_regen+=nextStat store.lvl_perm_regen+=1 store.cost_perm_regen+=ceil(store.lvl_perm_regen/3)*15}
 if myID=9 {store.perm_armor+=nextStat store.lvl_perm_armor+=1 store.cost_perm_armor+=ceil(store.lvl_perm_armor/3)*15}
 if myID=10 {store.perm_block_chance+=nextStat store.lvl_perm_blockchance+=1 store.cost_perm_blockchance+=ceil(store.lvl_perm_blockchance/3)*15}

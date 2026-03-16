@@ -6,11 +6,10 @@ store.xp=0
 store.next_level=10
 store.level=1
 store.enemy_base_level=0
-store.tier=1
 store.enemies_killed_run=0
 store.gems_earned_run=0
-store.enemy_hp=2
-store.enemy_damage=1
+store.enemy_hp=2+store.tier
+store.enemy_damage=1+store.tier
 store.extra_spawn=0
 store.game_speed=1
 

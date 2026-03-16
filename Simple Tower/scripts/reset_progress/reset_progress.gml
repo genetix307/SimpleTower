@@ -10,6 +10,7 @@ store.gems=0
 store.version="version 1.00"
 store.devMode=0
 store.hold_dev=0
+store.tier=1
 
 //Game Settings
 store.color_scheme=4
@@ -134,6 +135,7 @@ store.tier_best_2=1
 store.tier_best_3=1
 store.tier_best_4=1
 store.tier_best_5=1
+store.tier_best_6=1
 store.total_runs=0
 store.enemies_slain=0
 store.bosses_slain=0

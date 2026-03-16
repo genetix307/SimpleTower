@@ -12,8 +12,8 @@
   "name":"btn_utility",
   "overriddenProperties":[],
   "parent":{
-    "name":"buttons",
-    "path":"folders/Objects/Menu/buttons.yy",
+    "name":"Buttons",
+    "path":"folders/Objects/Menu/Buttons.yy",
   },
   "parentObjectId":null,
   "persistent":false,
