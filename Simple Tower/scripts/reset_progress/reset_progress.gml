@@ -108,11 +108,10 @@ store.lvl_perm_gamespeed=1
 //store.have_template=1 //ex: have_potions
 
 //cards 
-/*
 store.slot_2_unlocked = 0
 store.slot_3_unlocked = 0
 store.slot_4_unlocked = 0
-store.card_cost = 10
+store.card_cost = 25
 store.card_slot_1 = 0
 store.card_slot_2 = 0
 store.card_slot_3 = 0
@@ -137,7 +136,6 @@ store.card_evilcreed=0
 store.card_lvl_evilcreed=1
 store.card_mastery=0
 store.card_lvl_mastery=1
-*/
 //Statistics
 //store.best_stage=1
 store.tier_best_1=1
