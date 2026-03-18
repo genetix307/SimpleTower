@@ -133,6 +133,7 @@
     {"id":{"name":"gore","path":"objects/gore/gore.yy",},},
     {"id":{"name":"hud_backdrop","path":"objects/hud_backdrop/hud_backdrop.yy",},},
     {"id":{"name":"hud","path":"objects/hud/hud.yy",},},
+    {"id":{"name":"OLD_CARD_UPGRADE","path":"objects/OLD_CARD_UPGRADE/OLD_CARD_UPGRADE.yy",},},
     {"id":{"name":"show_get_item","path":"objects/show_get_item/show_get_item.yy",},},
     {"id":{"name":"show_lifesteal","path":"objects/show_lifesteal/show_lifesteal.yy",},},
     {"id":{"name":"show_menu_cards","path":"objects/show_menu_cards/show_menu_cards.yy",},},

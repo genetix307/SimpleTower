@@ -72,6 +72,7 @@
     {"name":"gore","order":6,"path":"objects/gore/gore.yy",},
     {"name":"hud_backdrop","order":11,"path":"objects/hud_backdrop/hud_backdrop.yy",},
     {"name":"hud","order":1,"path":"objects/hud/hud.yy",},
+    {"name":"OLD_CARD_UPGRADE","order":2,"path":"objects/OLD_CARD_UPGRADE/OLD_CARD_UPGRADE.yy",},
     {"name":"show_get_item","order":10,"path":"objects/show_get_item/show_get_item.yy",},
     {"name":"show_lifesteal","order":12,"path":"objects/show_lifesteal/show_lifesteal.yy",},
     {"name":"show_menu_cards","order":15,"path":"objects/show_menu_cards/show_menu_cards.yy",},

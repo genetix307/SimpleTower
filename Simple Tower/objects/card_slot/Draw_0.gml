@@ -1,75 +1,73 @@
 // Genetix Studio
 draw_self()
-if selected = 1 {draw_rectangle_color(x-sprite_width/2,y-sprite_height/2,x+sprite_width/2,y+sprite_height/2,c_yellow,c_yellow,c_white,c_white,true)}
 
-if my_id = 2 //Inheritance
+if selected = 1 {
+    var pulse = 0.5 + sin(current_time * 0.005) * 0.25
+    draw_set_alpha(pulse)
+    draw_set_color(c_yellow)
+    draw_rectangle(x-sprite_width/2-4, y-sprite_height/2-4, x+sprite_width/2+4, y+sprite_height/2+4, false)
+    draw_set_alpha(1)
+}
+
+// 2 - Inheritance
+if my_id = 2
 {
 if store.card_inheritance = 0 {image_index = 1}
 if store.card_inheritance > 0 {image_index = 2 draw_card()}
 }
 
-if my_id = 3 //Heartpiece
+// 3 - Sharpened Tip
+if my_id = 3
 {
-if store.card_heartpiece = 0 {image_index = 1}
-if store.card_heartpiece > 0 {image_index = 2 draw_card()}
+if store.card_sharpened_tip = 0 {image_index = 1}
+if store.card_sharpened_tip > 0 {image_index = 2 draw_card()}
 }
-if my_id = 4 //Mineshaft
+
+// 4 - Critical Gold
+if my_id = 4
 {
-if store.card_mineshaft = 0 {image_index = 1}
-if store.card_mineshaft > 0 {image_index = 2 draw_card()}
+if store.card_critical_gold = 0 {image_index = 1}
+if store.card_critical_gold > 0 {image_index = 3 draw_card()}
 }
-if my_id = 5 //Farming
+
+// 5 - Critical Heart
+if my_id = 5
 {
-if store.card_farming = 0 {image_index = 1}
-if store.card_farming > 0 {image_index = 2 draw_card()}
+if store.card_critical_heart = 0 {image_index = 1}
+if store.card_critical_heart > 0 {image_index = 3 draw_card()}
 }
-if my_id = 6 //Barrier
+
+// 6 - Sacrifice
+if my_id = 6
 {
-if store.card_barrier = 0 {image_index = 1}
-if store.card_barrier > 0 {image_index = 2 draw_card()}
+if store.card_sacrifice = 0 {image_index = 1}
+if store.card_sacrifice > 0 {image_index = 2 draw_card()}
 }
-if my_id = 7 //Orb
+
+// 7 - Blood Moon
+if my_id = 7
 {
-if store.card_orb = 0 {image_index = 1}
-if store.card_orb > 0 {image_index = 2 draw_card()}
+if store.card_blood_moon = 0 {image_index = 1}
+if store.card_blood_moon > 0 {image_index = 2 draw_card()}
 }
-if my_id = 8 //Critical Gold
+
+// 8 - Vampiric Wealth
+if my_id = 8
 {
-if store.card_critgold = 0 {image_index = 1}
-if store.card_critgold > 0 {image_index = 3 draw_card()}
+if store.card_vampiric_wealth = 0 {image_index = 1}
+if store.card_vampiric_wealth > 0 {image_index = 3 draw_card()}
 }
-if my_id = 9 //Favored Winds
+
+// 9 - Charge
+if my_id = 9
 {
-if store.card_wind = 0 {image_index = 1}
-if store.card_wind > 0 {image_index = 3 draw_card()}
+if store.card_charge = 0 {image_index = 1}
+if store.card_charge > 0 {image_index = 2 draw_card()}
 }
-if my_id = 10 //Raging Fury
+
+// 10 - Bounty
+if my_id = 10
 {
-if store.card_rage = 0 {image_index = 1}
-if store.card_rage > 0 {image_index = 2 draw_card()}
-}
-if my_id = 11 //Shockwave
-{
-if store.card_shockwave = 0 {image_index = 1}
-if store.card_shockwave > 0 {image_index = 2 draw_card()}
-}
-if my_id = 12 //Supplydrop
-{
-if store.card_supplydrop = 0 {image_index = 1}
-if store.card_supplydrop > 0 {image_index = 3 draw_card()}
-}
-if my_id = 13 //Flying Axes
-{
-if store.card_axes = 0 {image_index = 1}
-if store.card_axes > 0 {image_index = 2 draw_card()}
-}
-if my_id = 14 //Evil Creed
-{
-if store.card_evilcreed = 0 {image_index = 1}
-if store.card_evilcreed > 0 {image_index = 3 draw_card()}
-}
-if my_id = 15 //Mastery
-{
-if store.card_mastery = 0 {image_index = 1}
-if store.card_mastery > 0 {image_index = 2 draw_card()}
+if store.card_bounty = 0 {image_index = 1}
+if store.card_bounty > 0 {image_index = 3 draw_card()}
 }
