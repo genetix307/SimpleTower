@@ -156,7 +156,7 @@
     {"amount":-1,"first":121,"second":46,},
   ],
   "last":0,
-  "lineHeight":0,
+  "lineHeight":15,
   "maintainGms1Font":false,
   "name":"font_stats",
   "parent":{

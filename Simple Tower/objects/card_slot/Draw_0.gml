@@ -1,6 +1,3 @@
-// Genetix Studio
-draw_self()
-
 if selected = 1 {
     var pulse = 0.5 + sin(current_time * 0.005) * 0.25
     draw_set_alpha(pulse)
@@ -8,6 +5,8 @@ if selected = 1 {
     draw_rectangle(x-sprite_width/2-4, y-sprite_height/2-4, x+sprite_width/2+4, y+sprite_height/2+4, false)
     draw_set_alpha(1)
 }
+
+draw_self()
 
 // 2 - Inheritance
 if my_id = 2
