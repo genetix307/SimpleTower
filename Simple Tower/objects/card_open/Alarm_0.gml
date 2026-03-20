@@ -16,6 +16,13 @@ if my_id = 8 {store.card_vampiric_wealth += 1}
 if my_id = 9 {store.card_charge += 1}
 if my_id = 10 {store.card_bounty += 1}
 
+//Quick Challenge
+if (store.challenge_a=5 or store.challenge_b=5 or store.challenge_c=5) and store.goal_collector<1+(store.lvl_collector)
+	{
+	  store.goal_collector+=1
+	  if store.goal_collector>=1+(store.lvl_collector) {store.challenge_flag=1}
+	}
+
 save_game()
 exit
 }

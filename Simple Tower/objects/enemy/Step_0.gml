@@ -27,6 +27,13 @@ if store.block_chance>random(100) {instance_create_depth(x,y,depth,effect_block)
 if tmpDamage<0 {tmpDamage=0}
 store.hp-=tmpDamage
 instance_create_depth(other.x,other.y-8,depth,effect_show_damage_player).myDamage=tmpDamage
+
+//CARDS
+//Sacrifice Card
+if store.card_slot_1 = 6 or store.card_slot_2 = 6 or store.card_slot_3 = 6 or store.card_slot_4 = 6
+	{
+		store.gold +=store.card_lvl_sacrifice
+	}
 }
 
 //Facing

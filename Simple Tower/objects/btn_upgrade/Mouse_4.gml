@@ -35,7 +35,7 @@ if freeUpgrade=0 {store.gold-=myCost}
 // ATTACK
 if myID=1 {store.attack_damage+=nextStat store.lvl_attack_damage+=1 store.cost_attack_damage+=ceil(store.lvl_attack_damage/5)*4}
 if myID=2 {store.attack_speed+=nextStat store.lvl_attack_speed+=1 store.cost_attack_speed+=ceil(store.lvl_attack_speed/5)*6}
-if myID=3 {store.critical_chance+=nextStat store.lvl_critical_chance+=1 store.cost_critical_chance+=ceil(store.lvl_critical_chance/3)*5}
+if myID=3 {store.critical_chance+=nextStat store.lvl_critical_chance+=1 store.cost_critical_chance+=ceil(store.lvl_critical_chance/3)*4}
 if myID=4 {store.critical_multiplier+=nextStat store.lvl_critical_multiplier+=1 store.cost_critical_multiplier+=ceil(store.lvl_critical_multiplier/2)*4}
 if myID=5 {store.attack_range+=nextStat store.lvl_attack_range+=1 store.cost_attack_range+=ceil(store.lvl_attack_range/3)*5}
 if myID=6 {store.multishot_chance+=nextStat store.lvl_multishot_chance+=1 store.cost_multishot_chance+=ceil(store.lvl_multishot_chance/2)*5}

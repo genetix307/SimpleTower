@@ -26,14 +26,14 @@ if store.card_sharpened_tip > 0 {image_index = 2 draw_card()}
 if my_id = 4
 {
 if store.card_critical_gold = 0 {image_index = 1}
-if store.card_critical_gold > 0 {image_index = 3 draw_card()}
+if store.card_critical_gold > 0 {image_index = 2 draw_card()}
 }
 
 // 5 - Critical Heart
 if my_id = 5
 {
 if store.card_critical_heart = 0 {image_index = 1}
-if store.card_critical_heart > 0 {image_index = 3 draw_card()}
+if store.card_critical_heart > 0 {image_index = 2 draw_card()}
 }
 
 // 6 - Sacrifice
@@ -54,7 +54,7 @@ if store.card_blood_moon > 0 {image_index = 2 draw_card()}
 if my_id = 8
 {
 if store.card_vampiric_wealth = 0 {image_index = 1}
-if store.card_vampiric_wealth > 0 {image_index = 3 draw_card()}
+if store.card_vampiric_wealth > 0 {image_index = 2 draw_card()}
 }
 
 // 9 - Charge
@@ -68,5 +68,5 @@ if store.card_charge > 0 {image_index = 2 draw_card()}
 if my_id = 10
 {
 if store.card_bounty = 0 {image_index = 1}
-if store.card_bounty > 0 {image_index = 3 draw_card()}
+if store.card_bounty > 0 {image_index = 2 draw_card()}
 }

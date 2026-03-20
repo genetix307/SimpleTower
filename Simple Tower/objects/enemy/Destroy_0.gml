@@ -35,60 +35,12 @@ if (store.challenge_a=1 or store.challenge_b=1 or store.challenge_c=1) and store
 	  store.goal_boss_slayer+=1
 	  if store.goal_boss_slayer>=2+(store.lvl_boss_slayer) {store.challenge_flag=1}
 	}
-
-////if on_death="acid" {wpn=instance_create_depth(x,y-24,depth,enemy_weapon_acid) wpn.direction=point_direction(x,y,player.x,player.y) wpn.attack_damage=attack_damage}
-////if on_death="explode" {instance_create_depth(x,y,depth,enemy_weapon_explosion)}
-//if boss=1 repeat 10 instance_create_depth(x+random_range(-44,44),y+random_range(-44,44),depth-10,effect_smoke_small)
-
-////Card - Plunderer
-//if store.card[4]>=1 and 2>random(100) {tmpGems=store.card[4] store.gems+=tmpGems store.gems_earned+=tmpGems store.gems_earned_run+=tmpGems}
-
-////Ninja trait
-////if store.character="Ninja" {player.super_critical=180}
-
 //store.xp+=xp_drop+store.perk_lvl_wisdom
 //if store.status_lampoil>0 {store.xp+=2}
-
-////Card - Focused
-//if store.card[9]>=1 and store.hp>=store.maxhp {store.xp+=store.card[9]}
-
-////if store.wisdompotion>0 {store.xp+=1}
-
-////Wisdom
-////if store.perk_lvl_wisdom>0 {store.xp+=store.perk_lvl_wisdom}
-//check_lvl_up()
 
 ////Bestiary
 ////if type="Bone Archer" {store.slain_bonearcher+=1}
 
 ////Supply Crate
 //if check_luck()+1>=random(120+hud.crate_count) {instance_create_depth(x,y,depth,supply_crate)}
-
-////Slime Split
-//if type="Slime" 
-//{
-//repeat 2 {makeEnemy=instance_create_depth(random_range(x-80,x+80),other.y-random(80),depth,enemy) makeEnemy.type="Baby Slime"}
-//}
-
-////Drop Item
-//if store.luck+2>random(100) 
-//{
-//if item="Crystal Shard" {instance_create_depth(x,y,depth,item_crystalshard)}
-//if item="Herbs" {instance_create_depth(x,y,depth,item_herbs)}
-//if item="Beast Blood" {instance_create_depth(x,y,depth,item_beastblood)}
-//if item="Bone Shard" {instance_create_depth(x,y,depth,item_boneshard)}
-//if item="Oil" {instance_create_depth(x,y,depth,item_oil)}
-//if item="Iron Shard" {instance_create_depth(x,y,depth,item_ironshard)}
-//if item="Element Shard" {instance_create_depth(x,y,depth,item_elementshard)}
-//} else if store.luck+2>random(200) //Drop Rare Item
-//{
-//if item="Crystal Shard" {instance_create_depth(x,y,depth,item_crystalshard)}
-//if item="Herbs" {instance_create_depth(x,y,depth,item_herbs)}
-//if item="Beast Blood" {instance_create_depth(x,y,depth,item_beastblood)}
-//if item="Bone Shard" {instance_create_depth(x,y,depth,item_boneshard)}
-//if item="Oil" {instance_create_depth(x,y,depth,item_oil)}
-//if item="Iron Shard" {instance_create_depth(x,y,depth,item_ironshard)}
-//if item="Element Shard" {instance_create_depth(x,y,depth,item_elementshard)}
-//}
-
 }

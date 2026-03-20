@@ -16,10 +16,10 @@ instance_create_depth(241,134,depth-10,btn_challenge).my_slot=0
 instance_create_depth(241,204,depth-10,btn_challenge).my_slot=1
 instance_create_depth(241,274,depth-10,btn_challenge).my_slot=2
 //Show Cards
-//instance_create_depth(85,790,depth-10,card_show_pause).my_slot=0
-//instance_create_depth(190,790,depth-10,card_show_pause).my_slot=1
-//instance_create_depth(295,790,depth-10,card_show_pause).my_slot=2
-//instance_create_depth(400,790,depth-10,card_show_pause).my_slot=3
+instance_create_depth(85,690,depth-10,card_show_pause).my_slot=0
+instance_create_depth(190,690,depth-10,card_show_pause).my_slot=1
+instance_create_depth(295,690,depth-10,card_show_pause).my_slot=2
+instance_create_depth(400,690,depth-10,card_show_pause).my_slot=3
 } else {
 inst=instance_create_depth(121,772,depth,btn_upgrade) inst.myID=1
 inst=instance_create_depth(357,772,depth,btn_upgrade) inst.myID=2
