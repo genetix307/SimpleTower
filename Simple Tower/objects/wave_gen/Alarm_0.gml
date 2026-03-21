@@ -49,7 +49,6 @@ if 95>random(100) and store.current_stage%50==0 and spawn_hamelot>0 {instance_cr
 //if random_boss=3 {instance_create_depth(random_range(220,260),room_height+random(160),depth,enemy).type="Boss Dark Rider" spawn_boss=0}
 //}
 //}
-
 //}
 
 if spawn<= 0 and instance_number(def_enemy)<=0 and hud.game_paused=0 and hud.game_over=0 {
@@ -90,5 +89,7 @@ if (store.challenge_a=4 or store.challenge_b=4 or store.challenge_c=4) and store
 	  store.goal_survivor+=1
 	  if store.goal_survivor>=40+(10*store.lvl_survivor) {store.challenge_flag=1}
 	}
+	
+
 }
 }

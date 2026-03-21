@@ -35,6 +35,27 @@ if (store.challenge_a=1 or store.challenge_b=1 or store.challenge_c=1) and store
 	  store.goal_boss_slayer+=1
 	  if store.goal_boss_slayer>=2+(store.lvl_boss_slayer) {store.challenge_flag=1}
 	}
+	
+//CARDS
+//Charge Card
+if store.card_slot_1 = 9 or store.card_slot_2 = 9 or store.card_slot_3 = 9 or store.card_slot_4 = 9
+	{
+		hud.count_kills+=1
+		if hud.count_kills>=25 {
+			hud.count_kills=0
+			store.attack_damage+=store.card_lvl_charge
+		}
+	}
+//Bounty Card
+if store.card_slot_1 = 10 or store.card_slot_2 = 10 or store.card_slot_3 = 10 or store.card_slot_4 = 10
+	{
+		hud.count_kills_b+=1
+		if hud.count_kills_b>=25 {
+			hud.count_kills_b=0
+			store.gems+=store.card_lvl_bounty*2
+		}
+	}
+	
 //store.xp+=xp_drop+store.perk_lvl_wisdom
 //if store.status_lampoil>0 {store.xp+=2}
 

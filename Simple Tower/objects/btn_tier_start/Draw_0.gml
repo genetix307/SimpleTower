@@ -8,6 +8,8 @@ draw_text_color(x-30,y-12,myName+string(myTier),c_white,c_white,c_silver,c_silve
 if greyed_out=1 
 {
 draw_sprite(spr_lock,0,x+102,y)	
+draw_set_font(font_stats)
+draw_text_color(x+122,y-15,"Pass Stage 50\nin Tier "+string(myTier-1),c_white,c_white,c_silver,c_silver,1)
 }
 
 if greyed_out=0

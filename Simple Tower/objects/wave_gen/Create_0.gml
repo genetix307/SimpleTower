@@ -10,3 +10,10 @@ spawn_boss=1
 random_boss=0
 
 //if store.current_stage=5 or store.current_stage=10 or store.current_stage=15 {spawn_boss=1}
+
+//CARDS
+//Blood Moon Card
+if store.card_slot_1 = 7 or store.card_slot_2 = 7 or store.card_slot_3 = 7 or store.card_slot_4 = 7
+	{
+		spawn+=2+store.card_lvl_blood_moon
+	}

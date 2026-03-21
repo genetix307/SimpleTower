@@ -8,6 +8,9 @@ best_stage=1
 show_fade=1
 show_stage=3
 hp_smooth = store.hp;
+count_lifesteal=0 //For Card
+count_kills=0 //For Card
+count_kills_b=0 //For Card
 
 if store.tier=1 {best_stage=store.tier_best_1}
 if store.tier=2 {best_stage=store.tier_best_2}
