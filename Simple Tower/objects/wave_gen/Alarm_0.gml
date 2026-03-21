@@ -2,11 +2,12 @@ alarm[0]=30
 
 if hud.game_paused=0 {
 if 50>random(100) and store.current_stage>=1 and spawn>0 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Bone Henchman" spawn-=1}
-if 70>random(100) and store.current_stage%5==0 and spawn_carbuncle>0 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Carbuncle" spawn_carbuncle-=1}
-if 70>random(100) and store.current_stage%3==0 and spawn_mushkin>0 {instance_create_depth(random_range(-300,room_width+300),-180-random(220),depth,enemy).type="Mushkin" spawn_mushkin-=1}
-if 70>random(100) and store.current_stage%10==0 and spawn_armored_skeleton>0 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Armored Skeleton" spawn_armored_skeleton-=1}
-if 95>random(100) and store.current_stage%15==0 and spawn_dark_lich_boss>0 {instance_create_depth(random_range(-100,room_width+100),-20-random(10),depth,enemy).type="Dark Lich" spawn_dark_lich_boss-=1}
-if 95>random(100) and store.current_stage%50==0 and spawn_hamelot>0 {instance_create_depth(random_range(-100,room_width+100),-20-random(10),depth,enemy).type="Hamelot" spawn_hamelot-=1}
+if 85>random(100) and store.current_stage%5==0 and spawn_carbuncle>0 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Carbuncle" spawn_carbuncle-=1}
+if 85>random(100) and store.current_stage%3==0 and spawn_mushkin>0 {instance_create_depth(random_range(-300,room_width+300),-180-random(220),depth,enemy).type="Mushkin" spawn_mushkin-=1}
+if 85>random(100) and store.current_stage%10==0 and spawn_armored_skeleton>0 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Armored Skeleton" spawn_armored_skeleton-=1}
+if 100>random(100) and store.current_stage%15==0 and spawn_dark_lich_boss>0 {instance_create_depth(random_range(-100,room_width+100),-20-random(10),depth,enemy).type="Dark Lich" spawn_dark_lich_boss-=1}
+if 100>random(100) and store.current_stage%50==0 and spawn_hamelot>0 {instance_create_depth(random_range(-100,room_width+100),-20-random(10),depth,enemy).type="Hamelot" spawn_hamelot-=1}
+if 90>random(100) and store.current_stage>=1 and spawn>0 and spawn<5 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Bone Henchman" spawn-=1}
 
 //if store.tier>1 {
 //if 3>random(100) and store.current_stage>=1 and spawn>10 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Boneheads" spawn-=1}

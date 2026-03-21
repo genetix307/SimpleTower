@@ -1,6 +1,6 @@
 //System Init
 randomize()
-//ads_init()
+ads_init()
 audio_group_load(audio_sfx)
 audio_group_load(audio_bgm)
 //Set All perm vars
