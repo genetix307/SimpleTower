@@ -7,9 +7,6 @@ store.ads_watched=0
 store.gem_chest_cooldown=0
 store.show_rating=0
 store.gems=0
-store.version="version 1.02"
-store.devMode=0
-store.hold_dev=0
 store.tier=1
 
 //Game Settings
@@ -17,6 +14,7 @@ store.color_scheme=4
 store.sfx_volume=1
 store.bgm_volume=1
 store.bonus_discord=0
+store.bonus_reddit=0
 //store.auto_perk=0
 //store.show_healthbars=0
 //store.auto_upgrade=0
@@ -135,7 +133,6 @@ store.card_lvl_charge = 1
 store.card_bounty=0
 store.card_lvl_bounty=1
 //Statistics
-//store.best_stage=1
 store.tier_best_1=1
 store.tier_best_2=1
 store.tier_best_3=1
@@ -147,11 +144,11 @@ store.enemies_slain=0
 store.bosses_slain=0
 store.gems_earned=0
 store.gold_earned=0
-//store.total_upgrades=0
 store.challenges_completed=0
 
 //Bonus Codes
 store.code_payday=0
 store.code_kickstart=0
 store.code_lotto=0
+store.code_fivestars=0
 }

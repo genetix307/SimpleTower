@@ -1,0 +1,1 @@
+if AdMob_Interstitial_IsLoaded()>0 {draw_self()}

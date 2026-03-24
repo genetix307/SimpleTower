@@ -6,7 +6,7 @@ if store.color_scheme > 0
 else
 	store.color_scheme = colorSchemes
 
-save_game_old()
+save_game()
 
 
 

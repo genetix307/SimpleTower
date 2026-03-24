@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Paused",
-    "path":"folders/Objects/Menu/InGame/Paused.yy",
+    "path":"folders/Objects/Menu/Paused.yy",
   },
   "parentObjectId":{
     "name":"def_pause_menu",

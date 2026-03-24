@@ -9,7 +9,7 @@ if myID=6 {myName="Multishot Chance" myStat=calc_number(store.perm_multishot_cha
 if myID=7 {myName="Max Health" myStat=store.perm_maxhp myCost=store.cost_perm_maxhp nextStat=4 myCap=999999999 mylvl=store.lvl_perm_maxhp}
 if myID=8 {myName="Regen" myStat=store.perm_regen myCost=store.cost_perm_regen nextStat=.05 myCap=999999999 mylvl=store.lvl_perm_regen}
 if myID=9 {myName="Armor" myStat=store.perm_armor myCost=store.cost_perm_armor nextStat=.25 myCap=999999999 mylvl=store.lvl_perm_armor}
-if myID=10 {myName="Block Chance" myStat=store.perm_block_chance postStat="%" myCost=store.cost_perm_blockchance nextStat=.25 myCap=2 mylvl=store.lvl_perm_blockchance}
+if myID=10 {myName="Block Chance" myStat=store.perm_block_chance postStat="%" myCost=store.cost_perm_blockchance nextStat=.25 myCap=10 mylvl=store.lvl_perm_blockchance}
 if myID=11 {myName="Lifesteal Chance" myStat=calc_number(store.perm_lifesteal_chance) postStat="%" myCost=store.cost_perm_lifesteal_chance nextStat=.25 myCap=20 mylvl=store.lvl_perm_lifesteal_chance}
 if myID=12 {myName="Lifesteal Amount" myStat=store.perm_lifesteal_amount myCost=store.cost_perm_lifesteal_amount nextStat=1 myCap=999999999 mylvl=store.lvl_perm_lifesteal_amount}
 // UTILITY

@@ -11,13 +11,13 @@ instance_create_depth(x+random_range(-8,8),y+random_range(-8,8),depth-5,effect_s
 store.enemies_slain +=1
 store.enemies_killed_run+=1
 
-//if boss=1 { 
-//store.bosses_slain+=1
+if boss=1 { 
+store.bosses_slain+=1
 ////store.bosses_killed_run+=1
 //repeat 8 instance_create_depth(x+random_range(-24,24),y+random_range(-24,24),depth-5,show_big_hit)
 //set_music()
 ////repeat store.current_floor {instance_create_depth(x,y,depth,item_gem)}
-//}
+}
 
 //if boss=0 {audio_play_sound(sfx_enemy_die,1,false)}
 //if boss=1 {audio_play_sound(sfx_boss_destroy,1,false)}
