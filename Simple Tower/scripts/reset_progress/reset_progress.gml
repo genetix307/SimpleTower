@@ -151,4 +151,5 @@ store.code_payday=0
 store.code_kickstart=0
 store.code_lotto=0
 store.code_fivestars=0
+store.code_tower=0
 }

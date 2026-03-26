@@ -73,6 +73,9 @@ store.enemy_hp+=1
 store.gold+=store.goldperwave instance_create_depth(180,480,depth-10,show_text_yellow).myText="Wave Gold +"+calc_number(store.goldperwave)
 store.gems+=store.gemsperwave instance_create_depth(180,503,depth-10,show_text_yellow).myText="Wave Gems +"+calc_number(store.gemsperwave)
 
+//Supply Crate
+if 5>random(100) and store.current_stage>2 {instance_create_depth(room_width/2,room_height/2-200,depth,supply_crate)}
+
 ////Check best tier stage reached
 if store.tier=1 {if store.current_stage>store.tier_best_1 {store.tier_best_1=store.current_stage}}
 if store.tier=2 {if store.current_stage>store.tier_best_2 {store.tier_best_2=store.current_stage}}
