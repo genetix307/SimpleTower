@@ -11,6 +11,7 @@ if my_id =2 {store.goal_focused_shot=0 store.lvl_focused_shot+=1}
 if my_id =3 {store.goal_vampire=0 store.lvl_vampire+=1} 
 if my_id =4 {store.goal_survivor=0 store.lvl_survivor+=1} 
 if my_id =5 {store.goal_collector=0 store.lvl_collector+=1} 
+if my_id =6 {store.goal_trickshot=0 store.lvl_trickshot+=1} 
 
 store.challenges_completed +=1
 save_game()

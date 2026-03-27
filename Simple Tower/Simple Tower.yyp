@@ -67,7 +67,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.3.217",
+    "IDEVersion":"2024.14.4.221",
   },
   "name":"Simple Tower",
   "resources":[
@@ -248,6 +248,7 @@
     {"id":{"name":"spr_gore","path":"sprites/spr_gore/spr_gore.yy",},},
     {"id":{"name":"spr_icon_beast_heart","path":"sprites/spr_icon_beast_heart/spr_icon_beast_heart.yy",},},
     {"id":{"name":"spr_icon_clock","path":"sprites/spr_icon_clock/spr_icon_clock.yy",},},
+    {"id":{"name":"spr_icon_skull","path":"sprites/spr_icon_skull/spr_icon_skull.yy",},},
     {"id":{"name":"spr_icon_sword","path":"sprites/spr_icon_sword/spr_icon_sword.yy",},},
     {"id":{"name":"spr_item_slot","path":"sprites/spr_item_slot/spr_item_slot.yy",},},
     {"id":{"name":"spr_levelup_confetti","path":"sprites/spr_levelup_confetti/spr_levelup_confetti.yy",},},

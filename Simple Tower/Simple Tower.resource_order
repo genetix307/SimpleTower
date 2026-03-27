@@ -170,6 +170,7 @@
     {"name":"spr_gore","order":5,"path":"sprites/spr_gore/spr_gore.yy",},
     {"name":"spr_icon_beast_heart","order":15,"path":"sprites/spr_icon_beast_heart/spr_icon_beast_heart.yy",},
     {"name":"spr_icon_clock","order":3,"path":"sprites/spr_icon_clock/spr_icon_clock.yy",},
+    {"name":"spr_icon_skull","order":21,"path":"sprites/spr_icon_skull/spr_icon_skull.yy",},
     {"name":"spr_icon_sword","order":14,"path":"sprites/spr_icon_sword/spr_icon_sword.yy",},
     {"name":"spr_item_slot","order":10,"path":"sprites/spr_item_slot/spr_item_slot.yy",},
     {"name":"spr_levelup_confetti","order":9,"path":"sprites/spr_levelup_confetti/spr_levelup_confetti.yy",},

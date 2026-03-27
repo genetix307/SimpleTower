@@ -9,5 +9,6 @@ if my_id = 2 {myCap=10+(15*store.lvl_focused_shot) myName="Focused Shot" myDesc=
 if my_id = 3 {myCap=20+(10*store.lvl_vampire) myName="Vampire" myDesc="Lifesteal "+string(myCap)+" times" myReward=25+(25*store.lvl_vampire) myCur=store.goal_vampire myLevel=store.lvl_vampire}
 if my_id = 4 {myCap=40+(10*store.lvl_survivor) myName="Survivor" myDesc="Survive "+string(myCap)+" Waves" myReward=25+(25*store.lvl_survivor) myCur=store.goal_survivor myLevel=store.lvl_survivor}
 if my_id = 5 {myCap=1+(store.lvl_collector) myName="Collector" myDesc="Buy "+string(myCap)+" Cards" myReward=25+(25*store.lvl_collector) myCur=store.goal_collector myLevel=store.lvl_collector}
+if my_id = 6 {myCap=10+(15*store.lvl_trickshot) myName="Trick Shot" myDesc="Multishot "+string(myCap)+" times" myReward=25+(25*store.lvl_trickshot) myCur=store.goal_trickshot myLevel=store.lvl_trickshot}
 
 save_game()
