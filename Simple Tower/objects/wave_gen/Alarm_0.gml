@@ -3,11 +3,11 @@ alarm[0]=30
 if hud.game_paused=0 {
 if 50>random(100) and store.current_stage>=1 and spawn>0 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Bone Henchman" spawn-=1}
 if 85>random(100) and store.current_stage%5==0 and spawn_carbuncle>0 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Carbuncle" spawn_carbuncle-=1}
-if 85>random(100) and store.current_stage%3==0 and spawn_mushkin>0 {instance_create_depth(random_range(-300,room_width+300),-180-random(220),depth,enemy).type="Mushkin" spawn_mushkin-=1}
+if 90>random(100) and store.current_stage%3==0 and spawn<store.current_stage and spawn_mushkin>0 {instance_create_depth(random_range(-300,room_width+300),-180-random(220),depth,enemy).type="Mushkin" spawn_mushkin-=1}
 if 85>random(100) and store.current_stage%10==0 and spawn_armored_skeleton>0 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Armored Skeleton" spawn_armored_skeleton-=1}
 if 100>random(100) and store.current_stage%15==0 and spawn_dark_lich_boss>0 {instance_create_depth(random_range(-100,room_width+100),-20-random(10),depth,enemy).type="Dark Lich" spawn_dark_lich_boss-=1}
 if 100>random(100) and store.current_stage%50==0 and spawn_hamelot>0 {instance_create_depth(random_range(-100,room_width+100),-20-random(10),depth,enemy).type="Hamelot" spawn_hamelot-=1}
-if 90>random(100) and store.current_stage>=1 and spawn>0 and spawn<5 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Bone Henchman" spawn-=1}
+if 70>random(100) and store.current_stage>=10 and spawn>0 and spawn<store.current_stage {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Bone Henchman" spawn-=1}
 
 //if store.tier>1 {
 //if 3>random(100) and store.current_stage>=1 and spawn>10 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Boneheads" spawn-=1}
@@ -16,26 +16,6 @@ if 90>random(100) and store.current_stage>=1 and spawn>0 and spawn<5 {instance_c
 //if 3>random(100) and store.current_stage>=4 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Stinger" spawn-=1}
 //if 3>random(100) and store.current_stage>=11 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(120),depth,enemy).type="Crawler" spawn-=1}
 //if 2>random(100) and store.current_stage>=9 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Golem" spawn-=1}
-//}
-//if store.tier>2 {
-//if 3>random(100) and store.current_stage>=6 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Bone Archer" spawn-=1}
-//if 3>random(100) and store.current_stage>=6 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Red Ghoul" spawn-=1}
-//if 1>random(100) and store.current_stage>=8 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(120),depth,enemy).type="Crawler" spawn-=1}
-//if 2>random(100) and store.current_stage>=7 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Golem" spawn-=1}
-//}
-//if store.tier>3 {
-//if 1>random(100) and store.current_stage>=7 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(120),depth,enemy).type="Crawler" spawn-=1}
-//if 2>random(100) and store.current_stage>=4 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(200),depth,enemy).type="Roblow" spawn-=1}
-//if 2>random(100) and store.current_stage>=6 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Golem" spawn-=1}
-//}
-//if store.tier>4 {
-//if 1>random(100) and store.current_stage>=6 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(120),depth,enemy).type="Crawler" spawn-=1}
-//if 2>random(100) and store.current_stage>=2 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Stinger" spawn-=1}
-//if 2>random(100) and store.current_stage>=5 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Golem" spawn-=1}
-//}
-//if store.tier>5 {
-//if 1>random(100) and store.current_stage>=4 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(120),depth,enemy).type="Crawler" spawn-=1}
-//if 1>random(100) and store.current_stage>=3 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Golem" spawn-=1}
 //}
 
 //if spawn_boss>0 and spawn<10 {
@@ -58,6 +38,7 @@ spawn=15+(store.current_stage)+store.extra_spawn
 spawn_carbuncle=1+floor(store.current_stage/15)
 spawn_mushkin=1+floor(store.current_stage/12)
 spawn_armored_skeleton=1+floor(store.current_stage/15)
+if store.current_stage>20 {spawn_armored_skeleton=1+floor(store.current_stage/20)}
 spawn_dark_lich_boss=1+floor(store.current_stage/40)
 spawn_hamelot=1+floor(store.current_stage/100)
 store.enemy_damage +=.25+(floor(store.current_stage/3)*.25)

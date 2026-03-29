@@ -21,3 +21,7 @@ draw_text_shadow_color(x-112,y+2,string(preStat)+string(myStat)+string(postStat)
 
 draw_sprite(spr_show_gem,0,x+54,y+12)
 draw_text_shadow_color(x+66,y+4,calc_number(myCost),c_yellow,c_yellow,c_yellow,c_yellow)
+
+//Show Description
+draw_set_font(font_stats_tiny)
+draw_text_shadow_color(x-110,y-38,myDesc,c_yellow,c_yellow,c_yellow,c_yellow)

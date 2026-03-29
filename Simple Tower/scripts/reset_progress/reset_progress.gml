@@ -34,6 +34,7 @@ store.goal_vampire=0
 store.goal_survivor=0
 store.goal_collector=0
 store.goal_trickshot=0
+store.goal_defender=0
 store.lvl_slayer=1
 store.lvl_boss_slayer=1
 store.lvl_focused_shot=1
@@ -41,6 +42,7 @@ store.lvl_vampire=1
 store.lvl_survivor=1
 store.lvl_collector=1
 store.lvl_trickshot=1
+store.lvl_defender=1
 
 //Perm Stats 
 store.perm_attack_speed=1
@@ -155,4 +157,5 @@ store.code_lotto=0
 store.code_fivestars=0
 store.code_tower=0
 store.code_arrow=0
+store.code_happy=0
 }

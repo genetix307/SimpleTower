@@ -14,3 +14,5 @@ myCap = 999999999
 capped=0
 mylvl=0
 
+myDesc = ""
+
