@@ -11,6 +11,10 @@ hp_smooth = store.hp;
 count_lifesteal=0 //For Card
 count_kills=0 //For Card
 count_kills_b=0 //For Card
+tutorial=""
+current_tutorial=0
+show_tutorial=0
+alarm[0]=180 //First tutorial
 
 if store.tier=1 {best_stage=store.tier_best_1}
 if store.tier=2 {best_stage=store.tier_best_2}

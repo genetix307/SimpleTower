@@ -18,8 +18,8 @@ set_gameover()
 if stage_complete=0 and show_fade>0 {show_fade-=.025*store.game_speed}
 
 //Active maintenance
-//if game_paused=0 {
-//if store.active_template>0 {store.active_template-=1*store.game_speed}
-//}
+if game_paused=0 {
+if show_tutorial>0 {show_tutorial-=.005}
+}
 
 if store.hp>store.maxhp {store.hp=store.maxhp}

@@ -34,6 +34,17 @@ draw_set_color(c_silver)
 if store.active_template>0 and store.active_template<3601 {draw_sprite(spr_item_templatepill,0,70,20) draw_text(64,28,string(round(store.active_template/60)))}
 if store.active_template>0 and store.active_template>3600 {draw_sprite(spr_item_templatepill,0,70,20) draw_text(64,28,string(ceil(store.active_template/3600))+"m")}
 */
+
+//Show Tutorial
+if show_tutorial>0 {
+draw_set_alpha(show_tutorial)
+draw_rectangle_color(30,200,450,290,c_blue,c_blue,c_navy,c_navy,false)
+draw_rectangle_color(30,200,450,290,c_white,c_white,c_silver,c_silver,true)
+draw_set_font(font_buttons)
+draw_text_ext_color(36,206,tutorial,26,404,c_white,c_white,c_silver,c_silver,show_tutorial)
+draw_set_alpha(1)
+}
+
 //Draw Fade
 if show_fade>0 {
 draw_set_alpha(show_fade)
