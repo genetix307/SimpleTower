@@ -7,4 +7,6 @@ greyed_out=0
 myName = "Tier "
 
 myTier=0
-showBest=""
+showBest=0
+showRank=0
+
