@@ -40,6 +40,7 @@
     {"name":"btn_card_done","order":7,"path":"objects/btn_card_done/btn_card_done.yy",},
     {"name":"btn_card_equip","order":3,"path":"objects/btn_card_equip/btn_card_equip.yy",},
     {"name":"btn_cards","order":9,"path":"objects/btn_cards/btn_cards.yy",},
+    {"name":"btn_challenge_reward","order":10,"path":"objects/btn_challenge_reward/btn_challenge_reward.yy",},
     {"name":"btn_clear_progress","order":7,"path":"objects/btn_clear_progress/btn_clear_progress.yy",},
     {"name":"btn_code","order":4,"path":"objects/btn_code/btn_code.yy",},
     {"name":"btn_credits","order":4,"path":"objects/btn_credits/btn_credits.yy",},

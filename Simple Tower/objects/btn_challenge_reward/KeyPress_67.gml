@@ -1,0 +1,1 @@
+store.challenges_completed+=1

@@ -155,6 +155,7 @@ store.bosses_slain=0
 store.gems_earned=0
 store.gold_earned=0
 store.challenges_completed=0
+store.challenge_reward_lvl=1
 
 //Bonus Codes
 store.code_payday=0

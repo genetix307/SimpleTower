@@ -1,7 +1,7 @@
 function reset_constants(){
 
 //MISC
-store.version="version 1.09"
+store.version="version 1.10"
 store.devMode=0
 store.hold_dev=0
 }
