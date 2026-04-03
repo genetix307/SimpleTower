@@ -136,6 +136,14 @@ store.card_charge = 0
 store.card_lvl_charge = 1
 store.card_bounty=0
 store.card_lvl_bounty=1
+store.card_bouncy=0
+store.card_lvl_bouncy=1
+store.card_fortified=0
+store.card_lvl_fortified=1
+store.card_investor=0
+store.card_lvl_investor=1
+store.card_shieldgold=0
+store.card_lvl_shieldgold=1
 //Statistics
 store.tier_best_1=1
 store.tier_best_2=1
@@ -165,4 +173,5 @@ store.code_fivestars=0
 store.code_tower=0
 store.code_arrow=0
 store.code_happy=0
+store.code_cookie=0
 }

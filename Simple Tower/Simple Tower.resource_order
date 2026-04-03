@@ -104,6 +104,7 @@
     {"name":"wave_gen","order":12,"path":"objects/wave_gen/wave_gen.yy",},
     {"name":"weapon_arrow","order":2,"path":"objects/weapon_arrow/weapon_arrow.yy",},
     {"name":"rm_maingame","order":1,"path":"rooms/rm_maingame/rm_maingame.yy",},
+    {"name":"rm_menu_cards_2","order":12,"path":"rooms/rm_menu_cards_2/rm_menu_cards_2.yy",},
     {"name":"rm_menu_cards","order":10,"path":"rooms/rm_menu_cards/rm_menu_cards.yy",},
     {"name":"rm_menu_credits","order":5,"path":"rooms/rm_menu_credits/rm_menu_credits.yy",},
     {"name":"rm_menu_home","order":2,"path":"rooms/rm_menu_home/rm_menu_home.yy",},

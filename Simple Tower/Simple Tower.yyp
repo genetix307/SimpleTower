@@ -168,6 +168,7 @@
     {"id":{"name":"wave_gen","path":"objects/wave_gen/wave_gen.yy",},},
     {"id":{"name":"weapon_arrow","path":"objects/weapon_arrow/weapon_arrow.yy",},},
     {"id":{"name":"rm_maingame","path":"rooms/rm_maingame/rm_maingame.yy",},},
+    {"id":{"name":"rm_menu_cards_2","path":"rooms/rm_menu_cards_2/rm_menu_cards_2.yy",},},
     {"id":{"name":"rm_menu_cards","path":"rooms/rm_menu_cards/rm_menu_cards.yy",},},
     {"id":{"name":"rm_menu_credits","path":"rooms/rm_menu_credits/rm_menu_credits.yy",},},
     {"id":{"name":"rm_menu_home","path":"rooms/rm_menu_home/rm_menu_home.yy",},},
@@ -281,6 +282,7 @@
     {"roomId":{"name":"rm_menu_tiers","path":"rooms/rm_menu_tiers/rm_menu_tiers.yy",},},
     {"roomId":{"name":"rm_menu_cards","path":"rooms/rm_menu_cards/rm_menu_cards.yy",},},
     {"roomId":{"name":"rm_open_card","path":"rooms/rm_open_card/rm_open_card.yy",},},
+    {"roomId":{"name":"rm_menu_cards_2","path":"rooms/rm_menu_cards_2/rm_menu_cards_2.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
