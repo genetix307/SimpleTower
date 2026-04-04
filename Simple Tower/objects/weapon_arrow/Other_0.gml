@@ -1,5 +1,2 @@
+
 instance_destroy()
-
-
-
-

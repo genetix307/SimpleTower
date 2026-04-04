@@ -70,3 +70,31 @@ if my_id = 10
 if store.card_bounty = 0 {image_index = 1}
 if store.card_bounty > 0 {image_index = 2 draw_card()}
 }
+
+// 11 - Bouncy
+if my_id = 11
+{
+if store.card_bounty = 0 {image_index = 1}
+if store.card_bounty > 0 {image_index = 2 draw_card()}
+}
+
+// 12 - Fortified
+if my_id = 12
+{
+if store.card_fortified = 0 {image_index = 1}
+if store.card_fortified > 0 {image_index = 2 draw_card()}
+}
+
+// 13 - Investor
+if my_id = 13
+{
+if store.card_investor = 0 {image_index = 1}
+if store.card_investor > 0 {image_index = 2 draw_card()}
+}
+
+// 14 - Shield Gold
+if my_id = 14
+{
+if store.card_shield_gold = 0 {image_index = 1}
+if store.card_shield_gold > 0 {image_index = 2 draw_card()}
+}

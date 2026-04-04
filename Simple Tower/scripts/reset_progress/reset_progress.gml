@@ -142,8 +142,8 @@ store.card_fortified=0
 store.card_lvl_fortified=1
 store.card_investor=0
 store.card_lvl_investor=1
-store.card_shieldgold=0
-store.card_lvl_shieldgold=1
+store.card_shield_gold=0
+store.card_lvl_shield_gold=1
 //Statistics
 store.tier_best_1=1
 store.tier_best_2=1

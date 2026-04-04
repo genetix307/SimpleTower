@@ -32,7 +32,7 @@ instance_create_depth(other.x,other.y-8,depth,effect_show_damage_player).myDamag
 //Sacrifice Card
 if store.card_slot_1 = 6 or store.card_slot_2 = 6 or store.card_slot_3 = 6 or store.card_slot_4 = 6
 	{
-		store.gold +=store.card_lvl_sacrifice
+		store.gold +=store.card_lvl_sacrifice*3
 	}
 }
 

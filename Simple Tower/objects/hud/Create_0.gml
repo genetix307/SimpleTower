@@ -35,12 +35,17 @@ if store.total_runs<=0 {store.gold+=10}
 //Inheritance Card
 if store.card_slot_1 = 2 or store.card_slot_2 = 2 or store.card_slot_3 = 2 or store.card_slot_4 = 2
 	{
-		if store.current_stage=1 {store.gold +=store.card_lvl_inheritance*15}
+		if store.current_stage=1 {store.gold +=store.card_lvl_inheritance*25}
 	}
 //Sharpened Tip Card
 if store.card_slot_1 = 3 or store.card_slot_2 = 3 or store.card_slot_3 = 3 or store.card_slot_4 = 3
 	{
 		if store.current_stage=1 {store.attack_damage +=ceil(store.attack_damage*(store.card_lvl_sharpened_tip*0.25))}
+	}
+//Fortified Tip Card
+if store.card_slot_1 = 12 or store.card_slot_2 = 12 or store.card_slot_3 = 12 or store.card_slot_4 = 12
+	{
+		if store.current_stage=1 {store.maxhp +=ceil(store.maxhp*(store.card_lvl_fortified*0.25))store.hp=store.maxhp}
 	}
 
 //PERKS

@@ -25,7 +25,7 @@ if myID=15 {store.perm_gemsperwave+=nextStat store.lvl_perm_gemsperwave+=1 store
 if myID=16 {store.perm_free_attack_upgrade+=nextStat store.lvl_perm_free_attack_upgrade+=1 store.cost_perm_free_attack_upgrade+=ceil(store.lvl_perm_free_attack_upgrade/2)*20}
 if myID=17 {store.perm_free_defense_upgrade+=nextStat store.lvl_perm_free_defense_upgrade+=1 store.cost_perm_free_defense_upgrade+=ceil(store.lvl_perm_free_defense_upgrade/2)*20}
 if myID=18 {store.perm_free_utility_upgrade+=nextStat store.lvl_perm_free_utility_upgrade+=1 store.cost_perm_free_utility_upgrade+=ceil(store.lvl_perm_free_utility_upgrade/2)*20}
-// ATTACK
+// Other
 if myID=19 {store.max_gamespeed+=nextStat}
 }
 

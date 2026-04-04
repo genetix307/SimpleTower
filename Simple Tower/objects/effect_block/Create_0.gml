@@ -14,7 +14,8 @@ if (store.challenge_a=7 or store.challenge_b=7 or store.challenge_c=7) and store
 	  if store.goal_defender>=5+(5*store.lvl_defender) {store.challenge_flag=1}
 	}
 
-//Cards
-//if store.card[2]>=1 and 25>random(100) {store.gold+=store.card[2]}
-//if store.card[3]>=1 and 10>random(100) {store.xp+=store.card[3] check_lvl_up()}
-//if store.card[8]>=1 and 25>random(100) {store.hp+=store.card[8]}
+//Critical Gold Card
+if store.card_slot_1 = 14 or store.card_slot_2 = 14 or store.card_slot_3 = 14 or store.card_slot_4 =14
+	{
+		store.gold +=store.card_lvl_shield_gold*5
+	}

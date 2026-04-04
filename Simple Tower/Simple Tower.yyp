@@ -90,6 +90,7 @@
     {"id":{"name":"btn_card_buy","path":"objects/btn_card_buy/btn_card_buy.yy",},},
     {"id":{"name":"btn_card_done","path":"objects/btn_card_done/btn_card_done.yy",},},
     {"id":{"name":"btn_card_equip","path":"objects/btn_card_equip/btn_card_equip.yy",},},
+    {"id":{"name":"btn_cards_next_page","path":"objects/btn_cards_next_page/btn_cards_next_page.yy",},},
     {"id":{"name":"btn_cards","path":"objects/btn_cards/btn_cards.yy",},},
     {"id":{"name":"btn_challenge_reward","path":"objects/btn_challenge_reward/btn_challenge_reward.yy",},},
     {"id":{"name":"btn_challenge","path":"objects/btn_challenge/btn_challenge.yy",},},

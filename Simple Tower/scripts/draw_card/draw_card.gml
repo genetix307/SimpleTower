@@ -10,7 +10,7 @@ draw_sprite(spr_card_art,0,x,y-28)
 draw_set_color(c_yellow)
 draw_text_ext(x-43,y-4,"Level "+calc_number(store.card_lvl_inheritance),15,86)
 draw_set_color(c_white)
-draw_text_ext(x-43,y+8,"Start run with "+calc_number(store.card_lvl_inheritance*15)+" gold.",14,88)
+draw_text_ext(x-43,y+8,"Start run with "+calc_number(store.card_lvl_inheritance*25)+" gold.",14,88)
 draw_set_color(c_yellow)
 draw_text(x-42,y+52,"Level Up: "+calc_number(store.card_inheritance)+"/"+calc_number(store.card_lvl_inheritance+1)) 
 }
@@ -70,7 +70,7 @@ draw_sprite(spr_card_art,4,x,y-28)
 draw_set_color(c_yellow)
 draw_text_ext(x-43,y-4,"Level "+calc_number(store.card_lvl_sacrifice),15,86)
 draw_set_color(c_white)
-draw_text_ext(x-43,y+8,"Gain "+calc_number(store.card_lvl_sacrifice)+" gold when hit.",14,88)
+draw_text_ext(x-43,y+8,"Gain "+calc_number(store.card_lvl_sacrifice*3)+" gold when hit.",14,88)
 draw_set_color(c_yellow)
 draw_text(x-42,y+52,"Level Up: "+calc_number(store.card_sacrifice)+"/"+calc_number(store.card_lvl_sacrifice+1))
 }
@@ -135,19 +135,63 @@ draw_set_color(c_yellow)
 draw_text(x-42,y+52,"Level Up: "+calc_number(store.card_bounty)+"/"+calc_number(store.card_lvl_bounty+1))
 }
 
-// 11 - Bouncy
+// 11 - Bouncy Arrows
 if my_id = 11
 {
 draw_set_font(font_stats_tiny)
 draw_set_color(c_aqua)
 draw_text(x-40,y-65,"Bouncy Arrows") 
-draw_sprite(spr_card_art,8,x,y-28)
+draw_sprite(spr_card_art,9,x,y-28)
 draw_set_color(c_yellow)
 draw_text_ext(x-43,y-4,"Level "+calc_number(store.card_lvl_bouncy),15,86)
 draw_set_color(c_white)
-draw_text_ext(x-43,y+8,"Arrows bounce off edges "+calc_number(store.card_lvl_bouncy)+" times.",14,88)
+draw_text_ext(x-43,y+8,"Arrows bounce off edge of map "+calc_number(store.card_lvl_bouncy)+" times.",14,88)
 draw_set_color(c_yellow)
-draw_text(x-42,y+52,"Level Up: "+calc_number(store.card_bouncy)+"/"+calc_number(store.card_lvl_bouncy+1))
+draw_text(x-42,y+52,"Level Up: "+calc_number(store.card_bouncy)+"/"+calc_number(store.card_lvl_bouncy+1)) 
 }
 
+// 12 - Fortify
+if my_id = 12
+{
+draw_set_font(font_stats_tiny)
+draw_set_color(c_aqua)
+draw_text(x-40,y-65,"Fortified")
+draw_sprite(spr_card_art,10,x,y-28)
+draw_set_color(c_yellow)
+draw_text_ext(x-43,y-4,"Level "+calc_number(store.card_lvl_fortified),15,86)
+draw_set_color(c_white)
+draw_text_ext(x-43,y+8,"Multiply starting health by x"+string(1 + (store.card_lvl_fortified*0.25)),14,88) 
+draw_set_color(c_yellow)
+draw_text(x-42,y+52,"Level Up: "+calc_number(store.card_fortified)+"/"+calc_number(store.card_lvl_fortified+1)) 
+}
+
+// 13 - Investor
+if my_id = 13
+{
+draw_set_font(font_stats_tiny)
+draw_set_color(c_aqua)
+draw_text(x-40,y-65,"Investor") 
+draw_sprite(spr_card_art,11,x,y-28)
+draw_set_color(c_yellow)
+draw_text_ext(x-43,y-4,"Level "+calc_number(store.card_lvl_investor),15,86)
+draw_set_color(c_white)
+draw_text_ext(x-43,y+8,"Gain +"+calc_number(store.card_lvl_investor)+" Gold Per Wave stat each Wave.",14,88)
+draw_set_color(c_yellow)
+draw_text(x-42,y+52,"Level Up: "+calc_number(store.card_investor)+"/"+calc_number(store.card_lvl_investor+1)) 
+}
+
+// 14 - Shield Gold
+if my_id = 14
+{
+draw_set_font(font_stats_tiny)
+draw_set_color(c_aqua)
+draw_text(x-40,y-65,"Shield Gold") 
+draw_sprite(spr_card_art,12,x,y-28)
+draw_set_color(c_yellow)
+draw_text_ext(x-43,y-4,"Level "+calc_number(store.card_lvl_shield_gold),15,86)
+draw_set_color(c_white)
+draw_text_ext(x-43,y+8,"Gain "+calc_number(store.card_lvl_shield_gold*5)+" gold when blocking a hit.",14,88)
+draw_set_color(c_yellow)
+draw_text(x-42,y+52,"Level Up: "+calc_number(store.card_shield_gold)+"/"+calc_number(store.card_lvl_shield_gold+1)) 
+}
 }

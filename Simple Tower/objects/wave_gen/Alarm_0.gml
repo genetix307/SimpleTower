@@ -89,7 +89,11 @@ if (store.challenge_a=4 or store.challenge_b=4 or store.challenge_c=4) and store
 	  store.goal_survivor+=1
 	  if store.goal_survivor>=40+(10*store.lvl_survivor) {store.challenge_flag=1}
 	}
-	
+//Investor Card
+if store.card_slot_1 = 13 or store.card_slot_2 = 13 or store.card_slot_3 = 13 or store.card_slot_4 = 13
+	{
+		store.goldperwave+=store.card_lvl_investor
+	}	
 
 }
 }

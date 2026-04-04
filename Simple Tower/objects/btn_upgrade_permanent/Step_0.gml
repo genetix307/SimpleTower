@@ -20,7 +20,7 @@ if myID=16 {myName="Free Attack Upgrade" myStat=store.perm_free_attack_upgrade p
 if myID=17 {myName="Free Defense Upgrade" myStat=store.perm_free_defense_upgrade postStat="%" myCost=store.cost_perm_free_defense_upgrade nextStat=.25 myCap=15 mylvl=store.lvl_perm_free_defense_upgrade myDesc = "Chance for free Defense Upgrade"}
 if myID=18 {myName="Free Utility Upgrade" myStat=store.perm_free_utility_upgrade postStat="%" myCost=store.cost_perm_free_utility_upgrade nextStat=.25 myCap=15 mylvl=store.lvl_perm_free_utility_upgrade myDesc = "Chance for free Utility Upgrade"}
 //Misc
-if myID=19 {myName="Max Game Speed" myStat=store.max_gamespeed myCost=round(store.max_gamespeed*50) mylvl=store.lvl_perm_gamespeed nextStat=.25 myCap=5 myDesc = "Fastest Game Speed allowed"}
+if myID=19 {myName="Max Game Speed" myStat=store.max_gamespeed myCost=round(store.max_gamespeed*50) mylvl=store.lvl_perm_gamespeed nextStat=.25 myCap=6 myDesc = "Fastest Game Speed allowed"}
 
 //Locked
 if mylvl=0 {myName="??????" myCost=25}
