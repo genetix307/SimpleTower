@@ -144,6 +144,8 @@ store.card_investor=0
 store.card_lvl_investor=1
 store.card_shield_gold=0
 store.card_lvl_shield_gold=1
+store.card_enforcedwalls=0
+store.card_lvl_enforcedwalls=1
 //Statistics
 store.tier_best_1=1
 store.tier_best_2=1

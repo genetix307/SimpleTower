@@ -7,4 +7,4 @@ alarm[0]=1
 //alarm[2]=180
 fade=0
 canSkip=0
-//ad_load_interstitial()
+ad_load_interstitial()

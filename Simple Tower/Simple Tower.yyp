@@ -196,7 +196,6 @@
     {"id":{"name":"draw_dialogue_box","path":"scripts/draw_dialogue_box/draw_dialogue_box.yy",},},
     {"id":{"name":"draw_player_heatlhbar","path":"scripts/draw_player_heatlhbar/draw_player_heatlhbar.yy",},},
     {"id":{"name":"draw_shadow","path":"scripts/draw_shadow/draw_shadow.yy",},},
-    {"id":{"name":"draw_stats","path":"scripts/draw_stats/draw_stats.yy",},},
     {"id":{"name":"draw_text_shadow_color","path":"scripts/draw_text_shadow_color/draw_text_shadow_color.yy",},},
     {"id":{"name":"effect_btn","path":"scripts/effect_btn/effect_btn.yy",},},
     {"id":{"name":"enemy_healthbar","path":"scripts/enemy_healthbar/enemy_healthbar.yy",},},

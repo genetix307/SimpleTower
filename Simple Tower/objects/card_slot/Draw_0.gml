@@ -98,3 +98,10 @@ if my_id = 14
 if store.card_shield_gold = 0 {image_index = 1}
 if store.card_shield_gold > 0 {image_index = 2 draw_card()}
 }
+
+// 15 - Enforced Walls
+if my_id = 15
+{
+if store.card_enforcedwalls = 0 {image_index = 1}
+if store.card_enforcedwalls > 0 {image_index = 2 draw_card()}
+}

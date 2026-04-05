@@ -129,7 +129,6 @@
     {"name":"draw_dialogue_box","order":4,"path":"scripts/draw_dialogue_box/draw_dialogue_box.yy",},
     {"name":"draw_player_heatlhbar","order":6,"path":"scripts/draw_player_heatlhbar/draw_player_heatlhbar.yy",},
     {"name":"draw_shadow","order":5,"path":"scripts/draw_shadow/draw_shadow.yy",},
-    {"name":"draw_stats","order":1,"path":"scripts/draw_stats/draw_stats.yy",},
     {"name":"draw_text_shadow_color","order":3,"path":"scripts/draw_text_shadow_color/draw_text_shadow_color.yy",},
     {"name":"load_game","order":5,"path":"scripts/load_game/load_game.yy",},
     {"name":"open_privacy_policy","order":6,"path":"scripts/open_privacy_policy/open_privacy_policy.yy",},

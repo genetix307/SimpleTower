@@ -1,4 +1,9 @@
 alarm[0]=30
+if store.current_stage>15 {alarm[0]=27}
+if store.current_stage>24 {alarm[0]=24}
+if store.current_stage>30 {alarm[0]=21}
+if store.current_stage>40 {alarm[0]=18}
+if store.current_stage>50 {alarm[0]=15}
 
 if hud.game_paused=0 {
 if 50>random(100) and store.current_stage>=1 and spawn>0 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Bone Henchman" spawn-=1}
@@ -8,6 +13,7 @@ if 85>random(100) and store.current_stage%10==0 and spawn_armored_skeleton>0 {in
 if 100>random(100) and store.current_stage%15==0 and spawn_dark_lich_boss>0 {instance_create_depth(random_range(-100,room_width+100),-20-random(10),depth,enemy).type="Dark Lich" spawn_dark_lich_boss-=1}
 if 100>random(100) and store.current_stage%50==0 and spawn_hamelot>0 {instance_create_depth(random_range(-100,room_width+100),-20-random(10),depth,enemy).type="Hamelot" spawn_hamelot-=1}
 if 70>random(100) and store.current_stage>=10 and spawn>0 and spawn<store.current_stage {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Bone Henchman" spawn-=1}
+if 30>random(100) and store.current_stage>=25 and spawn>0 and spawn<store.current_stage {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Bone Henchman" spawn-=1}
 
 //if store.tier>1 {
 //if 3>random(100) and store.current_stage>=1 and spawn>10 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Boneheads" spawn-=1}
@@ -79,9 +85,6 @@ if store.tier=3 {if store.current_stage>store.tier_best_3 {store.tier_best_3=sto
 if store.tier=4 {if store.current_stage>store.tier_best_4 {store.tier_best_4=store.current_stage}}
 if store.tier=5 {if store.current_stage>store.tier_best_5 {store.tier_best_5=store.current_stage}}
 if store.tier=6 {if store.current_stage>store.tier_best_6 {store.tier_best_6=store.current_stage}}
-
-//if store.perk_lvl_tutor>0 {store.xp+=store.perk_lvl_tutor*10} 
-//if store.perk_lvl_flawless>0 {store.gold+=store.perk_lvl_flawless*10 store.gold_earned+=store.perk_lvl_flawless*10}
 
 //Quick Challenge
 if (store.challenge_a=4 or store.challenge_b=4 or store.challenge_c=4) and store.goal_survivor<40+(10*store.lvl_survivor)
