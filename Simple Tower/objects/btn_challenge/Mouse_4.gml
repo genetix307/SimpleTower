@@ -13,6 +13,7 @@ if my_id =4 {store.goal_survivor=0 store.lvl_survivor+=1}
 if my_id =5 {store.goal_collector=0 store.lvl_collector+=1} 
 if my_id =6 {store.goal_trickshot=0 store.lvl_trickshot+=1} 
 if my_id =7 {store.goal_defender=0 store.lvl_defender+=1} 
+if my_id =8 {store.goal_resilient=0 store.lvl_resilient+=1} 
 
 store.challenges_completed +=1
 save_game()

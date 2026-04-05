@@ -16,6 +16,21 @@ if store.block_chance>random(100) {instance_create_depth(x,y,depth,effect_block)
 if tmpDamage<0 {tmpDamage=0}
 store.hp-=tmpDamage
 instance_create_depth(other.x,other.y-8,depth,effect_show_damage_player).myDamage=tmpDamage
+
+//Quick Challenge
+if (store.challenge_a=8 or store.challenge_b=8 or store.challenge_c=8) and store.goal_resilient<10+(15*store.lvl_resilient)
+	{
+	  store.goal_resilient+=1
+	  if store.goal_resilient>=10+(15*store.lvl_resilient) {store.challenge_flag=1}
+	}
+
+//CARDS
+//Sacrifice Card
+if store.card_slot_1 = 6 or store.card_slot_2 = 6 or store.card_slot_3 = 6 or store.card_slot_4 = 6
+	{
+		store.gold +=store.card_lvl_sacrifice*3
+	}
 }
+
 
 
