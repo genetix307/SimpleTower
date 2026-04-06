@@ -74,8 +74,8 @@ if store.card_bounty > 0 {image_index = 2 draw_card()}
 // 11 - Bouncy
 if my_id = 11
 {
-if store.card_bounty = 0 {image_index = 1}
-if store.card_bounty > 0 {image_index = 2 draw_card()}
+if store.card_bouncy = 0 {image_index = 1}
+if store.card_bouncy > 0 {image_index = 2 draw_card()}
 }
 
 // 12 - Fortified

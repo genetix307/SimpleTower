@@ -8,6 +8,8 @@ store.gem_chest_cooldown=0
 store.show_rating=0
 store.gems=0
 store.tier=1
+store.game_speed=1
+
 
 //Game Settings
 store.color_scheme=4
@@ -178,4 +180,5 @@ store.code_tower=0
 store.code_arrow=0
 store.code_happy=0
 store.code_cookie=0
+store.code_card=0
 }

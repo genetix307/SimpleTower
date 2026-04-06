@@ -23,10 +23,10 @@ store.bosses_slain+=1
 //if boss=1 {audio_play_sound(sfx_boss_destroy,1,false)}
 
 //Quick Challenge
-if (store.challenge_a=0 or store.challenge_b=0 or store.challenge_c=0) and store.goal_slayer<40+(10*store.lvl_slayer)
+if (store.challenge_a=0 or store.challenge_b=0 or store.challenge_c=0) and store.goal_slayer<25+(25*store.lvl_slayer)
 	{
 	  store.goal_slayer+=1
-	  if store.goal_slayer>=40+(10*store.lvl_slayer) {store.challenge_flag=1}
+	  if store.goal_slayer>=25+(25*store.lvl_slayer) {store.challenge_flag=1}
 	}
 	
 //Quick Challenge

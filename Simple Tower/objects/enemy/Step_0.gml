@@ -26,6 +26,7 @@ tmpDamage=attack_damage-store.armor
 if store.block_chance>random(100) {instance_create_depth(x,y,depth,effect_block) tmpDamage=0}
 if tmpDamage<0 {tmpDamage=0}
 store.hp-=tmpDamage
+hud.show_hit=.65
 instance_create_depth(other.x,other.y-8,depth,effect_show_damage_player).myDamage=tmpDamage
 
 //Quick Challenge

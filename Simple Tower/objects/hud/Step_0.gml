@@ -20,6 +20,7 @@ if stage_complete=0 and show_fade>0 {show_fade-=.025*store.game_speed}
 //Active maintenance
 if game_paused=0 {
 if show_tutorial>0 {show_tutorial-=.005}
+if show_hit>0 {show_hit-=.10}
 }
 
 if store.hp>store.maxhp {store.hp=store.maxhp}

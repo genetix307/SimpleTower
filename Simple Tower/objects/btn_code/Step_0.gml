@@ -62,3 +62,10 @@ store.gems += reward
 instance_create_depth(x,y-8,depth-1000,show_reward).myReward = "Rewarded "+string(reward)+" Gems!"
 save_game()
 }
+if myResult = "card" and store.code_card = 0
+{
+store.code_card = 1
+room=rm_open_card
+instance_create_depth(x,y-8,depth-1000,show_reward).myReward = "Rewarded a Card!"
+save_game()
+}

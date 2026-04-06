@@ -1,9 +1,9 @@
 alarm[0]=30
 if store.current_stage>15 {alarm[0]=27}
-if store.current_stage>24 {alarm[0]=24}
-if store.current_stage>30 {alarm[0]=21}
-if store.current_stage>40 {alarm[0]=18}
-if store.current_stage>50 {alarm[0]=15}
+if store.current_stage>24 {alarm[0]=25}
+if store.current_stage>30 {alarm[0]=22}
+if store.current_stage>40 {alarm[0]=20}
+if store.current_stage>50 {alarm[0]=18}
 
 if hud.game_paused=0 {
 if 50>random(100) and store.current_stage>=1 and spawn>0 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Bone Henchman" spawn-=1}

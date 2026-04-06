@@ -52,6 +52,13 @@ draw_rectangle_color(0,0,room_width,room_height,c_black,c_black,c_black,c_black,
 draw_set_alpha(1)
 }
 
+//Draw Hit
+if show_hit>0 {
+draw_set_alpha(show_hit)
+draw_rectangle_color(0,0,room_width,room_height,c_red,c_red,c_red,c_red,false)
+draw_set_alpha(1)
+}
+
 } //End Pause Check
 
 //Draw Paused

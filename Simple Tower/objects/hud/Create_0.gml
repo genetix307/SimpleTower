@@ -7,6 +7,7 @@ stage_complete=0
 best_stage=1
 show_fade=1
 show_stage=3
+show_hit=0
 hp_smooth = store.hp;
 count_lifesteal=0 //For Card
 count_kills_charge=0 //For Card
