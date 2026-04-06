@@ -74,6 +74,7 @@ store.enemy_hp+=(.50*store.tier)
 
 store.gold+=store.goldperwave instance_create_depth(180,480,depth-10,show_text_yellow).myText="Wave Gold +"+calc_number(store.goldperwave)
 store.gems+=store.gemsperwave instance_create_depth(180,503,depth-10,show_text_yellow).myText="Wave Gems +"+calc_number(store.gemsperwave)
+store.gems_earned+=store.gemsperwave
 
 //Supply Crate
 if 5>random(100) and store.current_stage>2 {instance_create_depth(room_width/2,room_height/2-200,depth,supply_crate)}

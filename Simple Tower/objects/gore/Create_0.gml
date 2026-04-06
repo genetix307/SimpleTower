@@ -1,4 +1,4 @@
-image_alpha = 1.8
+image_alpha = 1.7
 image_angle = random(360)
 image_index = round(random(image_number))
 rise=0

@@ -17,5 +17,5 @@ if (store.challenge_a=7 or store.challenge_b=7 or store.challenge_c=7) and store
 //Critical Gold Card
 if store.card_slot_1 = 14 or store.card_slot_2 = 14 or store.card_slot_3 = 14 or store.card_slot_4 =14
 	{
-		store.gold +=store.card_lvl_shield_gold*5
+		store.gold +=store.card_lvl_shield_gold*10
 	}

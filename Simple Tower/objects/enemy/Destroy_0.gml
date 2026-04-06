@@ -41,7 +41,7 @@ if (store.challenge_a=1 or store.challenge_b=1 or store.challenge_c=1) and store
 if store.card_slot_1 = 9 or store.card_slot_2 = 9 or store.card_slot_3 = 9 or store.card_slot_4 = 9
 	{
 		hud.count_kills_charge+=1
-		if hud.count_kills_charge>=25 {
+		if hud.count_kills_charge>=20+(5*store.card_lvl_charge) {
 			hud.count_kills_charge=0
 			store.attack_damage+=store.card_lvl_charge
 		}
@@ -50,18 +50,19 @@ if store.card_slot_1 = 9 or store.card_slot_2 = 9 or store.card_slot_3 = 9 or st
 if store.card_slot_1 = 10 or store.card_slot_2 = 10 or store.card_slot_3 = 10 or store.card_slot_4 = 10
 	{
 		hud.count_kills_bounty+=1
-		if hud.count_kills_bounty>=25 {
+		if hud.count_kills_bounty>=20+(5*store.card_lvl_bounty) {
 			hud.count_kills_bounty=0
 			store.gems+=store.card_lvl_bounty*2
+			store.gems_earned+=store.card_lvl_bounty*2
 		}
 	}
 //Enforce Wall Card
 if store.card_slot_1 = 15 or store.card_slot_2 = 15 or store.card_slot_3 = 15 or store.card_slot_4 = 15
 	{
 		hud.count_kills_enforcedwalls+=1
-		if hud.count_kills_enforcedwalls>=25 {
+		if hud.count_kills_enforcedwalls>=20+(5*store.card_lvl_enforcedwalls)  {
 			hud.count_kills_enforcedwalls=0
-			store.armor+=store.card_lvl_enforcedwalls
+			store.armor+=.75+(store.card_lvl_enforcedwalls*.25)
 		}
 	}
 	
