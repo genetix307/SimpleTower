@@ -69,3 +69,11 @@ room=rm_open_card
 instance_create_depth(x,y-8,depth-1000,show_reward).myReward = "Rewarded a Card!"
 save_game()
 }
+if myResult = "ironpost" and store.code_ironpost = 0
+{
+reward = 300
+store.code_ironpost = 1
+store.gems += reward
+instance_create_depth(x,y-8,depth-1000,show_reward).myReward = "Rewarded "+string(reward)+" Gems!"
+save_game()
+}

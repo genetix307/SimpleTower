@@ -38,6 +38,7 @@ store.goal_collector=0
 store.goal_trickshot=0
 store.goal_defender=0
 store.goal_resilient=0
+store.goal_tank=0
 store.lvl_slayer=1
 store.lvl_boss_slayer=1
 store.lvl_focused_shot=1
@@ -47,6 +48,7 @@ store.lvl_collector=1
 store.lvl_trickshot=1
 store.lvl_defender=1
 store.lvl_resilient=1
+store.lvl_tank=1
 
 //Perm Stats 
 store.perm_attack_speed=1
@@ -181,4 +183,5 @@ store.code_arrow=0
 store.code_happy=0
 store.code_cookie=0
 store.code_card=0
+store.code_ironpost=0
 }
