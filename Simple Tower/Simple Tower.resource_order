@@ -51,6 +51,7 @@
     {"name":"btn_gamespeed_more","order":9,"path":"objects/btn_gamespeed_more/btn_gamespeed_more.yy",},
     {"name":"btn_home","order":1,"path":"objects/btn_home/btn_home.yy",},
     {"name":"btn_lonetower_ad","order":6,"path":"objects/btn_lonetower_ad/btn_lonetower_ad.yy",},
+    {"name":"btn_modifiers","order":11,"path":"objects/btn_modifiers/btn_modifiers.yy",},
     {"name":"btn_pause","order":2,"path":"objects/btn_pause/btn_pause.yy",},
     {"name":"btn_perks","order":6,"path":"objects/btn_perks/btn_perks.yy",},
     {"name":"btn_perm_upgrades","order":7,"path":"objects/btn_perm_upgrades/btn_perm_upgrades.yy",},

@@ -43,7 +43,7 @@ if myID=6 {store.multishot_chance+=nextStat store.lvl_multishot_chance+=1 store.
 if myID=7 {store.maxhp+=nextStat store.hp+=nextStat store.lvl_maxhp+=1 store.cost_maxhp+=ceil(store.lvl_maxhp/2)*3}
 if myID=8 {store.regen+=nextStat store.lvl_regen+=1 store.cost_regen+=ceil(store.lvl_regen/3)*10}
 if myID=9 {store.armor+=nextStat store.lvl_armor+=1 store.cost_armor+=ceil(store.lvl_armor/3)*10}
-if myID=10 {store.block_chance+=nextStat store.lvl_blockchance+=1 store.cost_blockchance+=ceil(store.lvl_blockchance/3)*10}
+if myID=10 {store.block_chance+=nextStat store.lvl_blockchance+=1 store.cost_blockchance+=ceil(store.lvl_blockchance/3)*12}
 if myID=11 {store.lifesteal_chance+=nextStat store.lvl_lifesteal_chance+=1 store.cost_lifesteal_chance+=ceil(store.lvl_lifesteal_chance/2)*10}
 if myID=12 {store.lifesteal_amount+=nextStat store.lvl_lifesteal_amount+=1 store.cost_lifesteal_amount+=ceil(store.lvl_lifesteal_amount/2)*10}
 // UTILITY

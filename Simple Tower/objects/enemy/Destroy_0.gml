@@ -62,7 +62,7 @@ if store.card_slot_1 = 15 or store.card_slot_2 = 15 or store.card_slot_3 = 15 or
 		hud.count_kills_enforcedwalls+=1
 		if hud.count_kills_enforcedwalls>=20+(5*store.card_lvl_enforcedwalls)  {
 			hud.count_kills_enforcedwalls=0
-			store.armor+=.75+(store.card_lvl_enforcedwalls*.25)
+			store.armor+=store.card_lvl_enforcedwalls*.50
 		}
 	}
 	

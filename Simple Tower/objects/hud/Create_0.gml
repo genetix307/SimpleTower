@@ -37,7 +37,7 @@ if store.total_runs<=0 {store.gold+=10}
 //Inheritance Card
 if store.card_slot_1 = 2 or store.card_slot_2 = 2 or store.card_slot_3 = 2 or store.card_slot_4 = 2
 	{
-		if store.current_stage=1 {store.gold +=store.card_lvl_inheritance*50}
+		if store.current_stage=1 {store.gold +=store.card_lvl_inheritance*100}
 	}
 //Sharpened Tip Card
 if store.card_slot_1 = 3 or store.card_slot_2 = 3 or store.card_slot_3 = 3 or store.card_slot_4 = 3
