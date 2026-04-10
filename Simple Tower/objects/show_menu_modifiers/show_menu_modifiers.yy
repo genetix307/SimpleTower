@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"btn_modifiers",
+  "%Name":"show_menu_modifiers",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"btn_modifiers",
+  "name":"show_menu_modifiers",
   "overriddenProperties":[],
   "parent":{
-    "name":"menu_buttons",
-    "path":"folders/Objects/Menu/Buttons/menu_buttons.yy",
+    "name":"System",
+    "path":"folders/Objects/System.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"btn_large_tab",
-    "path":"sprites/btn_large_tab/btn_large_tab.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

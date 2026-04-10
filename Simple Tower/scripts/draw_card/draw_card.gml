@@ -115,7 +115,7 @@ draw_sprite(spr_card_art,7,x,y-28)
 draw_set_color(c_yellow)
 draw_text_ext(x-43,y-4,"Level "+calc_number(store.card_lvl_charge),15,86)
 draw_set_color(c_white)
-draw_text_ext(x-43,y+8,"Gain "+calc_number(store.card_lvl_charge)+" damage every "+string(20+(5*store.card_lvl_charge))+"  kills.",14,88)
+draw_text_ext(x-43,y+8,"Gain "+calc_number(store.card_lvl_charge)+" damage every "+string(20+(5*store.card_lvl_charge))+" kills.",14,88)
 draw_set_color(c_yellow)
 draw_text(x-42,y+52,"Level Up: "+calc_number(store.card_charge)+"/"+calc_number(store.card_lvl_charge+1))
 }
@@ -130,7 +130,7 @@ draw_sprite(spr_card_art,8,x,y-28)
 draw_set_color(c_yellow)
 draw_text_ext(x-43,y-4,"Level "+calc_number(store.card_lvl_bounty),15,86)
 draw_set_color(c_white)
-draw_text_ext(x-43,y+8,"Gain "+calc_number(store.card_lvl_bounty*2)+" gems every "+string(20+(5*store.card_lvl_bounty))+"  kills.",14,88)
+draw_text_ext(x-43,y+8,"Gain "+calc_number(store.card_lvl_bounty*2)+" gems every "+string(20+(5*store.card_lvl_bounty))+" kills.",14,88)
 draw_set_color(c_yellow)
 draw_text(x-42,y+52,"Level Up: "+calc_number(store.card_bounty)+"/"+calc_number(store.card_lvl_bounty+1))
 }
@@ -210,5 +210,19 @@ draw_set_color(c_yellow)
 draw_text(x-42,y+52,"Level Up: "+calc_number(store.card_enforcedwalls)+"/"+calc_number(store.card_lvl_enforcedwalls+1))
 }
 
+// 16 - Tempered Stone
+if my_id = 16
+{
+draw_set_font(font_stats_tiny)
+draw_set_color(c_aqua)
+draw_text(x-40,y-65,"Temper Stone") 
+draw_sprite(spr_card_art,14,x,y-28)
+draw_set_color(c_yellow)
+draw_text_ext(x-43,y-4,"Level "+calc_number(store.card_lvl_temperedstone),15,86)
+draw_set_color(c_white)
+draw_text_ext(x-43,y+8,"Gain +"+calc_number(1+store.card_lvl_temperedstone)+" Max HP each Wave.",14,88)
+draw_set_color(c_yellow)
+draw_text(x-42,y+52,"Level Up: "+calc_number(store.card_temperedstone)+"/"+calc_number(store.card_lvl_temperedstone+1)) 
+}
 ////////////////////////
 }

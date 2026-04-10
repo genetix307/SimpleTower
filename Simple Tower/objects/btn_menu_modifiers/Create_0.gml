@@ -3,8 +3,5 @@ depth = -10000
 image_speed = 0
 alarm[0]=1
 greyed_out=1
-myName = ""
-myDesc = ""
-myId=0
-myBest=0
+myName = "?????????"
 

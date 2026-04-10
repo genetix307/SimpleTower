@@ -105,3 +105,10 @@ if my_id = 15
 if store.card_enforcedwalls = 0 {image_index = 1}
 if store.card_enforcedwalls > 0 {image_index = 2 draw_card()}
 }
+
+// 16 - Tempered Stone
+if my_id = 16
+{
+if store.card_temperedstone = 0 {image_index = 1}
+if store.card_temperedstone > 0 {image_index = 2 draw_card()}
+}

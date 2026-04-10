@@ -2,7 +2,7 @@
 if opened = 0 
 {
 opened = 1
-var max_cards = 13.99 //Increment this when adding new card
+var max_cards = 14.99 //Increment this when adding new card
 instance_create_depth(x,y,depth-1000,show_open_card)
 my_id = floor(random(max_cards))+2 
 
@@ -21,6 +21,7 @@ if my_id = 12 {store.card_fortified += 1}
 if my_id = 13 {store.card_investor += 1}
 if my_id = 14 {store.card_shield_gold += 1}
 if my_id = 15 {store.card_enforcedwalls +=1}
+if my_id = 16 {store.card_temperedstone +=1}
 
 //Level Up Card
 if my_id = 2 {if store.card_inheritance>store.card_lvl_inheritance {store.card_lvl_inheritance+=1 store.card_inheritance=1}}
@@ -37,6 +38,7 @@ if my_id = 12 {if store.card_fortified>store.card_lvl_fortified {store.card_lvl_
 if my_id = 13 {if store.card_investor>store.card_lvl_investor {store.card_lvl_investor+=1 store.card_investor=1}}
 if my_id = 14 {if store.card_shield_gold>store.card_lvl_shield_gold {store.card_lvl_shield_gold+=1 store.card_shield_gold=1}}
 if my_id = 15 {if store.card_enforcedwalls>store.card_lvl_enforcedwalls {store.card_lvl_enforcedwalls+=1 store.card_enforcedwalls=1}}
+if my_id = 16 {if store.card_temperedstone>store.card_lvl_temperedstone {store.card_lvl_temperedstone+=1 store.card_temperedstone=1}}
 
 //Quick Challenge
 if (store.challenge_a=5 or store.challenge_b=5 or store.challenge_c=5) and store.goal_collector<1+(store.lvl_collector)

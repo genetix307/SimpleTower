@@ -97,7 +97,13 @@ if (store.challenge_a=4 or store.challenge_b=4 or store.challenge_c=4) and store
 if store.card_slot_1 = 13 or store.card_slot_2 = 13 or store.card_slot_3 = 13 or store.card_slot_4 = 13
 	{
 		store.goldperwave+=store.card_lvl_investor
-	}	
+	}
+//Tempered Stone Card
+if store.card_slot_1 = 16 or store.card_slot_2 = 16 or store.card_slot_3 = 16 or store.card_slot_4 = 16
+	{
+		store.maxhp+=1+store.card_lvl_temperedstone
+		//store.hp+=1+store.card_lvl_temperedstone
+	}
 
 }
 }

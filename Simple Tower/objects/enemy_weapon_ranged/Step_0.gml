@@ -24,6 +24,13 @@ if (store.challenge_a=8 or store.challenge_b=8 or store.challenge_c=8) and store
 	  store.goal_resilient+=1
 	  if store.goal_resilient>=10+(15*store.lvl_resilient) {store.challenge_flag=1}
 	}
+	
+//Quick Challenge
+if (store.challenge_a=9 or store.challenge_b=9 or store.challenge_c=9) and store.goal_tank<25*store.lvl_tank
+	{
+	  store.goal_tank+=store.armor
+	  if store.goal_tank>=25*store.lvl_tank {store.challenge_flag=1}
+	}
 
 //CARDS
 //Sacrifice Card

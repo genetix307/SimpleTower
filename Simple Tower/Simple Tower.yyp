@@ -67,7 +67,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.221",
+    "IDEVersion":"2024.14.4.222",
   },
   "name":"Simple Tower",
   "resources":[
@@ -103,6 +103,7 @@
     {"id":{"name":"btn_gamespeed_more","path":"objects/btn_gamespeed_more/btn_gamespeed_more.yy",},},
     {"id":{"name":"btn_home","path":"objects/btn_home/btn_home.yy",},},
     {"id":{"name":"btn_lonetower_ad","path":"objects/btn_lonetower_ad/btn_lonetower_ad.yy",},},
+    {"id":{"name":"btn_menu_modifiers","path":"objects/btn_menu_modifiers/btn_menu_modifiers.yy",},},
     {"id":{"name":"btn_modifiers","path":"objects/btn_modifiers/btn_modifiers.yy",},},
     {"id":{"name":"btn_pause","path":"objects/btn_pause/btn_pause.yy",},},
     {"id":{"name":"btn_perks","path":"objects/btn_perks/btn_perks.yy",},},
@@ -151,6 +152,7 @@
     {"id":{"name":"show_lifesteal","path":"objects/show_lifesteal/show_lifesteal.yy",},},
     {"id":{"name":"show_menu_cards","path":"objects/show_menu_cards/show_menu_cards.yy",},},
     {"id":{"name":"show_menu_credits","path":"objects/show_menu_credits/show_menu_credits.yy",},},
+    {"id":{"name":"show_menu_modifiers","path":"objects/show_menu_modifiers/show_menu_modifiers.yy",},},
     {"id":{"name":"show_menu_opencard","path":"objects/show_menu_opencard/show_menu_opencard.yy",},},
     {"id":{"name":"show_menu_perks","path":"objects/show_menu_perks/show_menu_perks.yy",},},
     {"id":{"name":"show_menu_rate","path":"objects/show_menu_rate/show_menu_rate.yy",},},
@@ -174,6 +176,7 @@
     {"id":{"name":"rm_menu_cards","path":"rooms/rm_menu_cards/rm_menu_cards.yy",},},
     {"id":{"name":"rm_menu_credits","path":"rooms/rm_menu_credits/rm_menu_credits.yy",},},
     {"id":{"name":"rm_menu_home","path":"rooms/rm_menu_home/rm_menu_home.yy",},},
+    {"id":{"name":"rm_menu_modifiers","path":"rooms/rm_menu_modifiers/rm_menu_modifiers.yy",},},
     {"id":{"name":"rm_menu_perks","path":"rooms/rm_menu_perks/rm_menu_perks.yy",},},
     {"id":{"name":"rm_menu_rating","path":"rooms/rm_menu_rating/rm_menu_rating.yy",},},
     {"id":{"name":"rm_menu_settings","path":"rooms/rm_menu_settings/rm_menu_settings.yy",},},
@@ -284,6 +287,7 @@
     {"roomId":{"name":"rm_menu_cards","path":"rooms/rm_menu_cards/rm_menu_cards.yy",},},
     {"roomId":{"name":"rm_open_card","path":"rooms/rm_open_card/rm_open_card.yy",},},
     {"roomId":{"name":"rm_menu_cards_2","path":"rooms/rm_menu_cards_2/rm_menu_cards_2.yy",},},
+    {"roomId":{"name":"rm_menu_modifiers","path":"rooms/rm_menu_modifiers/rm_menu_modifiers.yy",},},
   ],
   "templateType":null,
   "TextureGroups":[
