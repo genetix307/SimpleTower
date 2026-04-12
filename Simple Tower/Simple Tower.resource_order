@@ -127,6 +127,7 @@
     {"name":"check_critical_chance","order":3,"path":"scripts/check_critical_chance/check_critical_chance.yy",},
     {"name":"check_critical_multiplier","order":4,"path":"scripts/check_critical_multiplier/check_critical_multiplier.yy",},
     {"name":"check_lifesteal","order":2,"path":"scripts/check_lifesteal/check_lifesteal.yy",},
+    {"name":"check_modifier_bonus","order":5,"path":"scripts/check_modifier_bonus/check_modifier_bonus.yy",},
     {"name":"consent_request_async","order":4,"path":"scripts/consent_request_async/consent_request_async.yy",},
     {"name":"consent_set_mode","order":5,"path":"scripts/consent_set_mode/consent_set_mode.yy",},
     {"name":"draw_card","order":7,"path":"scripts/draw_card/draw_card.yy",},

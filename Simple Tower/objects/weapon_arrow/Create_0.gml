@@ -8,6 +8,7 @@ type="Physical"
 ability=""
 image_alpha=0
 alarm[0]=3
+alarm[1]=1
 multishot_offset=0
 bounce=0
 
@@ -19,3 +20,4 @@ if store.card_slot_1 = 11 or store.card_slot_2 = 11 or store.card_slot_3 = 11 or
 	{
 		bounce=store.card_lvl_bouncy
 	}
+	

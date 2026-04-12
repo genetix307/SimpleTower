@@ -3,7 +3,7 @@ if check_critical_chance()>random(100) {tmpCrit=check_critical_multiplier() inst
 audio_play_sound(sfx_enemy_hit,1,false)
 
 //Lifesteal
-if check_lifesteal()>random(100) {instance_create_depth(other.x+5,other.y-12,depth-10,show_lifesteal) store.hp+=store.lifesteal_amount}
+if check_lifesteal()>random(100) and store.mod_norecovery=0 {instance_create_depth(other.x+5,other.y-12,depth-10,show_lifesteal) store.hp+=store.lifesteal_amount}
 
 ////Perk Boss Slayer
 //if other.boss=1 {attack_damage+=store.perk_lvl_bossslayer*5}

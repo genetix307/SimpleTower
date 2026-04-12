@@ -50,10 +50,16 @@ if store.card_slot_1 = 12 or store.card_slot_2 = 12 or store.card_slot_3 = 12 or
 		if store.current_stage=1 {store.maxhp +=ceil(store.maxhp*(store.card_lvl_fortified*0.25))store.hp=store.maxhp}
 	}
 
-//PERKS
-//Template
-//if store.perk_lvl_template>0 {store.gold+=store.perk_lvl_template*50}
 
+//Check Modifiers
+if store.mod_nocards=1 {
+store.card_slot_1 = 0
+store.card_slot_2 = 0
+store.card_slot_3 = 0
+store.card_slot_4 = 0	
+}
+
+if store.mod_glasscastle=1 {store.maxhp=1 store.hp=1}
 
 
 

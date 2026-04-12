@@ -1,9 +1,10 @@
 alarm[0]=30
 if store.current_stage>15 {alarm[0]=27}
-if store.current_stage>24 {alarm[0]=25}
-if store.current_stage>30 {alarm[0]=22}
-if store.current_stage>40 {alarm[0]=20}
-if store.current_stage>50 {alarm[0]=18}
+if store.current_stage>24 {alarm[0]=24}
+if store.current_stage>30 {alarm[0]=21}
+if store.current_stage>40 {alarm[0]=18}
+if store.current_stage>50 {alarm[0]=16}
+if store.mod_swarm=1 {alarm[0]=15}
 
 if hud.game_paused=0 {
 if 50>random(100) and store.current_stage>=1 and spawn>0 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Bone Henchman" spawn-=1}
@@ -15,32 +16,10 @@ if 100>random(100) and store.current_stage%50==0 and spawn_hamelot>0 {instance_c
 if 70>random(100) and store.current_stage>=10 and spawn>0 and spawn<store.current_stage {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Bone Henchman" spawn-=1}
 if 30>random(100) and store.current_stage>=25 and spawn>0 and spawn<store.current_stage {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Bone Henchman" spawn-=1}
 
-//if store.tier>1 {
-//if 3>random(100) and store.current_stage>=1 and spawn>10 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Boneheads" spawn-=1}
-//if 3>random(100) and store.current_stage>=1 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Mushkin" spawn-=1}
-//if 8>random(100) and store.current_stage=4 and spawn>5 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Mushkin" spawn-=1}
-//if 3>random(100) and store.current_stage>=4 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Stinger" spawn-=1}
-//if 3>random(100) and store.current_stage>=11 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(120),depth,enemy).type="Crawler" spawn-=1}
-//if 2>random(100) and store.current_stage>=9 and spawn>0 {instance_create_depth(random_range(60,420),room_height+random(160),depth,enemy).type="Golem" spawn-=1}
-//}
-
-//if spawn_boss>0 and spawn<10 {
-//if store.current_stage=5 {instance_create_depth(random_range(220,260),room_height+random(160),depth,enemy).type="Boss Hamelot" spawn_boss=0}
-//if store.current_stage=10 {instance_create_depth(random_range(220,260),room_height+random(160),depth,enemy).type="Boss Slime Queen" spawn_boss=0}
-//if store.current_stage=15 {instance_create_depth(random_range(220,260),room_height+random(160),depth,enemy).type="Boss Dark Rider" spawn_boss=0}
-
-//if store.current_stage>15 and (store.current_stage%5==0) {
-//random_boss=choose(1,2,3)
-//if random_boss=1 {instance_create_depth(random_range(220,260),room_height+random(160),depth,enemy).type="Boss Hamelot" spawn_boss=0}
-//if random_boss=2 {instance_create_depth(random_range(220,260),room_height+random(160),depth,enemy).type="Boss Slime Queen" spawn_boss=0}
-//if random_boss=3 {instance_create_depth(random_range(220,260),room_height+random(160),depth,enemy).type="Boss Dark Rider" spawn_boss=0}
-//}
-//}
-//}
-
 if spawn<= 0 and instance_number(def_enemy)<=0 and hud.game_paused=0 and hud.game_over=0 {
 store.current_stage+=1 
 spawn=15+(store.current_stage)+store.extra_spawn
+if store.mod_swarm=1 {spawn=spawn*2 if 2>random(10) {spawn_mushkin+=1} if 1>random(10) {spawn_carbuncle+=1}}
 spawn_carbuncle=1+floor(store.current_stage/15)
 spawn_mushkin=1+floor(store.current_stage/12)
 spawn_armored_skeleton=1+floor(store.current_stage/15)
@@ -87,6 +66,18 @@ if store.tier=4 {if store.current_stage>store.tier_best_4 {store.tier_best_4=sto
 if store.tier=5 {if store.current_stage>store.tier_best_5 {store.tier_best_5=store.current_stage}}
 if store.tier=6 {if store.current_stage>store.tier_best_6 {store.tier_best_6=store.current_stage}}
 
+//Check best wave for Modifiers
+if store.mod_nocards=1 and store.current_stage>=store.mod_best_nocards {store.mod_best_nocards=store.current_stage}
+if store.mod_glasscastle=1 and store.current_stage>=store.mod_best_glasscastle {store.mod_best_glasscastle=store.current_stage}
+if store.mod_norecovery=1 and store.current_stage>=store.mod_best_norecovery {store.mod_best_norecovery=store.current_stage}
+if store.mod_doomed=1 and store.current_stage>=store.mod_best_doomed {store.mod_best_doomed=store.current_stage}
+if store.mod_swarm=1 and store.current_stage>=store.mod_best_swarm {store.mod_best_swarm=store.current_stage}
+if store.mod_haste=1 and store.current_stage>=store.mod_best_haste {store.mod_best_haste=store.current_stage}
+if store.mod_titans=1 and store.current_stage>=store.mod_best_titans {store.mod_best_titans=store.current_stage}
+if store.mod_taxation=1 and store.current_stage>=store.mod_best_taxation {store.mod_best_taxation=store.current_stage}
+if store.mod_windstorm=1 and store.current_stage>=store.mod_best_windstorm {store.mod_best_windstorm=store.current_stage}
+if store.mod_oldage=1 and store.current_stage>=store.mod_best_oldage {store.mod_best_oldage=store.current_stage}
+
 //Quick Challenge
 if (store.challenge_a=4 or store.challenge_b=4 or store.challenge_c=4) and store.goal_survivor<40+(10*store.lvl_survivor)
 	{
@@ -104,6 +95,11 @@ if store.card_slot_1 = 16 or store.card_slot_2 = 16 or store.card_slot_3 = 16 or
 		store.maxhp+=1+store.card_lvl_temperedstone
 		//store.hp+=1+store.card_lvl_temperedstone
 	}
+	
+//Modifiers
+if store.mod_doomed=1 {store.maxhp-=10 store.hp-=10}
+if store.mod_taxation=1 {store.gold-=round(store.gold*.25)}
+if store.mod_oldage=1 {store.attack_damage-=2}
 
 }
 }

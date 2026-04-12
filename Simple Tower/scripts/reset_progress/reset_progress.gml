@@ -209,4 +209,5 @@ store.code_happy=0
 store.code_cookie=0
 store.code_card=0
 store.code_ironpost=0
+store.code_lonetower=0
 }

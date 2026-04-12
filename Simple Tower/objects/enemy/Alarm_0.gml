@@ -96,4 +96,7 @@ move_pattern="normal"
 }
 
 //Post Stats
+if store.mod_titans=1 {maxhp+=maxhp}
 hp=maxhp
+
+if store.mod_haste=1 {move_speed+=move_speed/2}
