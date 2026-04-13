@@ -52,6 +52,7 @@
     {"name":"btn_home","order":1,"path":"objects/btn_home/btn_home.yy",},
     {"name":"btn_lonetower_ad","order":6,"path":"objects/btn_lonetower_ad/btn_lonetower_ad.yy",},
     {"name":"btn_menu_modifiers","order":11,"path":"objects/btn_menu_modifiers/btn_menu_modifiers.yy",},
+    {"name":"btn_menu_quests","order":13,"path":"objects/btn_menu_quests/btn_menu_quests.yy",},
     {"name":"btn_modifiers","order":12,"path":"objects/btn_modifiers/btn_modifiers.yy",},
     {"name":"btn_pause","order":2,"path":"objects/btn_pause/btn_pause.yy",},
     {"name":"btn_perks","order":6,"path":"objects/btn_perks/btn_perks.yy",},

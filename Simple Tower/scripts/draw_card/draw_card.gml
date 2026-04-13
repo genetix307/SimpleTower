@@ -190,7 +190,7 @@ draw_sprite(spr_card_art,12,x,y-28)
 draw_set_color(c_yellow)
 draw_text_ext(x-43,y-4,"Level "+calc_number(store.card_lvl_shield_gold),15,86)
 draw_set_color(c_white)
-draw_text_ext(x-43,y+8,"Gain "+calc_number(store.card_lvl_shield_gold*10)+" gold when blocking a hit.",14,88)
+draw_text_ext(x-43,y+8,"Gain "+calc_number(15+store.card_lvl_shield_gold*15)+" gold when blocking a hit.",14,88)
 draw_set_color(c_yellow)
 draw_text(x-42,y+52,"Level Up: "+calc_number(store.card_shield_gold)+"/"+calc_number(store.card_lvl_shield_gold+1)) 
 }

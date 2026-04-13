@@ -4,7 +4,7 @@ if store.current_stage>24 {alarm[0]=24}
 if store.current_stage>30 {alarm[0]=21}
 if store.current_stage>40 {alarm[0]=18}
 if store.current_stage>50 {alarm[0]=16}
-if store.mod_swarm=1 {alarm[0]=15}
+if store.mod_swarm=1 {alarm[0]=12}
 
 if hud.game_paused=0 {
 if 50>random(100) and store.current_stage>=1 and spawn>0 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Bone Henchman" spawn-=1}
@@ -19,13 +19,13 @@ if 30>random(100) and store.current_stage>=25 and spawn>0 and spawn<store.curren
 if spawn<= 0 and instance_number(def_enemy)<=0 and hud.game_paused=0 and hud.game_over=0 {
 store.current_stage+=1 
 spawn=15+(store.current_stage)+store.extra_spawn
-if store.mod_swarm=1 {spawn=spawn*2 if 2>random(10) {spawn_mushkin+=1} if 1>random(10) {spawn_carbuncle+=1}}
 spawn_carbuncle=1+floor(store.current_stage/15)
 spawn_mushkin=1+floor(store.current_stage/12)
 spawn_armored_skeleton=1+floor(store.current_stage/15)
 if store.current_stage>20 {spawn_armored_skeleton=1+floor(store.current_stage/20)}
 spawn_dark_lich_boss=1+floor(store.current_stage/40)
 spawn_hamelot=1+floor(store.current_stage/100)
+if store.mod_swarm=1 {spawn=spawn*2 spawn_mushkin+=2 spawn_carbuncle+=1}
 store.enemy_damage +=.25+(floor(store.current_stage/3)*.25)
 store.enemy_hp +=1+floor(store.current_stage/3)
 

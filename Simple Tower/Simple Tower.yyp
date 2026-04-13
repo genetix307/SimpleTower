@@ -104,6 +104,7 @@
     {"id":{"name":"btn_home","path":"objects/btn_home/btn_home.yy",},},
     {"id":{"name":"btn_lonetower_ad","path":"objects/btn_lonetower_ad/btn_lonetower_ad.yy",},},
     {"id":{"name":"btn_menu_modifiers","path":"objects/btn_menu_modifiers/btn_menu_modifiers.yy",},},
+    {"id":{"name":"btn_menu_quests","path":"objects/btn_menu_quests/btn_menu_quests.yy",},},
     {"id":{"name":"btn_modifiers","path":"objects/btn_modifiers/btn_modifiers.yy",},},
     {"id":{"name":"btn_pause","path":"objects/btn_pause/btn_pause.yy",},},
     {"id":{"name":"btn_perks","path":"objects/btn_perks/btn_perks.yy",},},

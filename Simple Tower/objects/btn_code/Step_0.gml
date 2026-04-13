@@ -85,3 +85,11 @@ store.gems += reward
 instance_create_depth(x,y-8,depth-1000,show_reward).myReward = "Rewarded "+string(reward)+" Gems!"
 save_game()
 }
+if myResult = "hundo" and store.code_hundo = 0
+{
+reward = 100
+store.code_hundo = 1
+store.gems += reward
+instance_create_depth(x,y-8,depth-1000,show_reward).myReward = "Rewarded "+string(reward)+" Gems!"
+save_game()
+}
