@@ -262,6 +262,7 @@
     {"id":{"name":"spr_levelup_confetti","path":"sprites/spr_levelup_confetti/spr_levelup_confetti.yy",},},
     {"id":{"name":"spr_lock","path":"sprites/spr_lock/spr_lock.yy",},},
     {"id":{"name":"spr_lonetower_ad","path":"sprites/spr_lonetower_ad/spr_lonetower_ad.yy",},},
+    {"id":{"name":"spr_menu_home","path":"sprites/spr_menu_home/spr_menu_home.yy",},},
     {"id":{"name":"spr_show_block","path":"sprites/spr_show_block/spr_show_block.yy",},},
     {"id":{"name":"spr_show_challenge","path":"sprites/spr_show_challenge/spr_show_challenge.yy",},},
     {"id":{"name":"spr_show_criticalhit","path":"sprites/spr_show_criticalhit/spr_show_criticalhit.yy",},},

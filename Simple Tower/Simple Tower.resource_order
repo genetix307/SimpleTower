@@ -183,6 +183,7 @@
     {"name":"spr_item_slot","order":10,"path":"sprites/spr_item_slot/spr_item_slot.yy",},
     {"name":"spr_levelup_confetti","order":9,"path":"sprites/spr_levelup_confetti/spr_levelup_confetti.yy",},
     {"name":"spr_lonetower_ad","order":8,"path":"sprites/spr_lonetower_ad/spr_lonetower_ad.yy",},
+    {"name":"spr_menu_home","order":4,"path":"sprites/spr_menu_home/spr_menu_home.yy",},
     {"name":"spr_show_block","order":10,"path":"sprites/spr_show_block/spr_show_block.yy",},
     {"name":"spr_show_criticalhit","order":9,"path":"sprites/spr_show_criticalhit/spr_show_criticalhit.yy",},
     {"name":"spr_show_gem","order":4,"path":"sprites/spr_show_gem/spr_show_gem.yy",},
