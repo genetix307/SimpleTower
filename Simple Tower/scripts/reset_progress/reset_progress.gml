@@ -177,6 +177,7 @@ store.card_enforcedwalls=0
 store.card_lvl_enforcedwalls=1
 store.card_temperedstone=0
 store.card_lvl_temperedstone=1
+
 //Statistics
 store.tier_best_1=1
 store.tier_best_2=1
@@ -197,6 +198,10 @@ store.gems_earned=0
 store.gold_earned=0
 store.challenges_completed=0
 store.challenge_reward_lvl=1
+store.criticals=0
+store.blocks=0
+store.lifesteals=0
+store.multishots=0
 
 //Bonus Codes
 store.code_payday=0

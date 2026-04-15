@@ -2,6 +2,7 @@
 // You can write your code in this editor
 depth =-y-500
 image_alpha = 4
+store.lifesteals+=1
 
 //Quick Challenge
 if (store.challenge_a=3 or store.challenge_b=3 or store.challenge_c=3) and store.goal_vampire<20+(10*store.lvl_vampire)
@@ -19,6 +20,6 @@ if store.card_slot_1 = 8 or store.card_slot_2 = 8 or store.card_slot_3 = 8 or st
 		hud.count_lifesteal+=1
 		if hud.count_lifesteal>=25 {
 			hud.count_lifesteal=0
-			store.gold+=store.card_lvl_vampiric_wealth*10
+			store.gold+=store.card_lvl_vampiric_wealth*50
 		}
 	}

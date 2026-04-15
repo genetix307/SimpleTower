@@ -16,6 +16,7 @@ count_kills_enforcedwalls=0 //For Card
 tutorial=""
 current_tutorial=0
 show_tutorial=0
+rush_wave=0 
 alarm[0]=180 //First tutorial
 
 if store.tier=1 {best_stage=store.tier_best_1}
@@ -25,13 +26,23 @@ if store.tier=4 {best_stage=store.tier_best_4}
 if store.tier=5 {best_stage=store.tier_best_5}
 if store.tier=6 {best_stage=store.tier_best_6}
 
+//Change Background
+layer_bg=layer_get_id("Background")
+bg_id=layer_background_get_id(layer_bg)
+//if store.tier=1 {layer_background_change(bg_id,spr_bg_grass)}
+//if store.tier=2 {layer_background_change(bg_id,spr_floor_grass_dark)}
+//if store.tier=3 {layer_background_change(bg_id,spr_floor_desert)}
+//if store.tier=4 {layer_background_change(bg_id,spr_floor_dirt)}
+//if store.tier=5 {layer_background_change(bg_id,spr_floor_grass)}
+//if store.tier=6 {layer_background_change(bg_id,spr_floor_dungeon)}
+
 alarm[0]=240 //Show tutorial
 alarm[1]=60 //Regen 
 instance_create_depth(x,y,depth,hud_backdrop)
 instance_create_depth(x,y,depth,wave_gen)
 
 //First Run Bonus
-if store.total_runs<=0 {store.gold+=10}
+if store.total_runs<=0 {store.gold+=15}
 
 //CARDS
 //Inheritance Card

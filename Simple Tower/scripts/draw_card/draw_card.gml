@@ -100,7 +100,7 @@ draw_sprite(spr_card_art,6,x,y-28)
 draw_set_color(c_yellow)
 draw_text_ext(x-43,y-4,"Level "+calc_number(store.card_lvl_vampiric_wealth),15,86)
 draw_set_color(c_white)
-draw_text_ext(x-43,y+8,"Gain "+calc_number(store.card_lvl_vampiric_wealth*10)+" gold every 25 lifesteals.",14,88)
+draw_text_ext(x-43,y+8,"Gain "+calc_number(store.card_lvl_vampiric_wealth*50)+" gold every 25 lifesteals.",14,88)
 draw_set_color(c_yellow)
 draw_text(x-42,y+52,"Level Up: "+calc_number(store.card_vampiric_wealth)+"/"+calc_number(store.card_lvl_vampiric_wealth+1))
 }

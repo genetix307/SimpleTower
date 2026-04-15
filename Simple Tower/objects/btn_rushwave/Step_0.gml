@@ -1,0 +1,1 @@
+greyed_out=hud.rush_wave

@@ -7,10 +7,11 @@ draw_text_color(118,170,"Total Runs: "+string(store.total_runs),c_white,c_white,
 draw_text_color(118,200,"Enemies Slain: "+string(store.enemies_slain),c_white,c_white,c_silver,c_silver,1)
 draw_text_color(118,230,"Bosses Slain: "+string(store.bosses_slain),c_white,c_white,c_silver,c_silver,1)
 draw_text_color(118,260,"Gems Earned: "+string(store.gems_earned),c_white,c_white,c_silver,c_silver,1)
-draw_text_color(118,290,"Challenges Completed: "+string(store.challenges_completed),c_white,c_white,c_silver,c_silver,1)
-
-
-
+draw_text_color(118,290,"Critical Hits: "+string(store.criticals),c_white,c_white,c_silver,c_silver,1)
+draw_text_color(118,320,"Hits Blocked: "+string(store.blocks),c_white,c_white,c_silver,c_silver,1)
+draw_text_color(118,350,"Lifesteals: "+string(store.lifesteals),c_white,c_white,c_silver,c_silver,1)
+draw_text_color(118,380,"Multishots: "+string(store.multishots),c_white,c_white,c_silver,c_silver,1)
+draw_text_color(118,410,"Challenges Completed: "+string(store.challenges_completed),c_white,c_white,c_silver,c_silver,1)
 
 
 
