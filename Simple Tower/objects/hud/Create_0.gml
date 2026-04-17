@@ -30,11 +30,11 @@ if store.tier=6 {best_stage=store.tier_best_6}
 layer_bg=layer_get_id("Background")
 bg_id=layer_background_get_id(layer_bg)
 //if store.tier=1 {layer_background_change(bg_id,spr_bg_grass)}
-//if store.tier=2 {layer_background_change(bg_id,spr_floor_grass_dark)}
-//if store.tier=3 {layer_background_change(bg_id,spr_floor_desert)}
-//if store.tier=4 {layer_background_change(bg_id,spr_floor_dirt)}
-//if store.tier=5 {layer_background_change(bg_id,spr_floor_grass)}
-//if store.tier=6 {layer_background_change(bg_id,spr_floor_dungeon)}
+if store.tier=2 {layer_background_change(bg_id,spr_floor_grass_dark)}
+if store.tier=3 {layer_background_change(bg_id,spr_floor_desert)}
+if store.tier=4 {layer_background_change(bg_id,spr_floor_path)}
+if store.tier=5 {layer_background_change(bg_id,spr_floor_grass)}
+if store.tier=6 {layer_background_change(bg_id,spr_floor_dungeon)}
 
 alarm[0]=240 //Show tutorial
 alarm[1]=60 //Regen 
