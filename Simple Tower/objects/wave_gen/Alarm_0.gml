@@ -18,6 +18,7 @@ if 100>random(100) and store.current_stage%15==0 and spawn_dark_lich_boss>0 {ins
 if 100>random(100) and store.current_stage%50==0 and spawn_hamelot>0 {instance_create_depth(random_range(-100,room_width+100),-20-random(10),depth,enemy).type="Hamelot" spawn_hamelot-=1}
 if 70>random(100) and store.current_stage>=10 and spawn>0 and spawn<store.current_stage {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Bone Henchman" spawn-=1}
 if 30>random(100) and store.current_stage>=25 and spawn>0 and spawn<store.current_stage {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Bone Henchman" spawn-=1}
+if 3>random(100) and store.current_stage>=1 and spawn>0 and store.tier>1 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Slime" spawn-=1}
 
 if spawn<= 0 and instance_number(def_enemy)<=0 and hud.game_paused=0 and hud.game_over=0 {
 store.current_stage+=1 
@@ -34,8 +35,8 @@ store.enemy_damage +=.25+(floor(store.current_stage/3)*.25)
 store.enemy_hp +=1+floor(store.current_stage/3)
 
 if store.current_stage>60 {
-store.enemy_damage+=round(.25*store.tier)
-store.enemy_hp+=(.50*store.tier)
+store.enemy_damage+=round(1*store.tier)
+store.enemy_hp+=(2*store.tier)
 }
 
 if store.tier>1 {

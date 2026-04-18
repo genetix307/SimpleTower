@@ -12,6 +12,11 @@ store.enemy_hp=2+store.tier
 store.enemy_damage=1+store.tier
 store.extra_spawn=0
 
+if store.tier>1 {
+store.enemy_hp+=store.tier*20
+store.enemy_damage+=store.tier*5
+}
+
 store.attack_damage=store.perm_attack_damage
 store.attack_speed=store.perm_attack_speed
 store.critical_chance=store.perm_critical_chance

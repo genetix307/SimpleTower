@@ -15,6 +15,38 @@ gold_drop=0
 move_pattern="normal"
 }
 
+if type=="Slime"
+{
+sprite_index=spr_enemy_slime
+move_speed=.90
+maxhp=store.enemy_hp*2
+boss=0
+shield=0
+attack_damage=store.enemy_damage
+attack_effect=""
+attack_range=0
+attack_speed=180
+attack_type="melee"
+gold_drop=0
+move_pattern="normal"
+}
+
+if type=="Baby Slime"
+{
+sprite_index=spr_enemy_babyslime
+move_speed=.90
+maxhp=store.enemy_hp
+boss=0
+shield=0
+attack_damage=store.enemy_damage/3
+attack_effect=""
+attack_range=0
+attack_speed=180
+attack_type="melee"
+gold_drop=0
+move_pattern="normal"
+}
+
 if type=="Carbuncle"
 {
 sprite_index=spr_enemy_carbuncle

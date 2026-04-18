@@ -216,4 +216,5 @@ store.code_card=0
 store.code_ironpost=0
 store.code_lonetower=0
 store.code_hundo=0
+store.code_levelup=0
 }

@@ -4,6 +4,7 @@ instance_create_depth(other.x,other.y-12,depth-10,blood_splatter)
 repeat 3 instance_create_depth(other.x,other.y-8,depth-10,gore)
 store.gold+=gold_drop+store.goldperkill
 
+if type="Slime" {repeat 2 instance_create_depth(random_range(x-20,x+20),y-20,depth,enemy).type="Baby Slime"}
 instance_create_depth(x+random_range(-8,8),y+random_range(-8,8),depth-5,effect_smoke_small)
 //instance_create_depth(x,y,depth,coin)
 //instance_create_depth(x+random_range(-32,32),y+random_range(-32,32),depth,xp_orb)
