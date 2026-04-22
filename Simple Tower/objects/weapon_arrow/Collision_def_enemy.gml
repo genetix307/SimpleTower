@@ -45,6 +45,7 @@ other.damaged=15
 //}
 instance_create_depth(x+random_range(-8,8),y+random_range(-8,8),depth-5,effect_smoke_small)
 instance_create_depth(other.x,other.y-8,depth,effect_show_damage).myDamage=attack_damage*tmpCrit
+store.damage_dealt+=attack_damage*tmpCrit
 instance_destroy()
 }
 

@@ -10,7 +10,6 @@ store.gems=0
 store.tier=1
 store.game_speed=1
 
-
 //Game Settings
 store.color_scheme=4
 store.sfx_volume=1
@@ -35,7 +34,6 @@ store.mod_titans=0
 store.mod_taxation=0
 store.mod_windstorm=0
 store.mod_oldage=0
-
 store.mod_best_nocards=0
 store.mod_best_glasscastle=0
 store.mod_best_norecovery=0
@@ -202,6 +200,12 @@ store.criticals=0
 store.blocks=0
 store.lifesteals=0
 store.multishots=0
+store.damage_dealt=0
+
+//Quests
+for (var i = 0; i < 999; ++i) {
+   store.quests[i]=0
+} 
 
 //Bonus Codes
 store.code_payday=0
@@ -217,4 +221,5 @@ store.code_ironpost=0
 store.code_lonetower=0
 store.code_hundo=0
 store.code_levelup=0
+store.code_snack=0
 }
