@@ -198,9 +198,14 @@ store.challenges_completed=0
 store.challenge_reward_lvl=1
 store.criticals=0
 store.blocks=0
+store.regened=0
+store.absorbed=0
 store.lifesteals=0
 store.multishots=0
 store.damage_dealt=0
+store.survived=0
+store.crates=0
+store.hits=0
 
 //Quests
 for (var i = 0; i < 999; ++i) {

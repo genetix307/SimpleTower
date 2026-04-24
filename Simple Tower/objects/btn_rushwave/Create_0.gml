@@ -6,3 +6,5 @@ greyed_out=0
 myName = "Rush Wave"
 
 if store.tier_best_1<30 {instance_destroy()}
+
+held=0

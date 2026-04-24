@@ -22,6 +22,7 @@ if 3>random(100) and store.current_stage>=1 and spawn>0 and store.tier>1 {instan
 
 if spawn<= 0 and instance_number(def_enemy)<=0 and hud.game_paused=0 and hud.game_over=0 {
 store.current_stage+=1 
+store.survived+=1
 hud.rush_wave=0
 spawn=15+(store.current_stage)+store.extra_spawn
 spawn_carbuncle=1+floor(store.current_stage/15)

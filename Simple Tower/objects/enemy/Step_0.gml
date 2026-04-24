@@ -23,10 +23,12 @@ if distance_to_object(tower)<10 {
 instance_destroy()
 audio_play_sound(sfx_tower_hit,1,false)
 tmpDamage=attack_damage-store.armor
+store.absorbed+=store.armor
 if store.block_chance>random(100) {instance_create_depth(x,y,depth,effect_block) tmpDamage=0}
 if tmpDamage<0 {tmpDamage=0}
 store.hp-=tmpDamage
 hud.show_hit=.65
+store.hits+=1
 instance_create_depth(other.x,other.y-8,depth,effect_show_damage_player).myDamage=tmpDamage
 
 //Quick Challenge
