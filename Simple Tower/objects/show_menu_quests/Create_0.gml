@@ -1,0 +1,2 @@
+questsTotal=60
+questsCompleted=check_quests_completed()

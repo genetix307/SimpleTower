@@ -56,6 +56,11 @@ if myID=52 {myDesc="Take 500 Hits" myReward=200 current=store.hits goal=500}
 if myID=53 {myDesc="Take 2500 Hits" myReward=500 current=store.hits goal=2500}
 if myID=54 {myDesc="Take 10000 Hits" myReward=750 current=store.hits goal=10000}
 if myID=55 {myDesc="Take 50000 Hits" myReward=1000 current=store.hits goal=50000}
+if myID=56 {myDesc="Open 5 Gem Chests" myReward=100 current=store.gemchests goal=5}
+if myID=57 {myDesc="Open 15 Gem Chests" myReward=250 current=store.gemchests goal=15}
+if myID=58 {myDesc="Open 30 Gem Chests" myReward=500 current=store.gemchests goal=30}
+if myID=59 {myDesc="Open 50 Gem Chests" myReward=1000 current=store.gemchests goal=50}
+if myID=60 {myDesc="Open 100 Gem Chests" myReward=3000 current=store.gemchests goal=100}
 
 if current>=goal {greyed_out=0} 
 

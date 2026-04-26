@@ -206,6 +206,7 @@ store.damage_dealt=0
 store.survived=0
 store.crates=0
 store.hits=0
+store.gemchests=0
 
 //Quests
 for (var i = 0; i < 999; ++i) {
@@ -227,4 +228,5 @@ store.code_lonetower=0
 store.code_hundo=0
 store.code_levelup=0
 store.code_snack=0
+store.code_bonfire=0
 }

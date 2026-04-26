@@ -9,5 +9,6 @@ draw_set_font(font_med_hud)
 draw_text(425,8,string(store.gems))
 draw_sprite(spr_show_gem,0,410,16)
 
-
+//Show Quests Completed
+draw_text_color(196,26,"Completed "+string(questsCompleted)+"/"+string(questsTotal),c_yellow,c_yellow,c_yellow,c_yellow,1)
 

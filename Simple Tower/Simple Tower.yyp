@@ -206,6 +206,7 @@
     {"id":{"name":"check_critical_multiplier","path":"scripts/check_critical_multiplier/check_critical_multiplier.yy",},},
     {"id":{"name":"check_lifesteal","path":"scripts/check_lifesteal/check_lifesteal.yy",},},
     {"id":{"name":"check_modifier_bonus","path":"scripts/check_modifier_bonus/check_modifier_bonus.yy",},},
+    {"id":{"name":"check_quests_completed","path":"scripts/check_quests_completed/check_quests_completed.yy",},},
     {"id":{"name":"consent_request_async","path":"scripts/consent_request_async/consent_request_async.yy",},},
     {"id":{"name":"consent_set_mode","path":"scripts/consent_set_mode/consent_set_mode.yy",},},
     {"id":{"name":"draw_btn_color","path":"scripts/draw_btn_color/draw_btn_color.yy",},},
