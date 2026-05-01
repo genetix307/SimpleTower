@@ -37,5 +37,13 @@ if (hit_wall and bounce>0)
 	instance_create_depth(x, y,depth, effect_smoke_small);
 }
 
-
-
+//Snipe Shot Card
+if store.card_slot_1 = 17 or store.card_slot_2 = 17 or store.card_slot_3 = 17 or store.card_slot_4 = 17
+	{
+distance_traveled += speed;
+var stacks = floor(distance_traveled / 50);
+var bonus = stacks * (store.card_lvl_snipeshot);
+attack_damage = base_damage + bonus
+critical_chance = base_crit  + bonus;
+		
+	}

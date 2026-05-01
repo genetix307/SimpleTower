@@ -1,4 +1,4 @@
-// Genetix Studio
+ // Genetix Studio
 
 image_speed = 0
 

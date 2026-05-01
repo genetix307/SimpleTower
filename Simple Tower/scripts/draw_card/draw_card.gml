@@ -224,5 +224,21 @@ draw_text_ext(x-43,y+8,"Gain +"+calc_number(1+store.card_lvl_temperedstone)+" Ma
 draw_set_color(c_yellow)
 draw_text(x-42,y+52,"Level Up: "+calc_number(store.card_temperedstone)+"/"+calc_number(store.card_lvl_temperedstone+1)) 
 }
+
+// 17 - Snipe Shot
+if my_id = 17
+{
+draw_set_font(font_stats_tiny)
+draw_set_color(c_aqua)
+draw_text(x-40,y-65,"Snipe Shot")
+draw_sprite(spr_card_art,15,x,y-28)
+draw_set_color(c_yellow)
+draw_text_ext(x-43,y-4,"Level "+calc_number(store.card_lvl_snipeshot),15,86)
+draw_set_color(c_white)
+draw_text_ext(x-43,y+7,"Arrows get +"+calc_number(store.card_lvl_snipeshot)+" Damage, +"+calc_number(store.card_lvl_snipeshot)+"% Crit Chance per 50ft traveled.",11,88)
+draw_set_color(c_yellow)
+draw_text(x-42,y+52,"Level Up: "+calc_number(store.card_snipeshot)+"/"+calc_number(store.card_lvl_snipeshot+1)) 
+}
+
 ////////////////////////
 }

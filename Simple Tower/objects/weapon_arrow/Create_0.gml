@@ -11,7 +11,9 @@ alarm[0]=3
 alarm[1]=1
 multishot_offset=0
 bounce=0
-
+base_damage = attack_damage;
+base_crit = critical_chance;
+distance_traveled = 0;
 //direction=tower.focus_direction+multishot_offset
 //audio_play_sound(sfx_fire_cannon,1,false)
 

@@ -112,3 +112,10 @@ if my_id = 16
 if store.card_temperedstone = 0 {image_index = 1}
 if store.card_temperedstone > 0 {image_index = 2 draw_card()}
 }
+
+// 17 - Snipe Shot
+if my_id = 17
+{
+if store.card_snipeshot = 0 {image_index = 1}
+if store.card_snipeshot > 0 {image_index = 2 draw_card()}
+}

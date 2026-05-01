@@ -175,6 +175,8 @@ store.card_enforcedwalls=0
 store.card_lvl_enforcedwalls=1
 store.card_temperedstone=0
 store.card_lvl_temperedstone=1
+store.card_snipeshot=0
+store.card_lvl_snipeshot=1
 
 //Statistics
 store.tier_best_1=1
