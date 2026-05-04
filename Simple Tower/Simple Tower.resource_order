@@ -125,6 +125,8 @@
     {"name":"rm_menu_quests_3","order":16,"path":"rooms/rm_menu_quests_3/rm_menu_quests_3.yy",},
     {"name":"rm_menu_quests_4","order":17,"path":"rooms/rm_menu_quests_4/rm_menu_quests_4.yy",},
     {"name":"rm_menu_quests_5","order":18,"path":"rooms/rm_menu_quests_5/rm_menu_quests_5.yy",},
+    {"name":"rm_menu_quests_6","order":19,"path":"rooms/rm_menu_quests_6/rm_menu_quests_6.yy",},
+    {"name":"rm_menu_quests_7","order":20,"path":"rooms/rm_menu_quests_7/rm_menu_quests_7.yy",},
     {"name":"rm_menu_quests","order":14,"path":"rooms/rm_menu_quests/rm_menu_quests.yy",},
     {"name":"rm_menu_rating","order":3,"path":"rooms/rm_menu_rating/rm_menu_rating.yy",},
     {"name":"rm_menu_settings","order":4,"path":"rooms/rm_menu_settings/rm_menu_settings.yy",},
@@ -155,6 +157,7 @@
     {"name":"reset_run","order":3,"path":"scripts/reset_run/reset_run.yy",},
     {"name":"save_game","order":4,"path":"scripts/save_game/save_game.yy",},
     {"name":"set_bestiary","order":1,"path":"scripts/set_bestiary/set_bestiary.yy",},
+    {"name":"update_cards_used","order":7,"path":"scripts/update_cards_used/update_cards_used.yy",},
     {"name":"bgm_gameover","order":1,"path":"sounds/bgm_gameover/bgm_gameover.yy",},
     {"name":"bgm_main_run","order":2,"path":"sounds/bgm_main_run/bgm_main_run.yy",},
     {"name":"sfx_crate","order":4,"path":"sounds/sfx_crate/sfx_crate.yy",},
@@ -212,5 +215,6 @@
     {"name":"spr_title","order":17,"path":"sprites/spr_title/spr_title.yy",},
     {"name":"spr_weapon_effect_arrow","order":6,"path":"sprites/spr_weapon_effect_arrow/spr_weapon_effect_arrow.yy",},
     {"name":"spr_wood_crate","order":2,"path":"sprites/spr_wood_crate/spr_wood_crate.yy",},
+    {"name":"Sprite60","order":1,"path":"sprites/Sprite60/Sprite60.yy",},
   ],
 }

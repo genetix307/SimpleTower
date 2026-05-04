@@ -19,6 +19,7 @@ if 100>random(100) and store.current_stage%50==0 and spawn_hamelot>0 {instance_c
 if 70>random(100) and store.current_stage>=10 and spawn>0 and spawn<store.current_stage {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Bone Henchman" spawn-=1}
 if 30>random(100) and store.current_stage>=25 and spawn>0 and spawn<store.current_stage {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Bone Henchman" spawn-=1}
 if 3>random(100) and store.current_stage>=1 and spawn>0 and store.tier>1 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Slime" spawn-=1}
+if 1>random(100) and store.current_stage>=1 and spawn>0 and store.tier>2 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Carbuncle" spawn-=1}
 
 if spawn<= 0 and instance_number(def_enemy)<=0 and hud.game_paused=0 and hud.game_over=0 {
 store.current_stage+=1 
@@ -52,6 +53,10 @@ if store.tier>3 {
 store.enemy_damage+=1
 store.enemy_hp+=1
 }
+if store.tier>4 {
+store.enemy_damage+=1
+store.enemy_hp+=1
+}
 if store.tier>5 {
 store.enemy_damage+=round(.50*store.tier)
 store.enemy_hp+=(1*store.tier)
@@ -62,7 +67,7 @@ store.gems+=store.gemsperwave instance_create_depth(180,503,depth-10,show_text_y
 store.gems_earned+=store.gemsperwave
 
 //Supply Crate
-if 5.5>random(100) and store.current_stage>2 {instance_create_depth(room_width/2,room_height/2-200,depth,supply_crate)}
+if 5.75>random(100) and store.current_stage>2 {instance_create_depth(room_width/2,room_height/2-200,depth,supply_crate)}
 
 ////Check best tier stage reached
 if store.tier=1 {if store.current_stage>store.tier_best_1 {store.tier_best_1=store.current_stage}}
@@ -101,7 +106,10 @@ if store.card_slot_1 = 16 or store.card_slot_2 = 16 or store.card_slot_3 = 16 or
 		store.maxhp+=1+store.card_lvl_temperedstone
 		//store.hp+=1+store.card_lvl_temperedstone
 	}
-	
+
+//Updates the Waves used per card variable
+update_cards_used()
+
 //Modifiers
 if store.mod_doomed=1 {store.maxhp-=10 store.hp-=10}
 if store.mod_taxation=1 {store.gold-=round(store.gold*.25)}

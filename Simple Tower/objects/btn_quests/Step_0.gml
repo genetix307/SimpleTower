@@ -62,6 +62,23 @@ if myID=58 {myDesc="Open 30 Gem Chests" myReward=500 current=store.gemchests goa
 if myID=59 {myDesc="Open 50 Gem Chests" myReward=1000 current=store.gemchests goal=50}
 if myID=60 {myDesc="Open 100 Gem Chests" myReward=3000 current=store.gemchests goal=100}
 
+if myID=61 {myDesc="Use Inheritance Card 500 Waves" myReward=500 current=store.card_inheritance_used goal=500}
+if myID=62 {myDesc="Use Sharpened Tip\nCard 500 Waves" myReward=500 current=store.card_sharpened_tip_used goal=500}
+if myID=63 {myDesc="Use Critical Gold Card 500 Waves" myReward=500 current=store.card_critical_gold_used goal=500}
+if myID=64 {myDesc="Use Critical Heart Card 500 Waves" myReward=500 current=store.card_critical_heart_used goal=500}
+if myID=65 {myDesc="Use Sacrifice Card 500 Waves" myReward=500 current=store.card_sacrifice_used goal=500}
+if myID=66 {myDesc="Use Blood Moon Card 500 Waves" myReward=500 current=store.card_blood_moon_used goal=500}
+if myID=67 {myDesc="Use Vampiric Wealth\nCard 500 Waves" myReward=500 current=store.card_vampiric_wealth_used goal=500}
+if myID=68 {myDesc="Use Charge Card 500 Waves" myReward=500 current=store.card_charge_used goal=500}
+if myID=69 {myDesc="Use Bounty Card 500 Waves" myReward=500 current=store.card_bounty_used goal=500}
+if myID=70 {myDesc="Use Bouncy Card 500 Waves" myReward=500 current=store.card_bouncy_used goal=500}
+if myID=71 {myDesc="Use Fortified Card 500 Waves" myReward=500 current=store.card_fortified_used goal=500}
+if myID=72 {myDesc="Use Investor Card 500 Waves" myReward=500 current=store.card_investor_used goal=500}
+if myID=73 {myDesc="Use Shield Gold Card 500 Waves" myReward=500 current=store.card_shield_gold_used goal=500}
+if myID=74 {myDesc="Use Enforced Walls\nCard 500 Waves" myReward=500 current=store.card_enforcedwalls_used goal=500}
+if myID=75 {myDesc="Use Tempered Stone\nCard 500 Waves" myReward=500 current=store.card_temperedstone_used goal=500}
+if myID=76 {myDesc="Use Snipe Shot Card 500 Waves" myReward=500 current=store.card_snipeshot_used goal=500}
+
 if current>=goal {greyed_out=0} 
 
 if store.quests[myID]>0 {collected=1}
