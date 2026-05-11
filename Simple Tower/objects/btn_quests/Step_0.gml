@@ -78,6 +78,15 @@ if myID=73 {myDesc="Use Shield Gold Card 500 Waves" myReward=500 current=store.c
 if myID=74 {myDesc="Use Enforced Walls\nCard 500 Waves" myReward=500 current=store.card_enforcedwalls_used goal=500}
 if myID=75 {myDesc="Use Tempered Stone\nCard 500 Waves" myReward=500 current=store.card_temperedstone_used goal=500}
 if myID=76 {myDesc="Use Snipe Shot Card 500 Waves" myReward=500 current=store.card_snipeshot_used goal=500}
+if myID=77 {myDesc="Get 100 Free Attack Upgrades" myReward=100 current=store.free_attack_upgrades goal=100}
+if myID=78 {myDesc="Get 250 Free Attack Upgrades" myReward=250 current=store.free_attack_upgrades goal=250}
+if myID=79 {myDesc="Get 1000 Free Attack Upgrades" myReward=1000 current=store.free_attack_upgrades goal=1000}
+if myID=80 {myDesc="Get 100 Free Defense Upgrades" myReward=100 current=store.free_defense_upgrades goal=100}
+if myID=81 {myDesc="Get 250 Free Defense Upgrades" myReward=250 current=store.free_defense_upgrades goal=250}
+if myID=82 {myDesc="Get 1000 Free Defense Upgrades" myReward=1000 current=store.free_defense_upgrades goal=1000}
+if myID=83 {myDesc="Get 100 Free Utility Upgrades" myReward=100 current=store.free_utility_upgrades goal=100}
+if myID=84 {myDesc="Get 250 Free Utility Upgrades" myReward=250 current=store.free_utility_upgrades goal=250}
+if myID=85 {myDesc="Get 1000 Free Utility Upgrades" myReward=1000 current=store.free_utility_upgrades goal=1000}
 
 if current>=goal {greyed_out=0} 
 

@@ -7,6 +7,7 @@ store.ads_watched=0
 store.gem_chest_cooldown=0
 store.show_rating=0
 store.gems=0
+store.keys=0
 store.tier=1
 store.game_speed=1
 
@@ -227,6 +228,9 @@ store.survived=0
 store.crates=0
 store.hits=0
 store.gemchests=0
+store.free_attack_upgrades=0
+store.free_defense_upgrades=0
+store.free_utility_upgrades=0
 
 //Quests
 for (var i = 0; i < 999; ++i) {
@@ -251,4 +255,5 @@ store.code_snack=0
 store.code_bonfire=0
 store.code_zombie=0
 store.code_taco=0
+store.code_funtimes=0
 }

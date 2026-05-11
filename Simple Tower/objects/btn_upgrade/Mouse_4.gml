@@ -3,10 +3,12 @@ effect_btn()
 
 freeUpgrade = 0
 
+if greyed_out=0 and capped=0 {
 // ATTACK FREE UPGRADE CHANCE
 if myID<=6 {
     if random(100) < store.free_attack_upgrade {
         freeUpgrade=1
+		store.free_attack_upgrades+=1
     }
 }
 
@@ -14,6 +16,7 @@ if myID<=6 {
 if myID>=7 and myID<=12 {
     if random(100) < store.free_defense_upgrade {
         freeUpgrade=1
+		store.free_defense_upgrades+=1
     }
 }
 
@@ -21,6 +24,7 @@ if myID>=7 and myID<=12 {
 if myID>=13 {
     if random(100) < store.free_utility_upgrade {
         freeUpgrade=1
+		store.free_utility_upgrades+=1
     }
 }
 
@@ -29,7 +33,6 @@ if freeUpgrade=1 {
     show.myReward="Free Upgrade"
 }
 
-if greyed_out=0 and capped=0 {
 if freeUpgrade=0 {store.gold-=myCost}
 
 // ATTACK

@@ -133,3 +133,11 @@ store.gems += reward
 instance_create_depth(x,y-8,depth-1000,show_reward).myReward = "Rewarded "+string(reward)+" Gems!"
 save_game()
 }
+if myResult = "funtimes" and store.code_funtimes = 0
+{
+reward = 200
+store.code_funtimes = 1
+store.gems += reward
+instance_create_depth(x,y-8,depth-1000,show_reward).myReward = "Rewarded "+string(reward)+" Gems!"
+save_game()
+}

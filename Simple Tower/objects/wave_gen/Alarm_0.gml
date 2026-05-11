@@ -58,7 +58,7 @@ store.enemy_damage+=1
 store.enemy_hp+=1
 }
 if store.tier>5 {
-store.enemy_damage+=round(.50*store.tier)
+store.enemy_damage+=round(.25*store.current_stage)
 store.enemy_hp+=(1*store.tier)
 }
 

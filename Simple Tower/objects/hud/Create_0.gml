@@ -40,6 +40,7 @@ alarm[0]=240 //Show tutorial
 alarm[1]=60 //Regen 
 instance_create_depth(x,y,depth,hud_backdrop)
 instance_create_depth(x,y,depth,wave_gen)
+instance_create_depth((room_width/2)-16,(room_height/2)+12,depth,transistion_keyhole)
 
 //First Run Bonus
 if store.total_runs<=0 {store.gold+=15}
