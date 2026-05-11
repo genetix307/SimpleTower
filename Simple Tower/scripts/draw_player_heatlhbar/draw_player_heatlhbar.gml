@@ -49,6 +49,7 @@ draw_set_alpha(1);
 //draw_set_valign(fa_middle);
 
 var txt = "Health " + calc_number(store.hp) + "/" + calc_number(store.maxhp);
+if store.hp>10 {txt = "Health " + calc_number(round(store.hp)) + "/" + calc_number(store.maxhp);}
 
 //vertical center of bar
 var text_y = bar_y + (bar_h/2) - (string_height(txt)/2);

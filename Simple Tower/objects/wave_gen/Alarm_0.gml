@@ -62,8 +62,9 @@ store.enemy_damage+=round(.50*store.tier)
 store.enemy_hp+=(1*store.tier)
 }
 
-store.gold+=store.goldperwave instance_create_depth(180,480,depth-10,show_text_yellow).myText="Wave Gold +"+calc_number(store.goldperwave)
-store.gems+=store.gemsperwave instance_create_depth(180,503,depth-10,show_text_yellow).myText="Wave Gems +"+calc_number(store.gemsperwave)
+instance_create_depth(18,637,depth-10,show_text_yellow).myText="Wave "+string(store.current_stage)
+store.gold+=store.goldperwave instance_create_depth(18,660,depth-10,show_text_yellow).myText="Wave Gold +"+calc_number(store.goldperwave)
+store.gems+=store.gemsperwave instance_create_depth(18,683,depth-10,show_text_yellow).myText="Wave Gems +"+calc_number(store.gemsperwave)
 store.gems_earned+=store.gemsperwave
 
 //Supply Crate

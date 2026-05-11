@@ -119,8 +119,16 @@ save_game()
 }
 if myResult = "zombie" and store.code_zombie = 0
 {
-reward = 400
+reward = 300
 store.code_zombie = 1
+store.gems += reward
+instance_create_depth(x,y-8,depth-1000,show_reward).myReward = "Rewarded "+string(reward)+" Gems!"
+save_game()
+}
+if myResult = "taco" and store.code_taco = 0
+{
+reward = 200
+store.code_taco = 1
 store.gems += reward
 instance_create_depth(x,y-8,depth-1000,show_reward).myReward = "Rewarded "+string(reward)+" Gems!"
 save_game()

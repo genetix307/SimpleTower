@@ -53,6 +53,7 @@
     {"name":"btn_lonetower_ad","order":6,"path":"objects/btn_lonetower_ad/btn_lonetower_ad.yy",},
     {"name":"btn_menu_modifiers","order":11,"path":"objects/btn_menu_modifiers/btn_menu_modifiers.yy",},
     {"name":"btn_menu_quests","order":13,"path":"objects/btn_menu_quests/btn_menu_quests.yy",},
+    {"name":"btn_menu_relics","order":17,"path":"objects/btn_menu_relics/btn_menu_relics.yy",},
     {"name":"btn_modifiers","order":12,"path":"objects/btn_modifiers/btn_modifiers.yy",},
     {"name":"btn_pause","order":2,"path":"objects/btn_pause/btn_pause.yy",},
     {"name":"btn_perks","order":6,"path":"objects/btn_perks/btn_perks.yy",},
@@ -215,6 +216,5 @@
     {"name":"spr_title","order":17,"path":"sprites/spr_title/spr_title.yy",},
     {"name":"spr_weapon_effect_arrow","order":6,"path":"sprites/spr_weapon_effect_arrow/spr_weapon_effect_arrow.yy",},
     {"name":"spr_wood_crate","order":2,"path":"sprites/spr_wood_crate/spr_wood_crate.yy",},
-    {"name":"Sprite60","order":1,"path":"sprites/Sprite60/Sprite60.yy",},
   ],
 }

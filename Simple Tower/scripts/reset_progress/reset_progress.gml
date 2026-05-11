@@ -250,4 +250,5 @@ store.code_levelup=0
 store.code_snack=0
 store.code_bonfire=0
 store.code_zombie=0
+store.code_taco=0
 }

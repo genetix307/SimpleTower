@@ -6,7 +6,7 @@ if store.bonus_reddit = 0
 {
 	draw_set_font(font_stats)
 	draw_set_color(c_yellow)
-	draw_text(x+111,y-6,"+50 Gems!")
+	draw_text(x+111,y-6,"+100 Gems!")
 }
 
 

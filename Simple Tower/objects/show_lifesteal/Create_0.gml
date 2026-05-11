@@ -1,7 +1,7 @@
  /// @description Insert description here
 // You can write your code in this editor
 depth =-y-500
-image_alpha = 4
+image_alpha = 4.2
 store.lifesteals+=1
 
 //Quick Challenge
