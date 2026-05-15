@@ -150,7 +150,6 @@ store.card_slot_4 = 0
 store.card_inheritance = 0
 store.card_lvl_inheritance = 1
 store.card_inheritance_used = 0
-
 store.card_sharpened_tip = 0
 store.card_lvl_sharpened_tip = 1
 store.card_sharpened_tip_used = 0
@@ -236,6 +235,11 @@ store.free_utility_upgrades=0
 for (var i = 0; i < 999; ++i) {
    store.quests[i]=0
 } 
+
+//Relics
+store.relic_support=0
+store.relic_plunder=0
+store.relic_hoarding=0
 
 //Bonus Codes
 store.code_payday=0

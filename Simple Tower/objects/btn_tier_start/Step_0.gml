@@ -12,7 +12,7 @@ if myTier=5 and store.tier_best_5>0 {showBest=store.tier_best_5 showRank=store.r
 if myTier=6 and store.tier_best_6>0 {showBest=store.tier_best_6 showRank=store.rank_tier_6}
 
 //Set ranking
-var totalPlayers=8327-(myTier*796)
-var percentile = 1 - exp(-showBest / 62);
+var totalPlayers=8527-(myTier*821)
+var percentile = 1 - exp(-showBest / 67);
 showRank=floor((1 - percentile) * totalPlayers);
 if showRank<1 {showRank=1}
