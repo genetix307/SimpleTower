@@ -87,6 +87,11 @@ if myID=82 {myDesc="Get 1000 Free Defense Upgrades" myReward=1000 current=store.
 if myID=83 {myDesc="Get 100 Free Utility Upgrades" myReward=100 current=store.free_utility_upgrades goal=100}
 if myID=84 {myDesc="Get 250 Free Utility Upgrades" myReward=250 current=store.free_utility_upgrades goal=250}
 if myID=85 {myDesc="Get 1000 Free Utility Upgrades" myReward=1000 current=store.free_utility_upgrades goal=1000}
+if myID=86 {myDesc="Play 25 Waves with no cards" myReward=200 current=store.survived_nocards goal=25}
+if myID=87 {myDesc="Play 100 Waves with no cards" myReward=500 current=store.survived_nocards goal=100}
+if myID=88 {myDesc="Play 250 Waves with no cards" myReward=750 current=store.survived_nocards goal=250}
+if myID=89 {myDesc="Play 500 Waves with no cards" myReward=1000 current=store.survived_nocards goal=500}
+if myID=90 {myDesc="Play 1000 Waves with no cards" myReward=1500 current=store.survived_nocards goal=1000}
 
 if current>=goal {greyed_out=0} 
 

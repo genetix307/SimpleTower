@@ -6,7 +6,7 @@ store.gold+=gold_drop+store.goldperkill
 
 if type="Slime" {repeat 2 instance_create_depth(random_range(x-20,x+20),y-20,depth,enemy).type="Baby Slime"}
 instance_create_depth(x+random_range(-8,8),y+random_range(-8,8),depth-5,effect_smoke_small)
-//instance_create_depth(x,y,depth,coin)
+if store.relic_plunder=1 and 7>random(100) {instance_create_depth(x,y,depth,item_gem)}
 //instance_create_depth(x+random_range(-32,32),y+random_range(-32,32),depth,xp_orb)
 ////if 5+check_luck()>random(200) {spawn_item()}
 store.enemies_slain +=1
@@ -14,6 +14,7 @@ store.enemies_killed_run+=1
 
 if boss=1 { 
 store.bosses_slain+=1
+if store.relic_hoarding=1 {store.gold+=100}
 ////store.bosses_killed_run+=1
 //repeat 8 instance_create_depth(x+random_range(-24,24),y+random_range(-24,24),depth-5,show_big_hit)
 //set_music()

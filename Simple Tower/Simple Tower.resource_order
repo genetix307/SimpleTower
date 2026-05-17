@@ -93,6 +93,7 @@
     {"name":"gore","order":6,"path":"objects/gore/gore.yy",},
     {"name":"hud_backdrop","order":11,"path":"objects/hud_backdrop/hud_backdrop.yy",},
     {"name":"hud","order":1,"path":"objects/hud/hud.yy",},
+    {"name":"item_gem","order":4,"path":"objects/item_gem/item_gem.yy",},
     {"name":"menu_show_tower","order":4,"path":"objects/menu_show_tower/menu_show_tower.yy",},
     {"name":"relic","order":5,"path":"objects/relic/relic.yy",},
     {"name":"show_get_item","order":10,"path":"objects/show_get_item/show_get_item.yy",},

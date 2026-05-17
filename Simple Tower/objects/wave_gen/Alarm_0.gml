@@ -116,5 +116,10 @@ if store.mod_doomed=1 {store.maxhp-=10 store.hp-=10}
 if store.mod_taxation=1 {store.gold-=round(store.gold*.25)}
 if store.mod_oldage=1 {store.attack_damage-=2}
 
+//Check no cards
+if store.card_slot_1 = 0 and store.card_slot_2 = 0 and store.card_slot_3 = 0 and store.card_slot_4 = 0 {store.survived_nocards+=1}
+
+//Relic - Tome of Support
+if store.relic_support=1 and store.current_stage%10==0 {instance_create_depth(room_width/2,room_height/2-120,depth,supply_crate)}
 }
 }

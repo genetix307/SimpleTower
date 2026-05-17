@@ -154,6 +154,7 @@
     {"id":{"name":"gore","path":"objects/gore/gore.yy",},},
     {"id":{"name":"hud_backdrop","path":"objects/hud_backdrop/hud_backdrop.yy",},},
     {"id":{"name":"hud","path":"objects/hud/hud.yy",},},
+    {"id":{"name":"item_gem","path":"objects/item_gem/item_gem.yy",},},
     {"id":{"name":"menu_show_tower","path":"objects/menu_show_tower/menu_show_tower.yy",},},
     {"id":{"name":"relic","path":"objects/relic/relic.yy",},},
     {"id":{"name":"show_get_item","path":"objects/show_get_item/show_get_item.yy",},},

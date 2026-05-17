@@ -74,5 +74,3 @@ store.card_slot_4 = 0
 if store.mod_glasscastle=1 {store.maxhp=1 store.hp=1}
 
 
-
-

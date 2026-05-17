@@ -230,6 +230,7 @@ store.gemchests=0
 store.free_attack_upgrades=0
 store.free_defense_upgrades=0
 store.free_utility_upgrades=0
+store.survived_nocards=0
 
 //Quests
 for (var i = 0; i < 999; ++i) {
@@ -260,4 +261,5 @@ store.code_bonfire=0
 store.code_zombie=0
 store.code_taco=0
 store.code_funtimes=0
+store.code_lordofflies=0
 }
