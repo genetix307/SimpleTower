@@ -8,7 +8,7 @@ draw_set_font(font_med_hud)
 draw_text_shadow_color(428,8,string(store.keys),c_white,c_white,c_white,c_white)
 draw_sprite(spr_show_key,0,412,16)
 
-
+draw_text_shadow_color(122,846,"Complete Quests to earn Keys!",c_yellow,c_yellow,c_yellow,c_yellow)
 
 
 
