@@ -17,3 +17,15 @@ store.keys-=15
 store.relic_hoarding=1
 audio_play_sound(sfx_upgrade,1,false)
 }     
+
+if myID=4 and store.relic_interest=0 and store.keys>=15 {
+store.keys-=15
+store.relic_interest=1
+audio_play_sound(sfx_upgrade,1,false)
+}     
+
+if myID=5 and store.relic_multiplicity=0 and store.keys>=15 {
+store.keys-=15
+store.relic_multiplicity=1
+audio_play_sound(sfx_upgrade,1,false)
+}     

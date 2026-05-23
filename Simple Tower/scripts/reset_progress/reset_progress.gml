@@ -241,6 +241,8 @@ for (var i = 0; i < 999; ++i) {
 store.relic_support=0
 store.relic_plunder=0
 store.relic_hoarding=0
+store.relic_interest=0
+store.relic_multiplicity=0
 
 //Bonus Codes
 store.code_payday=0
@@ -262,4 +264,5 @@ store.code_zombie=0
 store.code_taco=0
 store.code_funtimes=0
 store.code_lordofflies=0
+store.code_keylock=0
 }

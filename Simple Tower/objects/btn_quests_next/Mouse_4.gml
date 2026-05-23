@@ -7,3 +7,5 @@ if room=rm_menu_quests_4 {room=rm_menu_quests_5 exit}
 if room=rm_menu_quests_5 {room=rm_menu_quests_6 exit}
 if room=rm_menu_quests_6 {room=rm_menu_quests_7 exit}
 if room=rm_menu_quests_7 {room=rm_menu_quests_8 exit}
+if room=rm_menu_quests_8 {room=rm_menu_quests_9 exit}
+if room=rm_menu_quests_9 {room=rm_menu_quests_10 exit}

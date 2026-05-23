@@ -92,6 +92,20 @@ if myID=87 {myDesc="Play 100 Waves with no cards" myReward=500 current=store.sur
 if myID=88 {myDesc="Play 250 Waves with no cards" myReward=750 current=store.survived_nocards goal=250}
 if myID=89 {myDesc="Play 500 Waves with no cards" myReward=1000 current=store.survived_nocards goal=500}
 if myID=90 {myDesc="Play 1000 Waves with no cards" myReward=1500 current=store.survived_nocards goal=1000}
+if myID=91 {myDesc="Reach Wave 50 on Tier 1" myReward=500 current=store.tier_best_1 goal=50}
+if myID=92 {myDesc="Reach Wave 100 on Tier 1" myReward=1000 current=store.tier_best_1 goal=100}
+if myID=93 {myDesc="Reach Wave 50 on Tier 2" myReward=500 current=store.tier_best_2 goal=50}
+if myID=94 {myDesc="Reach Wave 100 on Tier 2" myReward=1500 current=store.tier_best_2 goal=100}
+if myID=95 {myDesc="Reach Wave 50 on Tier 3" myReward=500 current=store.tier_best_3 goal=50}
+if myID=96 {myDesc="Reach Wave 100 on Tier 3" myReward=1500 current=store.tier_best_3 goal=100}
+if myID=97 {myDesc="Reach Wave 50 on Tier 4" myReward=500 current=store.tier_best_4 goal=50}
+if myID=98 {myDesc="Reach Wave 100 on Tier 4" myReward=1500 current=store.tier_best_4 goal=100}
+if myID=99 {myDesc="Reach Wave 50 on Tier 5" myReward=500 current=store.tier_best_5 goal=50}
+if myID=100 {myDesc="Reach Wave 100 on Tier 5" myReward=1500 current=store.tier_best_5 goal=100}
+if myID=101 {myDesc="Reach Wave 50 on Tier 6" myReward=500 current=store.tier_best_6 goal=50}
+if myID=102 {myDesc="Reach Wave 100 on Tier 6" myReward=1500 current=store.tier_best_6 goal=100}
+
+
 
 if current>=goal {greyed_out=0} 
 

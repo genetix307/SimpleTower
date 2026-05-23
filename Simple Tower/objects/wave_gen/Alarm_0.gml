@@ -121,5 +121,8 @@ if store.card_slot_1 = 0 and store.card_slot_2 = 0 and store.card_slot_3 = 0 and
 
 //Relic - Tome of Support
 if store.relic_support=1 and store.current_stage%10==0 {instance_create_depth(room_width/2,room_height/2-120,depth,supply_crate)}
+
+//Relic - Tome of Interest
+if store.relic_interest=1 {store.gold+=floor(store.gold/100)}
 }
 }

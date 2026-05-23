@@ -149,3 +149,11 @@ store.gems += reward
 instance_create_depth(x,y-8,depth-1000,show_reward).myReward = "Rewarded "+string(reward)+" Gems!"
 save_game()
 }
+if myResult = "keylock" and store.code_keylock = 0
+{
+reward = 20
+store.code_keylock = 1
+store.keys += reward
+instance_create_depth(x,y-8,depth-1000,show_reward).myReward = "Rewarded "+string(reward)+" Keys!"
+save_game()
+}
