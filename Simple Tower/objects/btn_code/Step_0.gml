@@ -71,7 +71,7 @@ save_game()
 }
 if myResult = "ironpost" and store.code_ironpost = 0
 {
-reward = 300
+reward = 200
 store.code_ironpost = 1
 store.gems += reward
 instance_create_depth(x,y-8,depth-1000,show_reward).myReward = "Rewarded "+string(reward)+" Gems!"
@@ -79,7 +79,7 @@ save_game()
 }
 if myResult = "lonetower" and store.code_lonetower = 0
 {
-reward = 500
+reward = 300
 store.code_lonetower = 1
 store.gems += reward
 instance_create_depth(x,y-8,depth-1000,show_reward).myReward = "Rewarded "+string(reward)+" Gems!"
@@ -95,7 +95,7 @@ save_game()
 }
 if myResult = "levelup" and store.code_levelup = 0
 {
-reward = 500
+reward = 300
 store.code_levelup = 1
 store.gems += reward
 instance_create_depth(x,y-8,depth-1000,show_reward).myReward = "Rewarded "+string(reward)+" Gems!"
@@ -155,5 +155,13 @@ reward = 20
 store.code_keylock = 1
 store.keys += reward
 instance_create_depth(x,y-8,depth-1000,show_reward).myReward = "Rewarded "+string(reward)+" Keys!"
+save_game()
+}
+if myResult = "dig" and store.code_dig = 0
+{
+reward = 200
+store.code_dig = 1
+store.gems += reward
+instance_create_depth(x,y-8,depth-1000,show_reward).myReward = "Rewarded "+string(reward)+" Gems!"
 save_game()
 }

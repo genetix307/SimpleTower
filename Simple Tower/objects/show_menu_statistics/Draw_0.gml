@@ -13,9 +13,10 @@ draw_text_color(118,320,"Hits Blocked: "+string(store.blocks),c_white,c_white,c_
 draw_text_color(118,350,"Lifesteals: "+string(store.lifesteals),c_white,c_white,c_silver,c_silver,1)
 draw_text_color(118,380,"Multishots: "+string(store.multishots),c_white,c_white,c_silver,c_silver,1)
 draw_text_color(118,410,"Damage Dealt: "+string(calc_number(store.damage_dealt)),c_white,c_white,c_silver,c_silver,1)
-draw_text_color(118,440,"Damage Absorbed: "+string(calc_number(store.absorbed)),c_white,c_white,c_silver,c_silver,1)
-draw_text_color(118,470,"HP Regenerated: "+string(calc_number(store.regened)),c_white,c_white,c_silver,c_silver,1)
-draw_text_color(118,500,"Challenges Completed: "+string(store.challenges_completed),c_white,c_white,c_silver,c_silver,1)
+draw_text_color(118,440,"Damage Dealt in a Hit: "+string(calc_number(store.damage_dealt_hit)),c_white,c_white,c_silver,c_silver,1)
+draw_text_color(118,470,"Damage Absorbed: "+string(calc_number(store.absorbed)),c_white,c_white,c_silver,c_silver,1)
+draw_text_color(118,500,"HP Regenerated: "+string(calc_number(store.regened)),c_white,c_white,c_silver,c_silver,1)
+draw_text_color(118,530,"Challenges Completed: "+string(store.challenges_completed),c_white,c_white,c_silver,c_silver,1)
 
 
 

@@ -104,6 +104,9 @@ if myID=99 {myDesc="Reach Wave 50 on Tier 5" myReward=500 current=store.tier_bes
 if myID=100 {myDesc="Reach Wave 100 on Tier 5" myReward=1500 current=store.tier_best_5 goal=100}
 if myID=101 {myDesc="Reach Wave 50 on Tier 6" myReward=500 current=store.tier_best_6 goal=50}
 if myID=102 {myDesc="Reach Wave 100 on Tier 6" myReward=1500 current=store.tier_best_6 goal=100}
+if myID=103 {myDesc="Deal 100 Damage in a Hit" myReward=100 current=store.damage_dealt_hit goal=100}
+if myID=104 {myDesc="Deal 300 Damage in a Hit" myReward=250 current=store.damage_dealt_hit goal=300}
+if myID=105 {myDesc="Deal 1000 Damage in a Hit" myReward=1000 current=store.damage_dealt_hit goal=1000}
 
 
 

@@ -231,6 +231,7 @@ store.free_attack_upgrades=0
 store.free_defense_upgrades=0
 store.free_utility_upgrades=0
 store.survived_nocards=0
+store.damage_dealt_hit=0
 
 //Quests
 for (var i = 0; i < 999; ++i) {
@@ -265,4 +266,5 @@ store.code_taco=0
 store.code_funtimes=0
 store.code_lordofflies=0
 store.code_keylock=0
+store.code_dig=0
 }
