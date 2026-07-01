@@ -17,6 +17,6 @@ if greyed_out=0
 draw_set_font(font_stats)
 draw_text_color(x+82,y-21,"Best Stage: "+string(showBest),c_yellow,c_yellow,c_orange,c_orange,1)
 draw_text_color(x+82,y-6,"x"+string(myTier)+" Gem Multiplier",c_white,c_white,c_silver,c_silver,1)
-if showBest>1 {draw_text_color(x+82,y+9,"World Rank: "+string(showRank),c_fuchsia,c_fuchsia,c_purple,c_purple,1)}
+if showBest>1 and myTier<7 {draw_text_color(x+82,y+9,"World Rank: "+string(showRank),c_fuchsia,c_fuchsia,c_purple,c_purple,1)}
 }
 

@@ -18,6 +18,10 @@ current_tutorial=0
 show_tutorial=0
 rush_wave=0 
 alarm[0]=180 //First tutorial
+revive=0
+
+//Phoenix Relic
+if store.relic_phoenix=1 {revive=1}
 
 if store.tier=1 {best_stage=store.tier_best_1}
 if store.tier=2 {best_stage=store.tier_best_2}
@@ -25,6 +29,7 @@ if store.tier=3 {best_stage=store.tier_best_3}
 if store.tier=4 {best_stage=store.tier_best_4}
 if store.tier=5 {best_stage=store.tier_best_5}
 if store.tier=6 {best_stage=store.tier_best_6}
+if store.tier=7 {best_stage=store.tier_best_7}
 
 //Change Background
 layer_bg=layer_get_id("Background")
@@ -35,6 +40,7 @@ if store.tier=3 {layer_background_change(bg_id,spr_floor_desert)}
 if store.tier=4 {layer_background_change(bg_id,spr_floor_path)}
 if store.tier=5 {layer_background_change(bg_id,spr_floor_grass)}
 if store.tier=6 {layer_background_change(bg_id,spr_floor_dungeon)}
+if store.tier=7 {layer_background_change(bg_id,spr_floor_dungeon_grass)}
 
 alarm[0]=240 //Show tutorial
 alarm[1]=60 //Regen 

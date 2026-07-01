@@ -29,3 +29,9 @@ myName="Tome of Multiplicity"
 myDesc="Multishots now shoot 5 Arrows"
 if store.relic_multiplicity=0 {myDesc="Tap to Unlock for 15 Keys" image_index=0}
 }
+
+if myID=6 {
+myName="Tome of Phoenix"
+myDesc="One time at Death regain\nfull HP each Run"
+if store.relic_phoenix=0 {myDesc="Tap to Unlock for 15 Keys" image_index=0}
+}

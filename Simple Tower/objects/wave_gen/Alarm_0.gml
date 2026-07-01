@@ -20,6 +20,7 @@ if 70>random(100) and store.current_stage>=10 and spawn>0 and spawn<store.curren
 if 30>random(100) and store.current_stage>=25 and spawn>0 and spawn<store.current_stage {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Bone Henchman" spawn-=1}
 if 3>random(100) and store.current_stage>=1 and spawn>0 and store.tier>1 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Slime" spawn-=1}
 if 1>random(100) and store.current_stage>=1 and spawn>0 and store.tier>2 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Carbuncle" spawn-=1}
+if 1>random(100) and store.current_stage>=1 and spawn>0 and store.tier>6 {instance_create_depth(random_range(-300,room_width+300),-20-random(80),depth,enemy).type="Carbuncle" spawn-=1}
 
 if spawn<= 0 and instance_number(def_enemy)<=0 and hud.game_paused=0 and hud.game_over=0 {
 store.current_stage+=1 
@@ -60,6 +61,10 @@ store.enemy_hp+=1
 if store.tier>5 {
 store.enemy_damage+=round(.25*store.current_stage)
 store.enemy_hp+=(1*store.tier)
+}
+if store.tier>6 {
+store.enemy_damage+=10
+store.enemy_hp+=10
 }
 
 instance_create_depth(18,637,depth-10,show_text_yellow).myText="Wave "+string(store.current_stage)

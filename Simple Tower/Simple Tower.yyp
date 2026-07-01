@@ -67,7 +67,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"Simple Tower",
   "resources":[
@@ -280,6 +280,7 @@
     {"id":{"name":"spr_enemy_slime","path":"sprites/spr_enemy_slime/spr_enemy_slime.yy",},},
     {"id":{"name":"spr_enemy_weapon_melee","path":"sprites/spr_enemy_weapon_melee/spr_enemy_weapon_melee.yy",},},
     {"id":{"name":"spr_floor_desert","path":"sprites/spr_floor_desert/spr_floor_desert.yy",},},
+    {"id":{"name":"spr_floor_dungeon_grass","path":"sprites/spr_floor_dungeon_grass/spr_floor_dungeon_grass.yy",},},
     {"id":{"name":"spr_floor_dungeon","path":"sprites/spr_floor_dungeon/spr_floor_dungeon.yy",},},
     {"id":{"name":"spr_floor_grass_dark","path":"sprites/spr_floor_grass_dark/spr_floor_grass_dark.yy",},},
     {"id":{"name":"spr_floor_grass","path":"sprites/spr_floor_grass/spr_floor_grass.yy",},},

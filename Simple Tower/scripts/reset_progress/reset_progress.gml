@@ -203,12 +203,14 @@ store.tier_best_3=1
 store.tier_best_4=1
 store.tier_best_5=1
 store.tier_best_6=1
+store.tier_best_7=1
 store.rank_tier_1=0
 store.rank_tier_2=0
 store.rank_tier_3=0
 store.rank_tier_4=0
 store.rank_tier_5=0
 store.rank_tier_6=0
+store.rank_tier_7=0
 store.total_runs=0
 store.enemies_slain=0
 store.bosses_slain=0
@@ -244,6 +246,7 @@ store.relic_plunder=0
 store.relic_hoarding=0
 store.relic_interest=0
 store.relic_multiplicity=0
+store.relic_phoenix=0
 
 //Bonus Codes
 store.code_payday=0
@@ -267,4 +270,6 @@ store.code_funtimes=0
 store.code_lordofflies=0
 store.code_keylock=0
 store.code_dig=0
+store.code_onion=0
+store.code_phoenix=0
 }
