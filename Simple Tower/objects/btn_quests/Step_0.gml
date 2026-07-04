@@ -61,7 +61,6 @@ if myID=57 {myDesc="Open 15 Gem Chests" myReward=250 current=store.gemchests goa
 if myID=58 {myDesc="Open 30 Gem Chests" myReward=500 current=store.gemchests goal=30}
 if myID=59 {myDesc="Open 50 Gem Chests" myReward=1000 current=store.gemchests goal=50}
 if myID=60 {myDesc="Open 100 Gem Chests" myReward=3000 current=store.gemchests goal=100}
-
 if myID=61 {myDesc="Use Inheritance Card 500 Waves" myReward=500 current=store.card_inheritance_used goal=500}
 if myID=62 {myDesc="Use Sharpened Tip\nCard 500 Waves" myReward=500 current=store.card_sharpened_tip_used goal=500}
 if myID=63 {myDesc="Use Critical Gold Card 500 Waves" myReward=500 current=store.card_critical_gold_used goal=500}
@@ -109,6 +108,10 @@ if myID=104 {myDesc="Deal 300 Damage in a Hit" myReward=250 current=store.damage
 if myID=105 {myDesc="Deal 1000 Damage in a Hit" myReward=1000 current=store.damage_dealt_hit goal=1000}
 if myID=106 {myDesc="Reach Wave 50 on Tier 7" myReward=750 current=store.tier_best_7 goal=50}
 if myID=107 {myDesc="Reach Wave 100 on Tier 7" myReward=2000 current=store.tier_best_7 goal=100}
+
+if myID=108 {myDesc="Defeat 10 Bosses" myReward=300 current=store.bosses_slain goal=10}
+if myID=109 {myDesc="Defeat 25 Bosses" myReward=500 current=store.bosses_slain goal=25}
+if myID=110 {myDesc="Defeat 50 Bosses" myReward=1000 current=store.bosses_slain goal=50}
 
 
 if current>=goal {greyed_out=0} 

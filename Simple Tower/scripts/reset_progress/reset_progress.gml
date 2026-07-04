@@ -272,4 +272,5 @@ store.code_keylock=0
 store.code_dig=0
 store.code_onion=0
 store.code_phoenix=0
+store.code_fire=0
 }

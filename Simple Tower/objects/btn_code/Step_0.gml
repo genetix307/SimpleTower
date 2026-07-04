@@ -175,8 +175,16 @@ save_game()
 }
 if myResult = "phoenix" and store.code_phoenix = 0
 {
-reward = 250
+reward = 200
 store.code_phoenix = 1
+store.gems += reward
+instance_create_depth(x,y-8,depth-1000,show_reward).myReward = "Rewarded "+string(reward)+" Gems!"
+save_game()
+}
+if myResult = "fire" and store.code_fire = 0
+{
+reward = 250
+store.code_fire = 1
 store.gems += reward
 instance_create_depth(x,y-8,depth-1000,show_reward).myReward = "Rewarded "+string(reward)+" Gems!"
 save_game()

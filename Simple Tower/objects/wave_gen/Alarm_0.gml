@@ -75,13 +75,17 @@ store.gems_earned+=store.gemsperwave
 //Supply Crate
 if 5.75>random(100) and store.current_stage>2 {instance_create_depth(room_width/2,room_height/2-200,depth,supply_crate)}
 
+//Set Bonus game
+if store.current_stage>=15 {store.bonus_game=1}
+
 ////Check best tier stage reached
-if store.tier=1 {if store.current_stage>store.tier_best_1 {store.tier_best_1=store.current_stage}}
-if store.tier=2 {if store.current_stage>store.tier_best_2 {store.tier_best_2=store.current_stage}}
-if store.tier=3 {if store.current_stage>store.tier_best_3 {store.tier_best_3=store.current_stage}}
-if store.tier=4 {if store.current_stage>store.tier_best_4 {store.tier_best_4=store.current_stage}}
-if store.tier=5 {if store.current_stage>store.tier_best_5 {store.tier_best_5=store.current_stage}}
-if store.tier=6 {if store.current_stage>store.tier_best_6 {store.tier_best_6=store.current_stage}}
+if store.tier=1 {if store.current_stage>store.tier_best_1 {store.tier_best_1=store.current_stage show_best_reached()}}
+if store.tier=2 {if store.current_stage>store.tier_best_2 {store.tier_best_2=store.current_stage show_best_reached()}}
+if store.tier=3 {if store.current_stage>store.tier_best_3 {store.tier_best_3=store.current_stage show_best_reached()}}
+if store.tier=4 {if store.current_stage>store.tier_best_4 {store.tier_best_4=store.current_stage show_best_reached()}}
+if store.tier=5 {if store.current_stage>store.tier_best_5 {store.tier_best_5=store.current_stage show_best_reached()}}
+if store.tier=6 {if store.current_stage>store.tier_best_6 {store.tier_best_6=store.current_stage show_best_reached()}}
+if store.tier=7 {if store.current_stage>store.tier_best_7 {store.tier_best_7=store.current_stage show_best_reached()}}
 
 //Check best wave for Modifiers
 if store.mod_nocards=1 and store.current_stage>=store.mod_best_nocards {store.mod_best_nocards=store.current_stage}

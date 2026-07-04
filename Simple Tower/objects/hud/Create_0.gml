@@ -19,6 +19,7 @@ show_tutorial=0
 rush_wave=0 
 alarm[0]=180 //First tutorial
 revive=0
+show_best_reached=0
 
 //Phoenix Relic
 if store.relic_phoenix=1 {revive=1}

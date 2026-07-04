@@ -5,6 +5,6 @@ alarm[0]=1
 greyed_out=0
 myName = "Rush Wave"
 
-if store.tier_best_1<25 {instance_destroy()}
+if store.tier_best_1<20 {instance_destroy()}
 
 held=0
