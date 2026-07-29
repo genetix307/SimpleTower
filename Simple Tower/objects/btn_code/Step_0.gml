@@ -157,6 +157,14 @@ store.keys += reward
 instance_create_depth(x,y-8,depth-1000,show_reward).myReward = "Rewarded "+string(reward)+" Keys!"
 save_game()
 }
+if myResult = "keysplease" and store.code_keysplease = 0
+{
+reward = 20
+store.code_keysplease = 1
+store.keys += reward
+instance_create_depth(x,y-8,depth-1000,show_reward).myReward = "Rewarded "+string(reward)+" Keys!"
+save_game()
+}
 if myResult = "dig" and store.code_dig = 0
 {
 reward = 200
@@ -185,6 +193,14 @@ if myResult = "fire" and store.code_fire = 0
 {
 reward = 250
 store.code_fire = 1
+store.gems += reward
+instance_create_depth(x,y-8,depth-1000,show_reward).myReward = "Rewarded "+string(reward)+" Gems!"
+save_game()
+}
+if myResult = "tidus" and store.code_tidus = 0
+{
+reward = 250
+store.code_tidus = 1
 store.gems += reward
 instance_create_depth(x,y-8,depth-1000,show_reward).myReward = "Rewarded "+string(reward)+" Gems!"
 save_game()

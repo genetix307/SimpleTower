@@ -269,8 +269,10 @@ store.code_taco=0
 store.code_funtimes=0
 store.code_lordofflies=0
 store.code_keylock=0
+store.code_keysplease=0
 store.code_dig=0
 store.code_onion=0
 store.code_phoenix=0
 store.code_fire=0
+store.code_tidus=0
 }
