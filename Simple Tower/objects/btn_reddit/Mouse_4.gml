@@ -2,8 +2,8 @@
 if store.bonus_reddit = 0
 {
 store.bonus_reddit = 1
-store.gems += 100
-instance_create_depth(x,y-8,depth,show_reward).myReward = "Rewarded 50 Gems!"
+store.gems += 200
+instance_create_depth(x,y-8,depth,show_reward).myReward = "Rewarded 200 Gems!"
 }
 
 url_open("https://www.reddit.com/r/GenetixGames/")

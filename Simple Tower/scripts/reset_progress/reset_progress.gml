@@ -247,6 +247,7 @@ store.relic_hoarding=0
 store.relic_interest=0
 store.relic_multiplicity=0
 store.relic_phoenix=0
+store.relic_tolls=0
 
 //Bonus Codes
 store.code_payday=0
@@ -275,4 +276,6 @@ store.code_onion=0
 store.code_phoenix=0
 store.code_fire=0
 store.code_tidus=0
+store.code_steam=0
+store.code_key=0
 }

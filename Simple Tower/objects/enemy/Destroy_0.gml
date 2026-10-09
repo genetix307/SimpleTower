@@ -77,3 +77,5 @@ if store.card_slot_1 = 15 or store.card_slot_2 = 15 or store.card_slot_3 = 15 or
 ////Supply Crate
 //if check_luck()+1>=random(120+hud.crate_count) {instance_create_depth(x,y,depth,supply_crate)}
 }
+
+if hp>0 and store.relic_tolls>0 {store.gold+=gold_drop+store.goldperkill}
