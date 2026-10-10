@@ -47,7 +47,7 @@
   "option_android_launchscreen_fill":2,
   "option_android_lint":false,
   "option_android_logcat":"yoyo:V DEBUG:V AndroidRuntime:V",
-  "option_android_minimum_sdk":"21",
+  "option_android_minimum_sdk":"24",
   "option_android_orient_landscape":false,
   "option_android_orient_landscape_flipped":false,
   "option_android_orient_portrait":true,
@@ -79,7 +79,7 @@
   "option_android_tv_isgame":true,
   "option_android_tv_supports_leanback":true,
   "option_android_use_facebook":false,
-  "option_android_version":"1.0.38",
+  "option_android_version":"1.0.39",
   "resourceType":"GMAndroidOptions",
   "resourceVersion":"2.0",
 }
